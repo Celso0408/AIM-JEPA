@@ -1,0 +1,14 @@
+# Generated synthetic datasets. Regenerate with make_aimbio_multimodal_poc_dataset.py.
+*.npz
+
+# Notebook/model outputs.
+aim_jepa_gnn_kan_outputs/
+*.pt
+*.pth
+
+# Python/Jupyter cache.
+__pycache__/
+.ipynb_checkpoints/
+
+# OS/editor noise.
+.DS_Store
