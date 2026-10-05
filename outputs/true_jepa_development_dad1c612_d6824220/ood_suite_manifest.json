@@ -1,0 +1,3562 @@
+{
+  "single_parameter_extrapolation": [
+    {
+      "category": "single_parameter_extrapolation",
+      "group_id": "78f27c1747f6bb72bb8c7c86",
+      "augmentation_parent": "78f27c1747f6bb72bb8c7c86",
+      "family": "harmonic",
+      "parameters": {
+        "omega": 1.3479999999999999,
+        "x0": 0.0
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -5.635255430648722,
+        5.635255430648724
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "1ae672d36315e9491d0edb64ca7d288b1c84f06ea3c5486e84f0a4b7021b569d",
+      "affine_fingerprint": "7242be9dd59c2385dc80dc2dc495a6c4f702f6cb89fcbce09d4011c9098fc650",
+      "reflection_fingerprint": "7242be9dd59c2385dc80dc2dc495a6c4f702f6cb89fcbce09d4011c9098fc650",
+      "sampled_array_fingerprint": "08594f6c0d240273c3f1ed4d7d0094cfe655629b77efd0313137d554e2e2c56a",
+      "x_sha256": "2844b3d97869d46a1e41129927fe39caf6d496dc96feb3057fe2a737e4601d18",
+      "V_sha256": "e041d86e48c61065a803b250a5cdbd502c90cac52d9b288240e4af69d02c42ba",
+      "label_checksum": "833ae91b3f2dbb1d89572e14445d2386f78719b6a2be2a47be73ec7e1e08084b"
+    },
+    {
+      "category": "single_parameter_extrapolation",
+      "group_id": "97483de7a31c4aa31e1b1b6c",
+      "augmentation_parent": "97483de7a31c4aa31e1b1b6c",
+      "family": "morse",
+      "parameters": {
+        "a": 0.21400000000000002,
+        "D": 62.5,
+        "xe": 1.0
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -2.579922040330136,
+        6.68689380772568
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 62.5,
+      "valid_states": 11,
+      "potential_fingerprint": "6be5ab8f23256c7fe2208f79991605fd5ab5fc1bb9b6a6fb05a7e460f6bb9ba9",
+      "affine_fingerprint": "00d3c642ecf8c746c6c73034eb7c8c9e687cac5671081d5c887f43e284183830",
+      "reflection_fingerprint": "00d3c642ecf8c746c6c73034eb7c8c9e687cac5671081d5c887f43e284183830",
+      "sampled_array_fingerprint": "fa0e8e65985d2d953f8c0f518babd54978ecdf30c58e8e6dcefe01c53e4d11e0",
+      "x_sha256": "c4e4038bb9c9ae2c58713d4c82de561c54d438d41b166cff3e80dca9343973cd",
+      "V_sha256": "ef2f3b339df68f08973b5f60740ba0a63bc79d587e3228e454d04424a46321cf",
+      "label_checksum": "0c63defce0843fb82b701e92343350d9a0300098607039f1e9d989101bcb9004"
+    }
+  ],
+  "joint_parameter_extrapolation": [
+    {
+      "category": "joint_parameter_extrapolation",
+      "group_id": "7b9df8a2406335cae9e9bac6",
+      "augmentation_parent": "7b9df8a2406335cae9e9bac6",
+      "family": "double_well",
+      "parameters": {
+        "a": 0.01132,
+        "b": 3.064,
+        "tilt": 0.0
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.999523752024297,
+        7.999523752024293
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "a0cb45a71e4a50e21c124c84ac75ea042ad5ae8918aa2cf0ad10983517e414f3",
+      "affine_fingerprint": "f1c50e272bef530e2dd1dceb044581ae1af8669f33727440898cd563cadfcfb0",
+      "reflection_fingerprint": "f1c50e272bef530e2dd1dceb044581ae1af8669f33727440898cd563cadfcfb0",
+      "sampled_array_fingerprint": "64e328209d39a89cd92a162f54babc12d96eefda8f9c19a446649c4648ae7a6f",
+      "x_sha256": "25ddb7137e3017cfd24122cacf26348209388af7585a6d4a4bf23890c6bfbd9c",
+      "V_sha256": "788dcf2eae270f1c9f86e7358ab729b7764fdf5cb1542203a9e5fbbc75593260",
+      "label_checksum": "d0ebab9bf556721cdf61e792786c95f80ec8724ef85af410fb41651f2e6933fb"
+    },
+    {
+      "category": "joint_parameter_extrapolation",
+      "group_id": "6dde173c84aa95145d631f1b",
+      "augmentation_parent": "6dde173c84aa95145d631f1b",
+      "family": "fourier_random",
+      "parameters": {
+        "c2": 0.08280000000000001,
+        "shift": 1.1600000000000001,
+        "sin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cos": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.096387999283175,
+        11.418417441742958
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "70e36ed98bd6becce8db0ca9d5609311b61512c3b693982d36479cef4a0d38fe",
+      "affine_fingerprint": "4e30e1efefddde62e7a1eab20abd255ae01041385c79224ae39206b06851724f",
+      "reflection_fingerprint": "652a8aab5251e5e4c43f063ab5144ff3c35fcaab58b672a3c0cee4e3a2d516e4",
+      "sampled_array_fingerprint": "1a8eba682bb4f81b314fa2d40497ddfe9a59a2ad19bbbd03ccb26f4b2f31e48c",
+      "x_sha256": "a2f6d0cd5ed35324a12e15714abfc29c78037b9554276ed477d86bfb2619caa2",
+      "V_sha256": "77c60f3bfa8b808e944e71a9291df25a5cabc6d98825655a8de6c5fc7d4d209b",
+      "label_checksum": "adae174fbfdeefdc5069903a54713175a4085381f9ac8a669a8ffb1e58818250"
+    }
+  ],
+  "unseen_analytical_functional_forms": [
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "649331a41c858cec5c904c67",
+      "augmentation_parent": "649331a41c858cec5c904c67",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.2378152836393565,
+        "A": 14.973216091282666,
+        "B": 0.7444269202649594
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.415996252636859,
+        10.1708300654945
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "92575c35549bea8599ffb091400e609aec6b3da1a218223b7d8499076a142540",
+      "affine_fingerprint": "b7a3fe64422f701e00c472a8c97d84e3f6521b83ed8bc55c958f6b618bfefd13",
+      "reflection_fingerprint": "b7a3fe64422f701e00c472a8c97d84e3f6521b83ed8bc55c958f6b618bfefd13",
+      "sampled_array_fingerprint": "cb25650def2aa9709c951d91e909678b0a7d6f5abaf811d507c7ed4c123fdb88",
+      "x_sha256": "463f32fa0beb0027d7bcc888dfdb0ab74a3f8b49a21fe4ac5b063798663358a1",
+      "V_sha256": "2e3cb1fe0c5c1c4219da68c7bc708e0f478803908e442f6c4ca179984ebfe3f0",
+      "label_checksum": "00fa8bd571928a9b169792156007fb2dbb6734633d2661c0dc958086df2ba961"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "67d360effb3316940fee9c1f",
+      "augmentation_parent": "67d360effb3316940fee9c1f",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.24716695764102042,
+        "A": 15.701096796430647,
+        "B": 0.2044222641736269
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.987298361288333,
+        9.696237780750971
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "723b1a69bce4c521b0331dea587810ab0b78415e3793fdf27a24d5d46795bf96",
+      "affine_fingerprint": "4aedff7c6aa0305e4527f10bddc3ec88f215af406c9ce83d2d7e1ed4765fc08b",
+      "reflection_fingerprint": "c27eb39198a258cf40ccc337ab09207fa9cfaa2693a62a11ef3f312e12f5281c",
+      "sampled_array_fingerprint": "c5afb42bb953e4796e2df80364604d3e0f9689acce2f3602b7274c966774ca98",
+      "x_sha256": "e08035a4c5d2c8041fb35c071b7dca2ebc2e3b8a755298070a1146d22b902b35",
+      "V_sha256": "3f89c383960f3d2d65281b16e05f0c579ef5edcc162c948d18638bcad7d65394",
+      "label_checksum": "65fe3a4e10ccbe114eb7bebb0c67af6809b9385adb93641b77aca6fde1293a24"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "2f0ebf8f4bbefa9e24e5c661",
+      "augmentation_parent": "2f0ebf8f4bbefa9e24e5c661",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.26606888056732714,
+        "A": 14.524968131445348,
+        "B": 0.6486376568675041
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.549101569275948,
+        9.47092513384765
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "5f3184bda3cc73f8cfd36a35808b288782a13b7687b633e0d7a52ea62c89de55",
+      "affine_fingerprint": "c2d54ba97c6857cf6c2f84651ad130ab70b9f9f3567d41c0dd3790ed227c0f3c",
+      "reflection_fingerprint": "1847ebd77afb07e2499eded70c65d2335b287cb64340c48cd9670d3ac4c6ba08",
+      "sampled_array_fingerprint": "2c33292eb34875fb507dde3e8a387ba1692c0a7f8ebcdef5338c497971488821",
+      "x_sha256": "4198e35f86be46ea5b546d820b1018193e072d04e0e84a9e19acdf85b98f45fb",
+      "V_sha256": "fa83f186369fc71a260f1a2e808e4a33e885787e03b52e0c45b63bd2af2c1225",
+      "label_checksum": "f9d1a7265ce9dbae8e5d688d49d7827953a54d691aab1b949950e0ada21e29a8"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "ed36d57bd32b17181661912b",
+      "augmentation_parent": "ed36d57bd32b17181661912b",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.2317080460768193,
+        "A": 16.799735280685127,
+        "B": 0.40333652310073376
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.023869454155996,
+        9.514750950114262
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "48c1f375fe8f7aa678b8d7cd0135557efd01475a7bb00af40254f1f9c1c3306f",
+      "affine_fingerprint": "8ae3bfce5f67e3e490371eb2f1b0b9a89a5f982d93e7087b22a529698f004c5c",
+      "reflection_fingerprint": "8ae3bfce5f67e3e490371eb2f1b0b9a89a5f982d93e7087b22a529698f004c5c",
+      "sampled_array_fingerprint": "6e1af5255374d408cb2b3017f384767eee5565847b97279512719db284577773",
+      "x_sha256": "511f41f941be1205bc95ee45875b2ee2f002df0a2204ad40ddce548bfbda5a27",
+      "V_sha256": "58fe5ce865a403d0d64dfc7722545119d06056474686fc531fc2e704533f7b27",
+      "label_checksum": "97ce6f5e8cde2e1e8ebb9a249d476036f53d61ddaa342baff259621abeed174d"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "9ea0a396459a21cffae3d460",
+      "augmentation_parent": "9ea0a396459a21cffae3d460",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.2259849304612726,
+        "A": 14.080505662597716,
+        "B": 0.30495898723602294
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.621872141481704,
+        11.97002400633213
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "70b8545740b75558e55c063e3f8cfbb1859fc0f3429fb088ccc75bcbf3e2aba7",
+      "affine_fingerprint": "65c001a7e71d34f4e1cb5c7bfdf8166dbd84dddc016466f9049ebc8230611e2b",
+      "reflection_fingerprint": "65c001a7e71d34f4e1cb5c7bfdf8166dbd84dddc016466f9049ebc8230611e2b",
+      "sampled_array_fingerprint": "2816b3d4b54fd29e8a433129f5e6bdec47c82f839c0e2634b78b24ae2aa00516",
+      "x_sha256": "b353ab0b882283d1c10992bc408b7ed29970d07575bd255d29adcdb6705eec62",
+      "V_sha256": "6520219b3d15a5e7c75164cccb584820848e51a5958544e9a8c21ad22f5152d0",
+      "label_checksum": "4c39d229bb507f4573d4be90a073c75677b3ad670b7a2a16835b51cd9f4cd0cf"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "db6d56c360de5f05d5de6918",
+      "augmentation_parent": "db6d56c360de5f05d5de6918",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.26033970241434873,
+        "A": 16.308390681631863,
+        "B": 0.6626218821853399
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.35952068883407,
+        8.56351645506026
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "5ff0300a68c6a22f78057d222c7f9af66a98217393f567b7cfbfdf0c43215014",
+      "affine_fingerprint": "ad523e957361b6c87605748e1a45fe506e0e24807151034c9105e1a2de7c032e",
+      "reflection_fingerprint": "ad523e957361b6c87605748e1a45fe506e0e24807151034c9105e1a2de7c032e",
+      "sampled_array_fingerprint": "0e98b6213cc2d7101ed2fcad699b82df0ab653ad2893d7c31444816ffe2af505",
+      "x_sha256": "98b423fed47355f4a7a59a2b6a2fe3af494a7c09c6c2143f4af82c5bab5f1007",
+      "V_sha256": "ee16d069361c529df7db474fd80695f7e759ce5531cb2e796eb3d3fb51f94913",
+      "label_checksum": "10906b300424ffed211efc957e3516564620a61a1523834c17fb6311387a6073"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "fa46c0be2a511470a054ea14",
+      "augmentation_parent": "fa46c0be2a511470a054ea14",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.25404326257295906,
+        "A": 15.419367077760398,
+        "B": 0.4904287405312061
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.126112475601438,
+        9.41333649441658
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "c16f3777375e32982c16205e102d3d77d40258e1b7e60b7b09064dfb94d070c5",
+      "affine_fingerprint": "f71a3305994617180ac696503d36eb404e897f3ee6c93187334d3c7a723b2b89",
+      "reflection_fingerprint": "f71a3305994617180ac696503d36eb404e897f3ee6c93187334d3c7a723b2b89",
+      "sampled_array_fingerprint": "db9e631d6374ba4ee48ff8313f339b59240065fbd4a0b4425649e32edee4a72d",
+      "x_sha256": "24f7c480a77374a8fe22c4f080fc0758f0ec89364ab0b2a0519b7ae0c562fa36",
+      "V_sha256": "4fd65809394d7d122d95950d4f8297a7ad53057938e1b6323561b51719e3f7c9",
+      "label_checksum": "86f8de8c44fc63bc2964d0a5a55c7d933c39cf2717a388d81d738076cd4fe7e0"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "47df3223e8391680b2d7e971",
+      "augmentation_parent": "47df3223e8391680b2d7e971",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.24468543066643178,
+        "A": 16.194138540886343,
+        "B": 0.5427771333605051
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.959564053511736,
+        9.247554828153968
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "e0ce8288afffac2bb71cf0dcc77ec02ada2a4335577d0f8f602381b3c72d4aeb",
+      "affine_fingerprint": "0fd9b765bfd7f5ea3d9b63e102c98b4c89505ca413a6d2d74e96f477d08e96aa",
+      "reflection_fingerprint": "0fd9b765bfd7f5ea3d9b63e102c98b4c89505ca413a6d2d74e96f477d08e96aa",
+      "sampled_array_fingerprint": "0e5717727b90c2943f1d0fa684273a48353f84111d98815017731d155e9d07ca",
+      "x_sha256": "2e9ce51157b6cbb102709465c76a00b998981b3fa98f00bbf924fe5d223c3835",
+      "V_sha256": "c51280d2f6bb2520d331be2c656dbcdcf18a2d295ea1ced66bb6176fa42b8d36",
+      "label_checksum": "f6ab59b3e578c5e1f9555d69a47f14e5c4a7ec18c1a6e441fdcb844192ceea21"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "08b9b10d488b7868540bcc75",
+      "augmentation_parent": "08b9b10d488b7868540bcc75",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.23890842197462916,
+        "A": 14.680452804081142,
+        "B": 0.4262221882119775
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.393018815852255,
+        10.630109558684847
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "3766dba0ae25590247c6f52e884357adc3526ba16501c07b75b2108a3753262b",
+      "affine_fingerprint": "fe53f23a273a24c2e2a83f2082209abc0e2c94582615db5a901b35697d770f3d",
+      "reflection_fingerprint": "d0025169095be8553009d56a03d888220829a6bc302ceaff1ebd42f4657e087b",
+      "sampled_array_fingerprint": "52ebc60cf9e120c589543bf45e9b47b17a7dc02bc3a09429188984f81dbe022b",
+      "x_sha256": "7ce33b5a2ca5782e2f396ac8e753de74eca5903bd3ff77e0fb9572086e5f1fda",
+      "V_sha256": "d1cf018a7101d83dd5d193181f42d9bc2c6aa304c2ede2f87c1b1d76dd4bdac5",
+      "label_checksum": "02238c4e00476d67d6196039c6080a90467bfe1617bc505b479e2e2fa3a589e8"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "2cfdb037bb16a11820c38545",
+      "augmentation_parent": "2cfdb037bb16a11820c38545",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.2545468370243907,
+        "A": 16.90870117302984,
+        "B": 0.5215289724990726
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.11593690418474,
+        8.537501601186136
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "50ea6ad701e33ebc551668fddfca28f59888066365146b642f736d579b9d430a",
+      "affine_fingerprint": "35c6dd213e954697d3ac0679b6ac2a87141c66bc9a04b491efee6532ab24a8a5",
+      "reflection_fingerprint": "35c6dd213e954697d3ac0679b6ac2a87141c66bc9a04b491efee6532ab24a8a5",
+      "sampled_array_fingerprint": "dae46568bc44288bb35b467380d6a2bddfaffa5393811d1ac5e9bd8d3d54e39b",
+      "x_sha256": "f2ae80784328b97b6b65233b16db2f68d03c1cd9f48445290d517b15bbd4165a",
+      "V_sha256": "b1360bc25636d02d97e60b9139a5a0a761813536c97ecb603b319c14551a1245",
+      "label_checksum": "ae5529705bc28ec94674c248e907f33d6894faae3c7f5299b5bc5c644393109e"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "fc9e018ee786c90189fd6019",
+      "augmentation_parent": "fc9e018ee786c90189fd6019",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.26065407384186984,
+        "A": 14.818142355419695,
+        "B": 0.33044193703681235
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.249901975002155,
+        9.72548274480859
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "16543ac445a22942243fe4b9144a751b2bbf2646e2e069ab6aafe3f8060d0218",
+      "affine_fingerprint": "4b92eb7c9a6cf3d77eaa3b728b107f228f02f1ed355bf3bb1180423956db7e00",
+      "reflection_fingerprint": "4b92eb7c9a6cf3d77eaa3b728b107f228f02f1ed355bf3bb1180423956db7e00",
+      "sampled_array_fingerprint": "70d01811594f61a474f2ccda1cb4e57e36ffd2c0f19730a0dc27c79623765c60",
+      "x_sha256": "e537b184b974e048e4427712ce0561d8077b4cb1cf73f3fc6efbf15726c502ec",
+      "V_sha256": "8db59cbc377b37887b376fe6d8d974002e937545e7978acc2e7389d4ef98399f",
+      "label_checksum": "2d55a297311749a9c206622efa50f880c832921b8cec7da3a8b324b7e0f9f650"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "f68eea2a84c46ce994ab9aeb",
+      "augmentation_parent": "f68eea2a84c46ce994ab9aeb",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.2200064997933805,
+        "A": 15.59327716846019,
+        "B": 0.7204342192038893
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.708341647802136,
+        10.54828592635183
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "664d7808e06227e135d4c1a557f6422d0f2f8d20fbb141c7e40231a553e0d476",
+      "affine_fingerprint": "8bfa4c9e13e4131b2c0d747a85cdda5a50b6f520fc1b8df07d131e2711991d3f",
+      "reflection_fingerprint": "f62d1bdb23183f1b8e114880aff3f16a960e52940fb509be22331ca90fa37c6d",
+      "sampled_array_fingerprint": "20fb336762eea3ec805cca3076d777f60b519027e2e53a3053a32919669b6a38",
+      "x_sha256": "baabeba5cdc9cf27b36ed58a4e63b76a953f9b3ac3bdddd6acd098c612dc3313",
+      "V_sha256": "d6e4dea324ec6e9579a98d55025bec8db0118b7ea1931185e4a6b8879525d53a",
+      "label_checksum": "d82251767286f4c9a318b93c4ecde5566e3c76874871f1e6fc668e4034fecaeb"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "1235ab36300fbf4e26237594",
+      "augmentation_parent": "1235ab36300fbf4e26237594",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.22729822451248766,
+        "A": 15.309667847119272,
+        "B": 0.5844195174053312
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.496383702766312,
+        10.528056571413156
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "ec058657baa8a4ac43ea597e927997555e7425ec732b68ce4878f66c019bbc4e",
+      "affine_fingerprint": "5d3d6f2d3173ea3321bd245850e485e301b2ed9441ab9ea8b01b308c79967999",
+      "reflection_fingerprint": "5d3d6f2d3173ea3321bd245850e485e301b2ed9441ab9ea8b01b308c79967999",
+      "sampled_array_fingerprint": "694a4ff1e01145b07b09ed9f3182bf38a15bf9b86872a6c4c4de2fcbd1ef0773",
+      "x_sha256": "b90e4d92aefe85fdf88f69a465d45d3594599baf0641bf43aa050aaa18634282",
+      "V_sha256": "2217326f457045caf5ef93e2a8a7ba203793acf9e1afce3a03d79e4232d019ff",
+      "label_checksum": "9e9e3e6e877b3bb5e42668e618e978f5b92953dd210bc44606d6d4fac6c007cc"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "b6bd5d144f4d015698b0c7a0",
+      "augmentation_parent": "b6bd5d144f4d015698b0c7a0",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.26793964214622973,
+        "A": 16.0379233462736,
+        "B": 0.38206332828849554
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.09928824866263,
+        8.63642887008042
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "caee3486af5b0c930ca590c6191fd6910eece687ec1e69c82ec28befbda7eecd",
+      "affine_fingerprint": "326c01a75c20a270de212b2030364bccba2ef3cd56ae6b10ecb638b505343c88",
+      "reflection_fingerprint": "d2e6708c4559db6605500e20b89612491e36a9cd5e767c3bf2eaaf65a5fd4b71",
+      "sampled_array_fingerprint": "3b94f318c218afe08add7344a4dc4a99ba055f88f3d6407bfc683600121fb4c0",
+      "x_sha256": "af7fde3058141de46115c931189446ddef62b5e4799b5cadbbdd7b84c0f03bf8",
+      "V_sha256": "d5f9d78ce18e2bdc5fb41b39823b4a5317e6e96853c78053b9761a5b20e88758",
+      "label_checksum": "f2ad88c4900347b8d9f15b70dbbee04cc30c040a8929dce0f6999c3df189e8c6"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "c31288c16721870ab296b68d",
+      "augmentation_parent": "c31288c16721870ab296b68d",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.2492391411960125,
+        "A": 14.187591773457825,
+        "B": 0.7698802584782243
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.730137624546172,
+        10.277661883659944
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "a701ae73726d30cf7231eba55c82453215ebc2d0fe392623ecbe9527e521b28f",
+      "affine_fingerprint": "aa7e1646f2bfe9ef15b80bfa0672c4a1c9114f9d4b80f30c2f80b655a9bb90bd",
+      "reflection_fingerprint": "aa7e1646f2bfe9ef15b80bfa0672c4a1c9114f9d4b80f30c2f80b655a9bb90bd",
+      "sampled_array_fingerprint": "c2a8616607eda4545a2a9bd53c8d33d809ce778cb425414273ab73cc5b796055",
+      "x_sha256": "3e5078cffcbe41959f2d2395561cbfc294b3c39db42c2d921bf0b16586646835",
+      "V_sha256": "558b2ffcbc82108e22d185e8295afe57e01da06b38b0e263dd80a4bfd4ca2b79",
+      "label_checksum": "115e56c7967cb2bb09bd31f82c8397dcd5085472a05924e1f8ccb4be1ea2a43a"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "830d26e9b97383b72d9faa1d",
+      "augmentation_parent": "830d26e9b97383b72d9faa1d",
+      "family": "scarf_ii",
+      "parameters": {
+        "a": 0.23359466509893537,
+        "A": 16.46273371670395,
+        "B": 0.2622275916859508
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.07892294907159,
+        9.729505964567473
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "49dff9e3c9e9e61870bbe9dce78c25eb2c81aec09b218f94967b2c887cae58c7",
+      "affine_fingerprint": "9646f9cb4e92406508a1a928abb747618ce60be6c2200514bd13d04fed88c726",
+      "reflection_fingerprint": "9646f9cb4e92406508a1a928abb747618ce60be6c2200514bd13d04fed88c726",
+      "sampled_array_fingerprint": "8891569a42dfcd7f89eab609f16c21af95094ea960a075927348ab83dd6a0550",
+      "x_sha256": "4b9c64126fe48837ea35e7468920d101ef242229b6efde5f86869ace9dfb9e50",
+      "V_sha256": "b9f6d7b62eeed7d3eb432406e6b7cded78702389f2550a84894fa3f75d75adbe",
+      "label_checksum": "50176e8d296c773d59d71c81f9e8c1f01147cc0304aa63e7355ea32cf13c04a6"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "e2399d4cb94c9891bb3f6a7a",
+      "augmentation_parent": "e2399d4cb94c9891bb3f6a7a",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.12686853080056607,
+        "A": 3.0570937337353827,
+        "B": 290.3661826439202
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        14.877659933907646
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.673624929364539,
+      "valid_states": 11,
+      "potential_fingerprint": "3972ed9ec3a2c77f8df3bc4f29e931cc4b6967aa9370ab53d87ba64149587f65",
+      "affine_fingerprint": "55553f367310850e2ca8a4809e9b899cbf9f72e6ac6f65e6e8b27806f32f9415",
+      "reflection_fingerprint": "55553f367310850e2ca8a4809e9b899cbf9f72e6ac6f65e6e8b27806f32f9415",
+      "sampled_array_fingerprint": "6d55d8ffd2c3e08d1dc229300a2b78e409f2103d48b09c1b418c1c01d85823d1",
+      "x_sha256": "0fb56ce06be1cca65e35eccb758170459d8e0918ed2f649cd36671e89f17e820",
+      "V_sha256": "7c6139ecf3fa7aba3226909d02e6f39352e2985e5f6201cd1e22f98ed16c8104",
+      "label_checksum": "268b35421d248e6a1bf4e778317b38b3368c0f449f19b2d5df39e34e40c982c0"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "d27db58447c1475e8e2625c8",
+      "augmentation_parent": "d27db58447c1475e8e2625c8",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.14472415222786367,
+        "A": 2.3980856796726586,
+        "B": 245.58679059147835
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        14.202131543840682
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -5.143835034349556,
+      "valid_states": 11,
+      "potential_fingerprint": "3fa976b74a143a4a1a5837126ee15b104ab74e71bfdbc91f0c3d9e08bd93931f",
+      "affine_fingerprint": "b9709701f089acdfe1a58d97397fedd45a28d55a48fe8b265a2a805130e2c610",
+      "reflection_fingerprint": "b9709701f089acdfe1a58d97397fedd45a28d55a48fe8b265a2a805130e2c610",
+      "sampled_array_fingerprint": "04c9fe480f0950a3ec1435a2c3c8325ae06afafaa3148da19873563ffd251799",
+      "x_sha256": "79a2a7fb3cf08ba49ca7470e2ada14add4b328d6c601837b754f6e294262b310",
+      "V_sha256": "2bb807db55d796cb37f26ccb004a0fb66ee76cf67fe28003e6cbf200f7b7d10b",
+      "label_checksum": "cc01e0167415613391d9249687e62006a6c4d090bf74af3d5a51bf8a43efdfa4"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "e77de3ea2724864de3d2b956",
+      "augmentation_parent": "e77de3ea2724864de3d2b956",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.13810321144759655,
+        "A": 2.8020421432331206,
+        "B": 280.4487649910152
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        13.569477626255582
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -5.348858232349367,
+      "valid_states": 11,
+      "potential_fingerprint": "674815075e54db2a8046df6b7c917f9ca0214e9517bda28563e88fe34c44b685",
+      "affine_fingerprint": "426df3bb2135a8b592512e01ce4657f626d330e4a1a47ebf2b9d94f1df25636e",
+      "reflection_fingerprint": "51f6341db411c25b8979dd18bcad1d4e99a97a3bedc68bbb011634ef04a6ead8",
+      "sampled_array_fingerprint": "d32274b329c17e7eecc41dfe6d316b5722be8cddc32e6ce28d80c041ff87216b",
+      "x_sha256": "baa1acedf21bbf6178a8cd7971fe3f2236827941c887fe1167862a7e036b7381",
+      "V_sha256": "fa0b4776532989b36a3e302346f14479b5a652fed828787d085675efa41dbc38",
+      "label_checksum": "dd052d0978bb8d6eb71d159b433b2c142b4a14d8478949d5d8a17514d92639bd"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "86a4e3e83bddc846c89f615d",
+      "augmentation_parent": "86a4e3e83bddc846c89f615d",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.13337271697819233,
+        "A": 2.6521589046344163,
+        "B": 265.7005440071225
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        14.650739942278182
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.726356107144231,
+      "valid_states": 11,
+      "potential_fingerprint": "31f29e3e16d30600247b5edb6bcbb15889c05a817b8d93b996b5405947a3d849",
+      "affine_fingerprint": "cfa2ef32c6b0a2e297700209deb95d883e7dcfbe3982ac6c5055d161314b70c8",
+      "reflection_fingerprint": "9c5fa6659475ccc439ea0df3607a555403c1e47490d0501c75dd281e964fdbc0",
+      "sampled_array_fingerprint": "b22103cfdd67cafa5e6c8a9d67c58929975d497d5a30adb1ca1b0ac6d6298e3a",
+      "x_sha256": "c12365d1f6d14e5864eae1660f6ea647c4c5d3cfd47c81c92699e15a3188e0d7",
+      "V_sha256": "b8fcc37d01012e02a15be5d4a95737b05c879c06da7432a43eae8e32903850d5",
+      "label_checksum": "38b7916e8eb37537726ece3d36ccb4c58235ea11d989e285d82b8b72e7569bce"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "31729ae16ba4730f600a20bf",
+      "augmentation_parent": "31729ae16ba4730f600a20bf",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.12999901385977863,
+        "A": 2.8862271325662734,
+        "B": 250.43524023145437
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        17.212132045200892
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.232291349446678,
+      "valid_states": 11,
+      "potential_fingerprint": "a56537880ba286b6cce614ca276027449a41cffd495be5401fc8177ed4e2c3c7",
+      "affine_fingerprint": "d344e21407aafd1af710a86a90e4fd1db5f7e94a926b276d844b63bedf433fd0",
+      "reflection_fingerprint": "ce6ba8ddd3acb1a0d886e99df36156757d275efa5f6826fd3a6923bd79c110dc",
+      "sampled_array_fingerprint": "b8021b3cebb9f8ee07fddf9512f9a745b8caee10ea5e42cc35f3cf68f1b847cf",
+      "x_sha256": "85828ddb7d7f9eda57fd9cc90403f50de90eeee7e90b964520aded70245babe9",
+      "V_sha256": "da891577fe1b75ea969d5a54d6788b67837022b65bd274bdc0694997a20bc7fe",
+      "label_checksum": "eeefb296c48552b2e848ab6c4efbbe70414cca062d7ab9e0f22b4f8a9bbecf59"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "6b8b957c9feeb6c39f5edf11",
+      "augmentation_parent": "6b8b957c9feeb6c39f5edf11",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.142172743845731,
+        "A": 2.475197288952768,
+        "B": 295.71269324049354
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        160.0
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 1025,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -5.97726701428984,
+      "valid_states": 11,
+      "potential_fingerprint": "51c86fb7eb2a2b79b93650b25c8cfd24e0384da6a831ea455016c1444aa010e1",
+      "affine_fingerprint": "e0037307854844e1a54a03060a01df1d99ea08b533a68e00c400c9443b57a213",
+      "reflection_fingerprint": "e0037307854844e1a54a03060a01df1d99ea08b533a68e00c400c9443b57a213",
+      "sampled_array_fingerprint": "5755940b3f69fc7e24fb2dbae7315194b0802ce1383d6a028d7a3c935bb524b5",
+      "x_sha256": "7309e523be86e693d390e5724253973552222d20d3f97b87c800af9f746f9371",
+      "V_sha256": "00bcc287783073216efd827377fdffc71dbdaf57637106151b510b7f9dfb2f5e",
+      "label_checksum": "928299632073e7cfcf258c93005f89fc9e671b1877fef2c1e1868c7118c08315"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "06c55e5feda6dc0a61e8149e",
+      "augmentation_parent": "06c55e5feda6dc0a61e8149e",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.1487936580274254,
+        "A": 3.1330066116526725,
+        "B": 260.3828848153353
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        14.991773877825057
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -5.764760592522772,
+      "valid_states": 11,
+      "potential_fingerprint": "f434eeb036b939eba00ba10666adf6285d6b189f2fb142d514b1817580de6cc6",
+      "affine_fingerprint": "c4c8b77bd8863960f50f37dcad333f0d8303641eedd97c9748d5a6fce44b402f",
+      "reflection_fingerprint": "31f45e14ec63af7b01977217c5c94dfc121b1bdf161132280bbaf476145cdfe3",
+      "sampled_array_fingerprint": "2ac2e11594775cfa47e344b95e54ad74aece3e2151786643ac5ff18898d71e28",
+      "x_sha256": "f1787abf6281bb767d0a8b82e967f3447ac1d88d13be4681c4778bac866d83bc",
+      "V_sha256": "19babdac98b1cbdc2a136e3ce21dff935330c91326ad55cc34e6ebf20262f635",
+      "label_checksum": "5be9b1c86e283b8d0b5f058b54b5e2fb1726fe9d749d4b42c140e6e88e4f27c2"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "4db457bed086197a643341d7",
+      "augmentation_parent": "4db457bed086197a643341d7",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.12349479750730097,
+        "A": 2.227439474128187,
+        "B": 275.5705448426306
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        13.787896292550224
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.2027167375589265,
+      "valid_states": 11,
+      "potential_fingerprint": "86e1525be9225796bd906e371d81ecf2d3cfc5151ecb6d8f83e432396fa6feea",
+      "affine_fingerprint": "a664013bccd46de0cd104c2911a2d1f81a17a434869a818de2284fd7eff2f5b8",
+      "reflection_fingerprint": "a664013bccd46de0cd104c2911a2d1f81a17a434869a818de2284fd7eff2f5b8",
+      "sampled_array_fingerprint": "7f365186dbb052e4d51e13176af5262d0b3afbe0ce6de203856d54817e105d51",
+      "x_sha256": "95088eb1f091f32742cd4f50ebca5c7a6d8eec18896a94d0ef5cdcbff4ca6d63",
+      "V_sha256": "b6f3da291b03df72df5ee85b881a5c5f5d57199c4f121c3779f79609a60e8402",
+      "label_checksum": "55b8fd12168c3756ddc7835f0b26e1e9172d5d46df536ef00d4d3ce436a0844a"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "614dd208afc5298ed6b83e81",
+      "augmentation_parent": "614dd208afc5298ed6b83e81",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.12063577235676348,
+        "A": 2.7050822785124184,
+        "B": 256.2466442026198
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        17.212132045200892
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -3.72915474096964,
+      "valid_states": 11,
+      "potential_fingerprint": "a0b5aa5208f0ca52714029be30c5ff3098536e290d86167efde404ea12a8afbe",
+      "affine_fingerprint": "f70da328f9154dc1070204cdb6b104c6f9c8d4dfffe3770510f33d8e6fbf8279",
+      "reflection_fingerprint": "fc72be73661a35e17260ae6b77be3aff47d19d472dfea411300380f549aa6b7c",
+      "sampled_array_fingerprint": "233b2832a71ce9f5952d39d67a1685b87c1bbd3f842f33bd602cfd0103cca1fa",
+      "x_sha256": "85828ddb7d7f9eda57fd9cc90403f50de90eeee7e90b964520aded70245babe9",
+      "V_sha256": "56ca0d0362cb94f8711f3ea8cf230879b4158d1560aa310df06cd7a75667af8c",
+      "label_checksum": "30ae259423b8902bb57245899bea007bacaf492cb39940532d23e5859c5965de"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "331cb5dfce729376262d1335",
+      "augmentation_parent": "331cb5dfce729376262d1335",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.147778432527557,
+        "A": 2.608490356989205,
+        "B": 271.027809754014
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        160.0
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -5.918831369944805,
+      "valid_states": 11,
+      "potential_fingerprint": "b2fbebbb22d613b81d1db84fdf0252c3c15695a7106a7cf23c4c536a296098b3",
+      "affine_fingerprint": "ec7d7335238c7b867b32bb99919a92c92136d88fc90b0b6592ba7f3761ddd964",
+      "reflection_fingerprint": "ec7d7335238c7b867b32bb99919a92c92136d88fc90b0b6592ba7f3761ddd964",
+      "sampled_array_fingerprint": "bf614129869f8611b1c20003a46672c794516f7f274215c2f9127ac56e5092ed",
+      "x_sha256": "211bf0210dce209d34160775d7793dd00520e163cdc673cb9c775e49390ab2e5",
+      "V_sha256": "152221e91c2bef1df4dd01ce82ddd66ddd09f9c01bf915415df0d7a38acc904f",
+      "label_checksum": "509c77c3fa790d76929ffada3dd7d90e8fcb64b054af11db2a7dbb0ae9811805"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "ad0098a06a72897464e1cbb4",
+      "augmentation_parent": "ad0098a06a72897464e1cbb4",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.13939968975260852,
+        "A": 2.950854722224176,
+        "B": 254.79510029777884
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        15.861524854387557
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.9512480762422255,
+      "valid_states": 11,
+      "potential_fingerprint": "82dd61d035c55686a7eff92616c2426b8bfd0cf3cb1d9cbafa86366a3cdd299e",
+      "affine_fingerprint": "ace0d44cb44d5dc96ced7626e7f3dc0362e444d0319b7e0c9d3f94a31a586ad2",
+      "reflection_fingerprint": "9acf913ba6f8eb8209fee4879e6ef5a97d9e5d6521b5f801ff3fe1e479e735b0",
+      "sampled_array_fingerprint": "11ddb38cefcb9dd501fa0ccdbee9c0ad21a7b69e9c1c64de20e55f3fe3fd83e6",
+      "x_sha256": "aaa84e6383bae59627f29baa45bb88472a757b25e63e1b9dbfbb1de3c353da70",
+      "V_sha256": "19cd7a422b4630a41c8ce115d93869912dc30097a0b1af8851184dfb0155378e",
+      "label_checksum": "0fc1024721b4e8d5236568a055c5f79cca50ae7f9515708f46278a0f488373dd"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "248f80bae9217eda8d34416e",
+      "augmentation_parent": "248f80bae9217eda8d34416e",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.12913212792947887,
+        "A": 2.363692672736943,
+        "B": 299.5488717779517
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        160.0
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 1025,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.995009327947201,
+      "valid_states": 11,
+      "potential_fingerprint": "118bf324667aeb0e2500c1617386b97702997c41ac1690c5d3bd837dbfa8792d",
+      "affine_fingerprint": "3d53279605d50bc5bd05e86f3f7d78e216396b3a53f98f50e70ee97d4a279443",
+      "reflection_fingerprint": "c578a0a148fb048f98096214ac22ac3f0535a9f33b5d583ae187e033c23a5004",
+      "sampled_array_fingerprint": "c2969316300288869d136d3fcd6cd2467b0a00feb38cb8fe15dd964fdd95b54d",
+      "x_sha256": "7309e523be86e693d390e5724253973552222d20d3f97b87c800af9f746f9371",
+      "V_sha256": "1f5185f29dc9a93708af4a0355dbdbbcdfd2dd3d9fa754a4b1bdde1595c19c99",
+      "label_checksum": "c36a0d64b901d66f28b696fbf2a471c94cb7412819224d9d21e639d78bdd0b08"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "4274e749ba286591aa4f342d",
+      "augmentation_parent": "4274e749ba286591aa4f342d",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.1324967061728239,
+        "A": 3.15916701015085,
+        "B": 284.81228549033403
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        14.934662410191129
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.999987087781492,
+      "valid_states": 11,
+      "potential_fingerprint": "6c10c9bdec758dd9c700da7a3ae73076030f22e03cf03a2d3da2f3efec1f6a2b",
+      "affine_fingerprint": "e9c830f8f83f11b7212f564a8d986d66cc136ee6e57298fb7f552a27fe876ce6",
+      "reflection_fingerprint": "e9c830f8f83f11b7212f564a8d986d66cc136ee6e57298fb7f552a27fe876ce6",
+      "sampled_array_fingerprint": "752c62a86bffa837d6f0c731e82472e9daeec77f98720afed4c050a80536ee5a",
+      "x_sha256": "5fa590e341d640f952472da56ad2c8ab6d9a645962d08847c72b2edddadd00ea",
+      "V_sha256": "b0e6c1167f42377779e57f67ab4447bc9d640093ba5eaac16c07841213626e43",
+      "label_checksum": "3350dab29531c2366dc80606f8f5a57b5f0c178e6f56660c095321d169d6ea4f"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "aa3adf4af840f1e1915e4e85",
+      "augmentation_parent": "aa3adf4af840f1e1915e4e85",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.13532469101250172,
+        "A": 2.310660110600293,
+        "B": 269.53305853530765
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        13.164642878941129
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -4.9358974467806975,
+      "valid_states": 11,
+      "potential_fingerprint": "63ef00b451e1f3ea39b204f2d29d6103ced345a012c68a60e78ae46d1e7c408c",
+      "affine_fingerprint": "58226da8a73e3c538199f563b2c3707e9b4b7272e3c7b4cdedd3bf1f9e204c09",
+      "reflection_fingerprint": "58226da8a73e3c538199f563b2c3707e9b4b7272e3c7b4cdedd3bf1f9e204c09",
+      "sampled_array_fingerprint": "4a2de567ec5958d0ef55d69a56c70e32cfc26b1641b6406dc456de7f00073a5e",
+      "x_sha256": "ed3a8d23a56464869e5b20aedb53ea7fa255a631a1c14e7d86ecf29ecdab8205",
+      "V_sha256": "1b29ea5d127e2a29451e5aaea49c65be1ec1dce332ab660704173d24e47a3654",
+      "label_checksum": "a312c8cd08cdaf6015dce4b20f3a8d32d5a09d0aecd83a536e5e1ed13f9b5367"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "f21dc04046f51c179503779f",
+      "augmentation_parent": "f21dc04046f51c179503779f",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.14370340674184262,
+        "A": 2.907014664076269,
+        "B": 286.23360201716423
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        12.977818080357144
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -5.91091540319418,
+      "valid_states": 11,
+      "potential_fingerprint": "d7376f8d76730381473095740d2a2f26136347ea6814bf529a0b67b17d0d835f",
+      "affine_fingerprint": "29dee74e288b79aad7b9edf3e5fe231c15ae9e2efa1d28c37c89d9c35d976c57",
+      "reflection_fingerprint": "fb1d49295f1a8314cc7fda46b747450d603a76115ffffb59d0431e43ee8e67dc",
+      "sampled_array_fingerprint": "d0d2c03b0e46cad2a374d3186f3fd8b0387e1cba36b42c8f7f08f3bad1c84b29",
+      "x_sha256": "793c99ef077014a1bb8c1c0cfcfb2af0296fc73298ab3ac36be40190f2ad7836",
+      "V_sha256": "37c41454eaed1b555f76e54d77b31a9756090915a1ba5569d18790cae0f710fd",
+      "label_checksum": "6144f4d2acfdf625826a9f371742203186489fae85570ebc7ee658e7837dd6a8"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "b9febe379d76531767e1aafd",
+      "augmentation_parent": "b9febe379d76531767e1aafd",
+      "family": "eckart",
+      "parameters": {
+        "a": 0.12400031997822225,
+        "A": 2.563787245936692,
+        "B": 241.04039194062352
+      },
+      "geometry": "half_line",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        17.705644880022323
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 513,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -3.7062561941673806,
+      "valid_states": 11,
+      "potential_fingerprint": "f45370024881fa83bfe3f2840eff749ee0c6e8bd72ba511d156beb7fcda0760d",
+      "affine_fingerprint": "324bde849a465001609a0605be50042f5a851988f9fcead0baeab6245ac9b568",
+      "reflection_fingerprint": "4e014cfc382b18449c90c823f4fe38e95de33ffcd025dc7dae347a6530377fb0",
+      "sampled_array_fingerprint": "00ea01857ff08ccaa20879c775810dc5a0f8d305fffd1663107d6814f75a796d",
+      "x_sha256": "719899109409765e26475f687f1acc83a64b11aac945c523c85ad2336cbdc5e0",
+      "V_sha256": "ce1fdfa1c19d56d5d26651bb8c593c5889087b3921c7470abf5a15ff09aa9f6d",
+      "label_checksum": "c1dac685edaa003117f57f60501c558ee32e1f2327e807dd31be8408d17cb45f"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "fca4c8509b242451a55ee744",
+      "augmentation_parent": "fca4c8509b242451a55ee744",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 1.5973317702300847,
+        "a": 0.2998292966187,
+        "x0": -0.3577349726110697
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.972808276658705,
+        9.257338331436562
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "ed1e865a268e5d7f8c780a779ebb624963edee42784270c9d6e58012bd85d2be",
+      "affine_fingerprint": "ed3c195553dafcaa8bc4704661d05c21a9bd5fe3f5c9be9323d934647d0ce10e",
+      "reflection_fingerprint": "ed3c195553dafcaa8bc4704661d05c21a9bd5fe3f5c9be9323d934647d0ce10e",
+      "sampled_array_fingerprint": "9b2f04a85f3c97589870a7e028cff5941dae2a763e0abedc7a0cd6df6db0111b",
+      "x_sha256": "6f841b91f30078eb3d8541825c7788ef588bd0988d8ae12d9067eb349279cecf",
+      "V_sha256": "7188f9f82f20e83f9bf9d2847f6e08b57ea1e7ad42ec5a2a7fe696716afe19da",
+      "label_checksum": "f9b6fec78c5bf5eb27fbb2509a8b47fdf5f542e29058f24cce8cecf3c5e3695c"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "9b98373479ffd04f98fd2eb9",
+      "augmentation_parent": "9b98373479ffd04f98fd2eb9",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.3708370560780168,
+        "a": 0.2747766193002462,
+        "x0": 1.4101089891046286
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.8827256117044495,
+        10.702943589913707
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "bef99c75a8cf5cd67c3400323993df9600d948b92070c28242deb70490dbdf87",
+      "affine_fingerprint": "ea10145bacfecc9346e5065836ee74271a2ee0324ea73ff55aa369d772c34935",
+      "reflection_fingerprint": "ea10145bacfecc9346e5065836ee74271a2ee0324ea73ff55aa369d772c34935",
+      "sampled_array_fingerprint": "11c7567b65c559dd18fe5c6753cea910b15c112f86e331fbc63469d89b0d6bfe",
+      "x_sha256": "d45a74d9640912bebc96104b03eebc138261f5e94a7a173598147435bd28dc1d",
+      "V_sha256": "c27a1af3db182a8bf0e818444b574a0fa343aa07e256de57a95e1b78f8f7a602",
+      "label_checksum": "a1e16b64cb0a6c922e68a4da40de351498cd3498b1b04d2878e93a46af2e3ed2"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "9e9eddd77bf096604c1c16a9",
+      "augmentation_parent": "9e9eddd77bf096604c1c16a9",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.7627799375914037,
+        "a": 0.3082226072251797,
+        "x0": -1.4083562465384603
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.832026548948534,
+        7.015314055871613
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "c7f9abc5f06027d9d50707ef68639d47eb34f45993a6abb272c98cd8825e8f98",
+      "affine_fingerprint": "962c4d2357f22bf735cddc4c96d8cb1c99d14f4c152df2428f31d2f3600a97a9",
+      "reflection_fingerprint": "962c4d2357f22bf735cddc4c96d8cb1c99d14f4c152df2428f31d2f3600a97a9",
+      "sampled_array_fingerprint": "3e24c001cf03ca3d58cf92da0c9b214315c4c171984d44ec7e34e61bc64cc673",
+      "x_sha256": "eb39d7a0d9c615183139fc7047c5cb2be7fbf888f0103e2e5a9ad03f3fb0bfe4",
+      "V_sha256": "79f537294ce0c2e820f9e4fff83a9c56e91ffc38ab82a22a5f297a79b3977f03",
+      "label_checksum": "d4dc94df508533c0b9fa0872b053daaca9349672aad89ac4c5de15d2fd6c3694"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "f6e50af4772cc9c2dd7a3a92",
+      "augmentation_parent": "f6e50af4772cc9c2dd7a3a92",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 1.9892746601253748,
+        "a": 0.2432652138918638,
+        "x0": 0.36312550585716963
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.979744662543277,
+        10.705995674257617
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "aac066cbb1fd75533946a82db6cb5aa0fb6d5102b7e3f3721dd309c4f34f59a7",
+      "affine_fingerprint": "36aee7695bea9cdbbbf44500aa89e3aea81a0f96e62797d67c76ec49cd4d213f",
+      "reflection_fingerprint": "36aee7695bea9cdbbbf44500aa89e3aea81a0f96e62797d67c76ec49cd4d213f",
+      "sampled_array_fingerprint": "122b56b3984f0de857636424d6b716ed6dd8584fb4338e80073b617e39e060ad",
+      "x_sha256": "1ee28b382a2f84393c28875653dd4ecbfbb5bb85513f627f65b2c0bdc0a39aa2",
+      "V_sha256": "b2e4999ea27b6998658177d2db55243f072fa7bd7e994815c0b5d9f7ef92722a",
+      "label_checksum": "a46e21185bd6c5ca079304b13e0142c9230412406bb9f45de2fb3b5d404cb17f"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "287120bfef56733f42171a64",
+      "augmentation_parent": "287120bfef56733f42171a64",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.1708342670463026,
+        "a": 0.3170350342988968,
+        "x0": 1.1153856134042144
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.613068413981319,
+        9.843839640789747
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "93e220f1cc561a7d191c2f14b9db0d49120627f1f817885867d35307fa68aeef",
+      "affine_fingerprint": "66d4c2a5480301fe237b4ce853435ecc8add455644366557f44e18a5f2751a55",
+      "reflection_fingerprint": "66d4c2a5480301fe237b4ce853435ecc8add455644366557f44e18a5f2751a55",
+      "sampled_array_fingerprint": "78d66fb46db2a449e6072376b714b0089db938727dfcc9b2de5e9625be240dd6",
+      "x_sha256": "4805439fe6cfe165c5c2ea03c826e6da0817abc47ec7d52f32bc4b0d058e6f0b",
+      "V_sha256": "3867d7333dd51cb950c8917d6c47eff9b25850de376a36a435ab12a99a5e2507",
+      "label_checksum": "70214f18640c19d76b044118e6469f4c39c7d35333e9ecfb59ddc9abc88f70f0"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "d2b15794565a3abe6557408b",
+      "augmentation_parent": "d2b15794565a3abe6557408b",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.944295587018132,
+        "a": 0.25210716672241684,
+        "x0": -0.6796595240011811
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.97840219628402,
+        8.619083148281657
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "8b8948c1272183da7ed81f202192ffb2f9c4a7c5986aa244a2987f85bb84e3df",
+      "affine_fingerprint": "2a6d654fcd91b99f96a43b90f6dc1be4ab607ba6ba2aa36382f9749b40772ca7",
+      "reflection_fingerprint": "2a6d654fcd91b99f96a43b90f6dc1be4ab607ba6ba2aa36382f9749b40772ca7",
+      "sampled_array_fingerprint": "7240718ee65b6c088056eb36a28a80ce95ab8293c5e9e18ea49c5c917e6e55ed",
+      "x_sha256": "cf682ea92c77b30f8c5d369620c1b49417fca89db2343979671c8afacd2a5cd9",
+      "V_sha256": "86f7071b7d99dcd255d809e776aa66c1a8b50dab075faef3ed71628298d67b8b",
+      "label_checksum": "05b50286fea41ab68fb12ce30098814ee7bdf8af8cce8dc97de6a46e73baa551"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "5523fb8f67e40d01d7eae812",
+      "augmentation_parent": "5523fb8f67e40d01d7eae812",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.562812597025186,
+        "a": 0.28616304844617846,
+        "x0": 0.6740649584680796
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.258360553187726,
+        9.606490470123886
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "81e7e17a4cb6c11d17b2aa019f5686d061f39a898db668f9bfecb6ff87243f6a",
+      "affine_fingerprint": "851dc130204f621f767a676ced8f61ee72c0708d38115010470ca5ba2ff71384",
+      "reflection_fingerprint": "851dc130204f621f767a676ced8f61ee72c0708d38115010470ca5ba2ff71384",
+      "sampled_array_fingerprint": "e56ea8924d14d08198de61040e3c2bcbc8746b4d5db3d08379185ef896de6017",
+      "x_sha256": "ce9f84c581500dd124ae1a93df0e9fc5dc8a3ad3bd81d5b87c84d16571fd9d4b",
+      "V_sha256": "e13b716fec07182c7064c176dc7ee5716374593173497638f90afa996701ee25",
+      "label_checksum": "19b85745f288559c7aaf9c08f5e70a533d85534174d11524eb08f3deaf45f12e"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "50f3bacab6e6dbecbc622e87",
+      "augmentation_parent": "50f3bacab6e6dbecbc622e87",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 1.7893512854352593,
+        "a": 0.2611009869724512,
+        "x0": -1.1172966118901968
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.27803588219087,
+        9.043442658410477
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "0b16d78ec9f9cd5b7ab6f2f54c6b6ed78ea615cf538f309e50dda3734b8ca3a6",
+      "affine_fingerprint": "fdd38370f927da31a76278bbf630f3149ab6d758664ea4e4665c63a440b2488c",
+      "reflection_fingerprint": "fdd38370f927da31a76278bbf630f3149ab6d758664ea4e4665c63a440b2488c",
+      "sampled_array_fingerprint": "ca63644412c5362f46ae8458981a10ddbb34786087972bacdeb1c3b78b727152",
+      "x_sha256": "817ec59e189c992d8778e029779abdd414868cfe5022dce668d1864b92474122",
+      "V_sha256": "fe32f86bcce00078614086baead181ef11dcd628a72ab84abcc46b2d116d780f",
+      "label_checksum": "8ad981ddfe6e50c57589fb49b8aa551341b460097dce854903a878c59e268a1d"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "f1e2dc8f2d64ffe05eb9e81f",
+      "augmentation_parent": "f1e2dc8f2d64ffe05eb9e81f",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 1.7281358717009425,
+        "a": 0.3006068678200245,
+        "x0": 0.5265453793108463
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.916525152428239,
+        9.969615911049932
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "99b69406ce8c6b772d9d58043d423b3a928f22a2f9a01620a78918a91e460f78",
+      "affine_fingerprint": "4b53cd5550b7aaa7af01569429ab84b35ba624df3f87e718adc694aa1fa2af8a",
+      "reflection_fingerprint": "4b53cd5550b7aaa7af01569429ab84b35ba624df3f87e718adc694aa1fa2af8a",
+      "sampled_array_fingerprint": "ecd94bb0721436ed5d20aee5928fa4da58bf7c4235dfb536e07a17e65a5208fa",
+      "x_sha256": "27eec0129f6ce08d094cb13449b056f026bee695f5d00c0be56bb61714108b8a",
+      "V_sha256": "a0d6e118814f9ab32fd9fc39dfc7e7553eb962f3319e278bf1c88aa35df20230",
+      "label_checksum": "72a2d77c0c8bdf87f5c841d845cecfaf0adc96664d68c4aa519ce5843790f4d4"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "3c68487f6ee2b44e85c36e7a",
+      "augmentation_parent": "3c68487f6ee2b44e85c36e7a",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.4546295241452754,
+        "a": 0.24556158147752283,
+        "x0": -0.8699378035962582
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.694917084292317,
+        8.955041477099797
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "72c8078c58aac9d577bdc14abd06dd625d489b1c5b04a9d7a0f1f07fe012e39f",
+      "affine_fingerprint": "74f82dbb366180fdaf0eabd305ad1ce203b5dd05f7495800330cc84805943bdb",
+      "reflection_fingerprint": "74f82dbb366180fdaf0eabd305ad1ce203b5dd05f7495800330cc84805943bdb",
+      "sampled_array_fingerprint": "1b756f699780c3d8caa94ea717ce274644f403adb6224d427e97cb29a4861eda",
+      "x_sha256": "7fa9686ac9079f0b0743b9f8a5586c301f6913f02b7e240e3e244f0bbe11bcdf",
+      "V_sha256": "224f655c92703f5049941471a87ad81c3b0b5ba14662e821a68c1fc491a2278c",
+      "label_checksum": "3a0213fde262e8cd2b4a6481b0e9a42dab2b68715cd1d50e9039f1fe3a43b2da"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "a475005dfe45cfa215a9f890",
+      "augmentation_parent": "a475005dfe45cfa215a9f890",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.823867503553629,
+        "a": 0.29149776563048363,
+        "x0": 0.8704081596806645
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.779379044179558,
+        9.520195363540887
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "e1cb94ca0bdbb974f77d0ada7969df6dcf37951401e1e93de364291e5cf38dcc",
+      "affine_fingerprint": "89ee6284a5bef65536ca845e2d91f1741d49155c9ed627fa6a1130e5d66c1269",
+      "reflection_fingerprint": "89ee6284a5bef65536ca845e2d91f1741d49155c9ed627fa6a1130e5d66c1269",
+      "sampled_array_fingerprint": "1ac2042b843f32f7a4c8df63a0be966989879527c3c970e3112825200635a964",
+      "x_sha256": "9f61258f5d8e6055fa2eae57757fbd00e5e400f1313546000684f445fb64b61f",
+      "V_sha256": "f3ab18f357add307a2808f2de42586c488595bac39f79761077125aecde5f8cd",
+      "label_checksum": "3c27e1640fad60873ae9a9fdfa6c79b4eb38349426b62b56ed05a2510e7f0fba"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "115afa0e53c0aa4b0d1719ae",
+      "augmentation_parent": "115afa0e53c0aa4b0d1719ae",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.0973738650791347,
+        "a": 0.2765525125712156,
+        "x0": -0.5224343715235591
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.027592075649654,
+        8.982723332602536
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "feb2ada27ba518c9d59108d44807ebba9ada59d4384a436480a15f357b7490c5",
+      "affine_fingerprint": "24d6c38a50d28c3a55bdc467b405bf5e4711b1494289436840774518203b1f93",
+      "reflection_fingerprint": "24d6c38a50d28c3a55bdc467b405bf5e4711b1494289436840774518203b1f93",
+      "sampled_array_fingerprint": "bdd336597d7b34e0b0b39a81fdb9db5c4c7796947204ff44135b0004a9437119",
+      "x_sha256": "c3d7c3081e6271c78d22c4a6866e6a6b558d4071d1951e73d63ee82fdf6690b5",
+      "V_sha256": "f8fe808592baf587d108d63193da10713b6906aef36ccba71a4bf84eb46bbb22",
+      "label_checksum": "841c82d8f7cac692ef0248dcfd7c72c3df7f136c6453695c984e5f9d47cffcd7"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "061bba719e04aadd81f16a65",
+      "augmentation_parent": "061bba719e04aadd81f16a65",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 1.8987614773213863,
+        "a": 0.2825074201822281,
+        "x0": -1.2805312341079116
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.872951855254462,
+        8.311889387038638
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "e7344ce1fb3fe09263254f06a69a18cc57938be89ddcacb2b51f8bfc7d7781f0",
+      "affine_fingerprint": "d83327701165ba320991fc6f5d08d82bd81a058bf88c972a4b9658207eebd5f5",
+      "reflection_fingerprint": "d83327701165ba320991fc6f5d08d82bd81a058bf88c972a4b9658207eebd5f5",
+      "sampled_array_fingerprint": "f79a5c705b475639b8f7d31f2ca0b892985cd6da0951389c2db752993d9d9278",
+      "x_sha256": "991ba59e612cdeeefa4a7b5b71a74cd0052f47243f2013ecb1c68cbda7f8295b",
+      "V_sha256": "d0f114ba7e639d596d22f747546ad1ec682bd00109c2bb6634c0289a62790397",
+      "label_checksum": "58486a1512f59cd26b5c4d561757e09786adc58065c89080dc4d221964e7c4a3"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "498382b5fda868ada5b5a4bf",
+      "augmentation_parent": "498382b5fda868ada5b5a4bf",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.6253012414090335,
+        "a": 0.2675723142176866,
+        "x0": 0.13582890573889017
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.088564778313085,
+        9.360222589790869
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "ffee4368e0597fe0bfbccc4acd3da26e713d4c1e19beedea4fcdaa8e940b5846",
+      "affine_fingerprint": "b4a3ff31922044b65b500443d62bb3135ed560ff64521560a4e7b8ff5b667d3f",
+      "reflection_fingerprint": "b4a3ff31922044b65b500443d62bb3135ed560ff64521560a4e7b8ff5b667d3f",
+      "sampled_array_fingerprint": "fec1a328524291712b6e351470cd8ba7a23a923cb5ae85a7f7a69f882d8e53a8",
+      "x_sha256": "85b10b4604164ba48b2f38cd05273e07bb0f526cf5f712d4114f5c910f2c1672",
+      "V_sha256": "45a5ca7eeb05770981c7635722e00a80f75668fff1df951b160b1e7a88013803",
+      "label_checksum": "3265539ca7b7e08da490a4dad6d55e151bcf63b3be9321873509b2dabd2cdca9"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "7d01faa462d1a8eafd86ffdc",
+      "augmentation_parent": "7d01faa462d1a8eafd86ffdc",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 2.267987991683185,
+        "a": 0.31413792341947555,
+        "x0": -0.1397763043642044
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.835688807482555,
+        8.55613619875415
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "b623d27cb581853b28bdfde88a5a4eaf5444f8a9edd1273c85a3c802e2251c17",
+      "affine_fingerprint": "49c0bfc2df381ea7ac459bfbf64d3893ff024c5ed0032577a86e50ae7d07ef64",
+      "reflection_fingerprint": "49c0bfc2df381ea7ac459bfbf64d3893ff024c5ed0032577a86e50ae7d07ef64",
+      "sampled_array_fingerprint": "46a5b17ad25e04e4440593c91353f01350625897552d8714dc0f62b514e4281c",
+      "x_sha256": "5dc82c098fffa4090b84c5dfc4596fecb35b5d751ac91de806fb5fa7e44bafa7",
+      "V_sha256": "7b9894edc7cf7de4082570d6d7cc298f5917de706f2546e947e15713a0d53f09",
+      "label_checksum": "249b217f38a5e2b02deeea2449a6c29ec52402a0948f7f5b10c571b2143ea4f0"
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "group_id": "62f3e4c6d5eecd90c12ab630",
+      "augmentation_parent": "62f3e4c6d5eecd90c12ab630",
+      "family": "cosh_well",
+      "parameters": {
+        "D": 1.5414482415653765,
+        "a": 0.25906356908380984,
+        "x0": 1.2802702635526657
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.264307291785935,
+        11.824847818891273
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "5e099ed0532992558d6119f02c62d7cf1fd48803d6bb03e79158df7a193aab4f",
+      "affine_fingerprint": "7e8a20d59b80aaebff1d3efc5b3b1229afd3713665759a07023cf25484c41219",
+      "reflection_fingerprint": "7e8a20d59b80aaebff1d3efc5b3b1229afd3713665759a07023cf25484c41219",
+      "sampled_array_fingerprint": "f98303cf53ce591538cc7ac28e6d668dc5f07d721b42ca08ad7301c9207b0fe9",
+      "x_sha256": "6877236ef8cde7be478dd93aa009bd0ca05235fc14aeaf167e0602f0b3cbeb54",
+      "V_sha256": "ecdd591589f44e035e2ad0f7c9e38174ac4679a67b8394f358b219d7f6c711e1",
+      "label_checksum": "b76172040719447860fe638234494de8c103c10c84dff2865df155d4b3c50d4a"
+    }
+  ],
+  "seen_basis_reparameterization": [
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "d68b1604c7dd257e6d95f211",
+      "augmentation_parent": "d68b1604c7dd257e6d95f211",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2375797389820218,
+        "A": 16.392523459158838,
+        "B": 0.3231317271944135
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.808368715979846,
+        9.750180642090005
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.01823888998424813,
+      "valid_states": 11,
+      "potential_fingerprint": "0c55292dce3136a02120b2b89e2e0f2992ad15f44380d7767c351ffa2f7ad648",
+      "affine_fingerprint": "5adcbaf34418427cf2e180e120e143b9bd1deb59735d7debd40454b5b817cff6",
+      "reflection_fingerprint": "5adcbaf34418427cf2e180e120e143b9bd1deb59735d7debd40454b5b817cff6",
+      "sampled_array_fingerprint": "0c8d390afe2c365d90b1446e3a9f5dcaf06d3ee604ccf16ffe8c568ad7e46e8b",
+      "x_sha256": "b530ed8390ad1f727fadd28ef75eae86839e01fd3bac4779bf0757bf723020b4",
+      "V_sha256": "0231054eac13ca0e1506549bf48209c2fa9ecab64691011e734cc4fb40a0a798",
+      "label_checksum": "5abaaab270d6b4294c5579daf5c53ba52e060ae2685c1826eb0b997ab0023fde"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "278c7511ce818e81fbc48aa0",
+      "augmentation_parent": "278c7511ce818e81fbc48aa0",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.26239146313630046,
+        "A": 14.382857916876674,
+        "B": 0.1799004244618118
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.346636012612514,
+        10.273642291267286
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.01238601468272295,
+      "valid_states": 11,
+      "potential_fingerprint": "cb201cf80aa8766ce685462794a0fb498315f8bde1c792ee18e3ee0ef7479c57",
+      "affine_fingerprint": "27376df8251010a65d069ff485c2098a5cf1cb8e102bacd4136e8202c478ab74",
+      "reflection_fingerprint": "45673a2936eaf136f0200d4c32ebda674b0444ca546158fc4bb287eaf60e4885",
+      "sampled_array_fingerprint": "eb65ff782e22d0fa0b7c2c0bbae754827045bcaaa9cb154693962846b9ae6447",
+      "x_sha256": "31f61b0f43c9bed4aef343fd44084c6ddb55c8fb9e7839f650e1e2acb7b2eaa9",
+      "V_sha256": "4e9bf3820dddfe5dc1741efee30a724becec0ab895788be0f6aabb7b55392eed",
+      "label_checksum": "5dc65598808583eac86e44aebafc2549a961d76e828f819140395b998d4e21ab"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "09368923ae9cecadb572c912",
+      "augmentation_parent": "09368923ae9cecadb572c912",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2527903957106173,
+        "A": 15.850810922682285,
+        "B": 0.2615351585205644
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.559145768231966,
+        9.501051278266571
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.01671287709314606,
+      "valid_states": 11,
+      "potential_fingerprint": "14e6ac99d1790b4cc7defa6718af1251bd7fde0ebed0b88324d9a94236bc609e",
+      "affine_fingerprint": "e1cc1380e6f57d92adf444d194061ad3cd91fdf697b35d9882d71eadcc3c1f08",
+      "reflection_fingerprint": "c2c7fd07d2a32fb112d454ec2ec90e95e5e3a47ce16011636b6f79c9f719e761",
+      "sampled_array_fingerprint": "b61e71bf0ca65268452d7ce85b661fa427c0a36f34237107abcfa4d53138226f",
+      "x_sha256": "ea1d90cb96044fb5520944863f346a95569aefcfc48a764a8c87ce28e5086f3d",
+      "V_sha256": "42ec47337af26ef07cb7bf778cc891a987a975d112190a675cac14ae63e6ef47",
+      "label_checksum": "f629022c7a3a07290e66b48b06a58b08e4eaef54bdf05cb97a335f76436f95df"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "9d77950c418f1453a44929af",
+      "augmentation_parent": "9d77950c418f1453a44929af",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.22721000493504107,
+        "A": 15.329220664687455,
+        "B": 0.11637540711089969
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.025162998082115,
+        10.99582128663146
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.006007808977468279,
+      "valid_states": 11,
+      "potential_fingerprint": "f947ce3d89218d13bc0521ce9032f002e79e83d769f6f1a9b25a062a5129945f",
+      "affine_fingerprint": "7635e122dd59202cbb97c17e95b9be48263db06fa3bf0e8fa329fa9f8ad50c88",
+      "reflection_fingerprint": "48a368da152f08e64087cfd557c3e7c7db929cd6a6cb28aee1106c61371d23d1",
+      "sampled_array_fingerprint": "7674e8fb10efe210c21709241091acaea92a384e00db67ee35be6f2f88c9e133",
+      "x_sha256": "87f007571d53b89057c5f2edd379c128548c1472d6935f9f508e4c31044acb5f",
+      "V_sha256": "6a3af4a2890986ca9da740d8aa57f3ee47aa07130874d26a9e609ef810fea257",
+      "label_checksum": "2fbba80e86c243adef780b4aeea8ec30bfd459d63c7d676535e755920c283424"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "b386d2812f1574321b43974c",
+      "augmentation_parent": "b386d2812f1574321b43974c",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2256348296813667,
+        "A": 15.956175887957215,
+        "B": 0.19541047783568502
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.624344787734216,
+        10.580459878925662
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.009948557759680014,
+      "valid_states": 11,
+      "potential_fingerprint": "77c46ec4934a0f4181ce13316d8e0062d8da81d01a5ae56b60bd76e9ea24fb50",
+      "affine_fingerprint": "13331be78adfb7876c196fb256b03589cfc39e7d3ae7d20dccb0960c01b0dc7a",
+      "reflection_fingerprint": "e7e27ca3734df2f22cf5935a79372b100b59ca9f37296f697c7b9ef4d34d6513",
+      "sampled_array_fingerprint": "acdf6ec194ee142f72b4d9afb47f4240a68a26f4efeb7520fe86d0ecaa01073b",
+      "x_sha256": "6daa191d53e0ca44a4786765506405d38792b5d255a9974d3a84e5b8f23bc327",
+      "V_sha256": "e83a487e37f0c44eba3d5faa9d10c32217ede5af026966329d31fb27457d6f15",
+      "label_checksum": "ead813bf8076785710b278b0b0f0d38feca980c0de9fae5979ebf8968a116455"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "109ad689e33554166d4da553",
+      "augmentation_parent": "109ad689e33554166d4da553",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2512140588182956,
+        "A": 14.872291590087116,
+        "B": 0.30714769954793153
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.38210785682757,
+        10.279902028481708
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.01938363162523949,
+      "valid_states": 11,
+      "potential_fingerprint": "2e06ac44fcaee0c9cf48350da57b94204df33e84afb7b6a09702f4213c572fd1",
+      "affine_fingerprint": "50d94cffc218117958a742514ee990c2977f66b17a8f37b08dab4dbb4af624ae",
+      "reflection_fingerprint": "52cc83fa220201c06095950ad11479c82a93c7f94ff552ce871f12bfd8e480b0",
+      "sampled_array_fingerprint": "5be2f14918672b72e2bc5e61be1233b0ae4e839efe8d70f58d3a702e5b72dc77",
+      "x_sha256": "b120bd7feb2925bfe5282f74ed353a6744d9b6a319e84708eadccacec0a94f39",
+      "V_sha256": "1581a8e6945de7f31d7e1e4ab66cadb5c33ab214b4b58bbdb354a165b1279fe8",
+      "label_checksum": "91dde2e960ac5b3ef0e837059f83516ac34103ec4fd644faac82d3321a0a70af"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "789a7edf290458bf6e0909dc",
+      "augmentation_parent": "789a7edf290458bf6e0909dc",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2639885780215263,
+        "A": 16.896533326245844,
+        "B": 0.13188545303419233
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.53415146069172,
+        8.519716262126636
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.009191093176475724,
+      "valid_states": 11,
+      "potential_fingerprint": "fb36e694591361ad5a84ac2ca2f69ca1a2c1a59f520581d4d0905b950519dc9d",
+      "affine_fingerprint": "231856590fcd0834d3cd4f33dde6988d1f8a461c3cd8dee3cbbf90ff563858f3",
+      "reflection_fingerprint": "b70ecc8d3c353c35a1bc52dfecf581f376008056d2f3cf699ce5043a99f31f0b",
+      "sampled_array_fingerprint": "00c27ce5665a9aec2bf094eefe393dfe71e523aeee4efcfd9c972b740a53ae13",
+      "x_sha256": "29749b5428018c680c19fea80f0f4013cb8b54006ba0035e84ab4356c0db28dc",
+      "V_sha256": "4881a52f37f937417fbe24e644c84a01d6b9b90be4defea71702211f390ebc62",
+      "label_checksum": "6cce8b2abae11867faf13aa8d440abc9c133de1faea2831865bf1d179c227068"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "f9521bec513820496e8a73af",
+      "augmentation_parent": "f9521bec513820496e8a73af",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.23917876820079984,
+        "A": 14.324161801487207,
+        "B": 0.24555112342350185
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.426110031844782,
+        11.308435813179837
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.014047116206567291,
+      "valid_states": 11,
+      "potential_fingerprint": "dff74654bc68ebee3db13b3a3805b652076ed81ef2a1aba7ffb18a8d21f13e26",
+      "affine_fingerprint": "2deac77818126e4234c8cf756328ca262c2f9f0d38a82cd0fe5e20a2d6729089",
+      "reflection_fingerprint": "2deac77818126e4234c8cf756328ca262c2f9f0d38a82cd0fe5e20a2d6729089",
+      "sampled_array_fingerprint": "81b6f9c87915f96e1cc82ed7b8409c83ac666e631f0944755521370776c588f9",
+      "x_sha256": "8b9d13ae7a9c1719e73b7de0289b22a5b9993e868d0cd57365081ce27f092264",
+      "V_sha256": "86059d1f6b0d30df7142d04b0faee9410c12f458e2294376c66d2e9f85fda309",
+      "label_checksum": "d93af152782cd391fc585080d9ad0240a6c3a0d3ef7d74a46d2d6e7cbd527766"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "04bcca246792a9ac8bc34a0e",
+      "augmentation_parent": "04bcca246792a9ac8bc34a0e",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.24413184535689653,
+        "A": 15.684154427610338,
+        "B": 0.14954838962294162
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.001794020379542,
+        9.97266007115995
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.00891313754749267,
+      "valid_states": 11,
+      "potential_fingerprint": "7eef4e9177a4076afbf2d3b4c23896f4e7e14e64d18a99190ad26dfd4a075f03",
+      "affine_fingerprint": "ab623fd03958b3f192a5a6238b0c0350df99708f7a77886032eaa2b60097d9db",
+      "reflection_fingerprint": "ab623fd03958b3f192a5a6238b0c0350df99708f7a77886032eaa2b60097d9db",
+      "sampled_array_fingerprint": "35ce171b61854882c4cc7ebf2b26793ee10e610749ae541ed283b14919410ac9",
+      "x_sha256": "9ec7cdad39aaf8d5e3c5e8c2a2b8fce3cc76034ab3e7deb9d048922185da0424",
+      "V_sha256": "8dc713462605dd4c999bb142e79f8fd1a6b888a493c4ed2939dfa7d577bdbc0f",
+      "label_checksum": "79f9dd696ba5dd40c5a44e616e20f1e181ed0d2c7ca3f3291347649168789504"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "ed8856c693412156c6960110",
+      "augmentation_parent": "ed8856c693412156c6960110",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.26854077277705074,
+        "A": 15.162547064945102,
+        "B": 0.2319012362509966
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.473050666663788,
+        9.400475635816193
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.01672335975785867,
+      "valid_states": 11,
+      "potential_fingerprint": "8701575a68c3035df4cee92e9a0e1833f11a2f2e1cf3c2e9415d4bc3180ba721",
+      "affine_fingerprint": "74b08b5a3fd6ca1cc60d90627010f3a0ca1622d20ab407e954cbf02c582bf773",
+      "reflection_fingerprint": "74b08b5a3fd6ca1cc60d90627010f3a0ca1622d20ab407e954cbf02c582bf773",
+      "sampled_array_fingerprint": "ff2292c47bf15d1650b7c6f44b6a00cf49f893ed1aaa44f2261aaa5be8b8ec0d",
+      "x_sha256": "f4bf0c318e52dcc7c5bcfd25bb831f2fe201e860edfbf0a1c1d9b2e75237211b",
+      "V_sha256": "a9143de4a92e7629c50ab22de33482b4d562e39b9402986cbe31b46a58c79af8",
+      "label_checksum": "44baae02f06c4582504633f6b63ca0f5719f298a2bdc34fad627cd4ce18d72a9"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "54083941178345ebdf44c89b",
+      "augmentation_parent": "54083941178345ebdf44c89b",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2462566007208079,
+        "A": 16.606690548360348,
+        "B": 0.21294955597259105
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.316533766506762,
+        9.287528358252935
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.012913753711375639,
+      "valid_states": 11,
+      "potential_fingerprint": "49bbe919a4c919911b818e7bf33dc5cce9b2787cff05f8fed99a5fe329774075",
+      "affine_fingerprint": "9c8a02b5afb068703a4bbaf1262b2d37e34e2a13d935f23ae8f251fff80dc89d",
+      "reflection_fingerprint": "9c8a02b5afb068703a4bbaf1262b2d37e34e2a13d935f23ae8f251fff80dc89d",
+      "sampled_array_fingerprint": "9d60550f162578883f20898b216bc1e52fd21bbebfcb647c2e0b89817072991f",
+      "x_sha256": "c7155b4e069ac15eed4bdf58a755ae2b9b05e7f6ecc1da58ef0d42d46eeea65a",
+      "V_sha256": "8e50b62cd0ace3b3b6dcbfdbf00b874d1d2e7dda9a21fce27729f07f7b527e0d",
+      "label_checksum": "152350ab3073e99130770f6d1a30ec37a691c30514bf3a5ab7a63d9b9e984fd8"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "17e574fb446fd7b617b9c38a",
+      "augmentation_parent": "17e574fb446fd7b617b9c38a",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.22105459094047547,
+        "A": 14.59705373365432,
+        "B": 0.29337753020226953
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.076255201033344,
+        11.943223768349444
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.014335931790761536,
+      "valid_states": 11,
+      "potential_fingerprint": "db33db7944b410621d885583dd372f735ce84b1dabe165ef20c15c0f45447b4b",
+      "affine_fingerprint": "15c3ef756079174071ab31227c8957f0d543535ab5a29ec1b62520513238aa54",
+      "reflection_fingerprint": "15c3ef756079174071ab31227c8957f0d543535ab5a29ec1b62520513238aa54",
+      "sampled_array_fingerprint": "e494d7ae6da02759f440bb2a098c2141ecf78b101614028aaca816fec41aaa11",
+      "x_sha256": "61d7b2526c94179c195da6e925c26b87b8fa4e6edd7be03a67973c10d212b8e1",
+      "V_sha256": "3e9adc2d550da24a807657ce0d1da58e71b437dc0a0ae019a61586d240f2d7a8",
+      "label_checksum": "a8c38e482ede903990dbac6a0fbacbb18cb685f010557a9eef5c2cfcb8dded14"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "098860d9a55dfe9169db05ca",
+      "augmentation_parent": "098860d9a55dfe9169db05ca",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.23197940460406244,
+        "A": 16.68884707428515,
+        "B": 0.27915052641183136
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.84994520837231,
+        9.791741302256755
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.015022330415951203,
+      "valid_states": 11,
+      "potential_fingerprint": "bd1c1cf4dcad108559fd72a4b2a6f125b09a52525e6c854e5b131797ed165fd0",
+      "affine_fingerprint": "1388ceb5dd21302d018e50b64ef67465b248d94cd42c00e697ac4575a82e34b4",
+      "reflection_fingerprint": "1388ceb5dd21302d018e50b64ef67465b248d94cd42c00e697ac4575a82e34b4",
+      "sampled_array_fingerprint": "f97687cdc42fa064d4c15fda9f766d81417d92dfe619d99d3faa922cb40ba944",
+      "x_sha256": "6f123b14d29c7c3c023b1b73c134261edbf11d3578bf512b80ba592e18153d8c",
+      "V_sha256": "4880311e36139d14f2fa7070d5fee7ce57be9acae991e9a6990c55627a34aff3",
+      "label_checksum": "17579ff504f21df8200856229b0afb6431c8c600441402e50b9e599b22665898"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "19b930ee2e192436cbeee6c2",
+      "augmentation_parent": "19b930ee2e192436cbeee6c2",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.25718027491122486,
+        "A": 14.116458456031978,
+        "B": 0.10280359876342118
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.791649715575124,
+        10.747713016176883
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.006799604151299152,
+      "valid_states": 11,
+      "potential_fingerprint": "5116ef1b437a3ebf13f4ccbaabfa52bbce7a6eae9aa719a7e8d65a4cc9c7ffec",
+      "affine_fingerprint": "cd60b8729228dcadb9165821426816646b42f35117c244e7d123076f66023e8b",
+      "reflection_fingerprint": "e961d9b4b7f2045bf34b32a2f894c28c3c7151d7fce8591242f270bc02579728",
+      "sampled_array_fingerprint": "756d6ebc00c97d3fdcfb93e4fe0bb789a2654d525ac02830359e5dd5a878e6fe",
+      "x_sha256": "022362fdacc213e2f814af00e9a352b20f62784e1ecacf7e4adeb94657285d10",
+      "V_sha256": "a6750f5ef4f43e6fc4666bc2455cc554dbe70e29f72f2ecc32a60e492e5c9108",
+      "label_checksum": "e1b142be4eda4df5884d4b04e3c19ca34dbfb51e5ac2ae6591c6ceab97ec3417"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "052642260507a0d470e0039d",
+      "augmentation_parent": "052642260507a0d470e0039d",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.2576379004213959,
+        "A": 16.11762309167534,
+        "B": 0.3406268129125237
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.224359712465805,
+        9.151897514778849
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.022609883970455026,
+      "valid_states": 11,
+      "potential_fingerprint": "a3201b8137b22d817a71fcb63b163efcb6dc8cccaf06e2f6df6a15c5e6e0fccf",
+      "affine_fingerprint": "8188e28151f933e188a4a7b849b2e2bf8ba3a25e1a8281029191fd684f1fc85e",
+      "reflection_fingerprint": "8188e28151f933e188a4a7b849b2e2bf8ba3a25e1a8281029191fd684f1fc85e",
+      "sampled_array_fingerprint": "745c24d09f93072a153bb98f0d10261affc2690390177bed34d17006d0b9dd22",
+      "x_sha256": "a7788cc1b449a0ca6fab31a956d6c3905422b6f1eb18cf430ddfef4ca5adaf8f",
+      "V_sha256": "21afdf75ac3a41191d33716721684d65240d5bce4df220c390025929653aa5ff",
+      "label_checksum": "553af29916c730060e276808dc67920c47e3ae34d7bf516ed1757dfe21743fd6"
+    },
+    {
+      "category": "seen_basis_reparameterization",
+      "group_id": "a78e5f46945a45cb128faa82",
+      "augmentation_parent": "a78e5f46945a45cb128faa82",
+      "family": "rosen_morse_ii",
+      "parameters": {
+        "a": 0.23323086181655525,
+        "A": 15.033767510205507,
+        "B": 0.16620475766249002
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.997919337560132,
+        10.93925366005717
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": -0.009040979521823256,
+      "valid_states": 11,
+      "potential_fingerprint": "48af7a5ce97308b36b7d1973c9c1a79a43f23b000122b4d60af73206c51a660c",
+      "affine_fingerprint": "d7ee86ed0d690725ca8d6b13ec33e220a5ffcad051c14a08dbb7af1fd9b021b5",
+      "reflection_fingerprint": "d7ee86ed0d690725ca8d6b13ec33e220a5ffcad051c14a08dbb7af1fd9b021b5",
+      "sampled_array_fingerprint": "9a2262eaac232ec4603302599407420d1775f5ea257e4a08c3bb5da2b7e0fe2f",
+      "x_sha256": "c0561d6dd94db105bcdea51fa2c0617e764e773f39a32fed412bf3ba80d76da9",
+      "V_sha256": "70eab919c1e11b0135e5f7b039de18e8df386c0a41e71c8364cf751cf33f3be7",
+      "label_checksum": "e9b341d8f0cc60d61ba2d8b50c1d2f63344e2731ea822c44ed4f85a4cc74e57c"
+    }
+  ],
+  "constant_potential_shift": [
+    {
+      "category": "constant_potential_shift",
+      "group_id": "3e9703fca63f4b9d8f6c235e",
+      "augmentation_parent": "3e9703fca63f4b9d8f6c235e",
+      "family": "reflected_potential",
+      "parameters": {
+        "c2": 0.04542622853536159,
+        "shift": -0.20994398184120655,
+        "tilt": 0.3,
+        "defect": -6.739781097508967,
+        "reflect": false
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        7.795438178747316
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": 2.75,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "ed0ca0704d961cc3093a8b54aeba17d48bd1b8e82fb0e2f55b954d0ee520617a",
+      "affine_fingerprint": "a9c7383bfeb0edc4a92a7e663789200c3a4ad00406ba5cbe12ef959b2e785852",
+      "reflection_fingerprint": "f58d88257a3082c33306dd51dcdb69cfea68ee6072edb3d27772d789eddecbb9",
+      "sampled_array_fingerprint": "aa96a5b5f62f2e9b013356e72606b1dfb2816a800f3a227c906c7ba2c8838584",
+      "x_sha256": "dc1c94e61161e96a7af00e3f68228aa4c0405163b7eebc202468e0742898372c",
+      "V_sha256": "ffb87161482b5954053a7c4a4b7fa95ba24c02f922f372083c22cdaad264fa8a",
+      "label_checksum": "20deb879263fa2c3f9a3665cc8c0d253386a00d251f14cfebc3a1daacdf58d37"
+    }
+  ],
+  "valid_spatial_reflection": [
+    {
+      "category": "valid_spatial_reflection",
+      "group_id": "3e9703fca63f4b9d8f6c235e",
+      "augmentation_parent": "3e9703fca63f4b9d8f6c235e",
+      "family": "reflected_potential",
+      "parameters": {
+        "c2": 0.04542622853536159,
+        "shift": -0.20994398184120655,
+        "tilt": 0.3,
+        "defect": -6.739781097508967,
+        "reflect": false
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        7.795438178747316
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "d84c797841a194ab257d9e1335f2290717525c91649f2aea2c4cf60c28e9f7b8",
+      "affine_fingerprint": "f58d88257a3082c33306dd51dcdb69cfea68ee6072edb3d27772d789eddecbb9",
+      "reflection_fingerprint": "f58d88257a3082c33306dd51dcdb69cfea68ee6072edb3d27772d789eddecbb9",
+      "sampled_array_fingerprint": "3eff2a659611418ebc871a69ac069d121ac9833cc4843986de4ff4d9fd4a0cba",
+      "x_sha256": "355b7791bf6cedfbba90ca502e8605d63f05e008b9b2a9609eeb99452f13b7c9",
+      "V_sha256": "b8f072801f3f917f0e36f2a544c2a66897aeba3e9708a67444afc9d8c700b4d8",
+      "label_checksum": "c12ba6474753b385f1c61ec54590330f17e7bdc82841a2573e6cbf4b54585735"
+    }
+  ],
+  "within_range_unseen_parameter_interpolation": [
+    {
+      "category": "within_range_unseen_parameter_interpolation",
+      "group_id": "7f1cc10f9ffc9bcd227293eb",
+      "augmentation_parent": "7f1cc10f9ffc9bcd227293eb",
+      "family": "harmonic",
+      "parameters": {
+        "omega": 1.0035740090195426,
+        "x0": 0.08182983418757267
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -6.449232813969522,
+        6.61289248234467
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "a4e2668224e353d091882adb5cde8a2e46b59e6823a2d0006ac18eb42e4ca04f",
+      "affine_fingerprint": "ca40485131e1412b22d766f2808a3b490f46afc335a284d16bfd4a93c3ff0c80",
+      "reflection_fingerprint": "ca40485131e1412b22d766f2808a3b490f46afc335a284d16bfd4a93c3ff0c80",
+      "sampled_array_fingerprint": "39398d502b042aae098b006e2a2899de08e63af2870ff876ec3487a95489954e",
+      "x_sha256": "edbb124f0ae8ca43730f73d2ef60477843d0f67d3bdc312fc1943ebdefc359e6",
+      "V_sha256": "a7b25f0d657bd5de29a860771a7fde26700ff68fddb0283fdcd8651fb48c4600",
+      "label_checksum": "c7c125b4cce65c17cce035743b0571197be83b1858caaa85d3def7ace1bb0aaa"
+    }
+  ],
+  "near_continuum_states": [
+    {
+      "category": "near_continuum_states",
+      "group_id": "e3569f55a42af1b5c82ea46c",
+      "augmentation_parent": "e3569f55a42af1b5c82ea46c",
+      "family": "radial_coulomb",
+      "parameters": {
+        "Z": 1.2748531363904476,
+        "ell": 2
+      },
+      "geometry": "radial_reduced",
+      "boundary_condition": "friedrichs_dirichlet",
+      "domain": [
+        0.0,
+        371.9565702957328
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": 0.0,
+      "valid_states": 11,
+      "potential_fingerprint": "2285459ca714864b69cc7d17780577566788e36244be7070086817ac21d25b5b",
+      "affine_fingerprint": "6de26f16fc94ca4d17eb1946a9062400eb39f6895ab482cbb6b1872e93f388f7",
+      "reflection_fingerprint": "a94a75064d778f1e82729eff5ec3ab484f0ff74e74408f1744c2bf80e888fe8d",
+      "sampled_array_fingerprint": "09022adc29d80d83e9224d988783c44c64c5beac5e604c6a2e12121b7e29d021",
+      "x_sha256": "f26b02b9b394535794845e6463049379d808a70d85b421fa8ffb89cd715e6b19",
+      "V_sha256": "588c2377235104f2c82a56e23307ffea6662cdcfaac7e8298da87fee7fcd77b7",
+      "label_checksum": "6e7f698bc923e679e0d0e02ecdd24381b5765e89af6717412ef8da569cf39428"
+    }
+  ],
+  "variable_uniform_resolution": [
+    {
+      "category": "variable_uniform_resolution",
+      "group_id": "e51b0c876b7609a9f8ab12c8",
+      "augmentation_parent": "e51b0c876b7609a9f8ab12c8",
+      "family": "harmonic",
+      "parameters": {
+        "omega": 0.9488787496462464,
+        "x0": -0.14277706257998943
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -6.859434391616988,
+        6.57388026645701
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 161,
+      "grid_variant": "uniform_resolution",
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "a8aa791da418faac3b5412b1709c519e93b8a41dd36f1e76da1272587e01c8ac",
+      "affine_fingerprint": "e753c5d1de8c23bd52a5c5dbeaac166b1103e834177bcc501d6d41b93853b711",
+      "reflection_fingerprint": "e753c5d1de8c23bd52a5c5dbeaac166b1103e834177bcc501d6d41b93853b711",
+      "sampled_array_fingerprint": "52c4a31b9bb91129097cf7b0b96d540a0756bab0471017688a8273627ecc3590",
+      "x_sha256": "6c9e698771a356574a88095dfa8b749110b3bb36d22b3ebaf05473c0240f37b5",
+      "V_sha256": "5d1fae34f92acceac85dbe631c90efc9c898fd2f1e683751a484ce298f48bb4c",
+      "label_checksum": "f8bf43459e3133a57537284f55a66541aa8dfbc86918f2ad2a83056370dfbf23"
+    }
+  ],
+  "nonuniform_resolution": [
+    {
+      "category": "nonuniform_resolution",
+      "group_id": "e51b0c876b7609a9f8ab12c8",
+      "augmentation_parent": "e51b0c876b7609a9f8ab12c8",
+      "family": "harmonic",
+      "parameters": {
+        "omega": 0.9488787496462464,
+        "x0": -0.14277706257998943
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -6.859434391616988,
+        6.57388026645701
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 145,
+      "grid_variant": "nonuniform_resolution",
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "9c167d60e2d9cedbe4a7579e14b6ad244434cc7c3358379d829820c2416742f4",
+      "affine_fingerprint": "a48fec255f7024bd04214493afc47a5c2dd29e6c19c2004729616b4080c02a8c",
+      "reflection_fingerprint": "a48fec255f7024bd04214493afc47a5c2dd29e6c19c2004729616b4080c02a8c",
+      "sampled_array_fingerprint": "342458584f3f2dfca2e36c2f36f1f5414c142238940ab341c087b0b4f1554bde",
+      "x_sha256": "3368a06bd2a62479541e448a70c15cb8480a3374d909af1c613bdb957b4d44f8",
+      "V_sha256": "ecff9a5ad0dc71634130978d576c0f83e5db4cd2826778b5e65e06fa13104c3c",
+      "label_checksum": "ddf39764f74aec3acb1cf8a2cd99371670125640e3993077c264de47705378fe"
+    }
+  ],
+  "changed_domain_same_physical_operator": [
+    {
+      "category": "changed_domain_same_physical_operator",
+      "group_id": "e51b0c876b7609a9f8ab12c8",
+      "augmentation_parent": "e51b0c876b7609a9f8ab12c8",
+      "family": "harmonic",
+      "parameters": {
+        "omega": 0.9488787496462464,
+        "x0": -0.14277706257998943
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.866932990972537,
+        7.581378865812559
+      ],
+      "domain_factor_from_parent": 1.15,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "cc4c8fb9fdfad09f3855fd840a067f73d0ab20ae40fd794f1492710db4e01eac",
+      "affine_fingerprint": "7031fe912e97cb2a7eaee1b09c9db3f89fd031b63cbb5b68a40361b1fd898b97",
+      "reflection_fingerprint": "7031fe912e97cb2a7eaee1b09c9db3f89fd031b63cbb5b68a40361b1fd898b97",
+      "sampled_array_fingerprint": "d166d7039195140d91ede97d3c26face34a77e8af84f3552138ab26a13e752d6",
+      "x_sha256": "8dd9b1cf62aec31f0c59081a5c13a24dd90bad014a1c839bdaf6971cc915662a",
+      "V_sha256": "051ac0a393cd8f82560d244c633d6baccdbcce4fc31b990eac65529104c8fc44",
+      "label_checksum": "ecd187f75e3a283585cb163f8471b486bd5b14599977d938e1fc1083118d8143"
+    }
+  ],
+  "controlled_smooth_perturbations": [
+    {
+      "category": "controlled_smooth_perturbations",
+      "group_id": "cc9f319b78e5907ca2bfc514",
+      "augmentation_parent": "cc9f319b78e5907ca2bfc514",
+      "family": "smooth_perturbed",
+      "parameters": {
+        "c2": 0.07405,
+        "shift": 0.6599999999999999,
+        "amp": 1.65,
+        "freq": 4
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.64622600752007,
+        11.588332909592815
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "cd90941b55bf23aa2fc36cd8f79338659d266d64a687bebbeaba869301bb4eca",
+      "affine_fingerprint": "bfb32fab009ef9c69d7a32485959be21f81946672c54f1a8dd378c762d989cdc",
+      "reflection_fingerprint": "5144c6bbcb29e577732305741ab86fca0823e2eb5c37fa94be3c20b9fe500135",
+      "sampled_array_fingerprint": "3167c8a9b145c04e524c63edff67b139c9592723e48289c8f54b92219bacf868",
+      "x_sha256": "093000ec0d1f59975b0c450f50cdfcb28121ea4d4c244dcbfc710f786e08f858",
+      "V_sha256": "f98d9f6bb5203885f440ab87e92e20c46f6d8269f7cf946a1ad70364ed27c409",
+      "label_checksum": "e1021837b593c8ffef85be0fc8d4ca0fc2e0b01a67b98cd900e501c76bce7a71"
+    }
+  ],
+  "random_smooth_potentials": [
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "26e46de95ee6791e374e2638",
+      "augmentation_parent": "26e46de95ee6791e374e2638",
+      "family": "fourier_random",
+      "parameters": {
+        "c2": 0.04787297911942005,
+        "shift": -0.8170640114694834,
+        "sin": [
+          1.4028036147356033,
+          -0.42226285859942436,
+          0.5611036121845245,
+          0.27760558761656284,
+          -0.38508076667785646,
+          -0.20911960552136102
+        ],
+        "cos": [
+          -0.6815395131707191,
+          -0.7271136306226254,
+          -0.3475177561243375,
+          0.4525492861866951,
+          -0.027585384994745256,
+          0.09963633368412654
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        8.60147868722425
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "6ca23410c449dab492a206ff32f1dfa83b8a87549ed4ae615c62b8f0fbd28b09",
+      "affine_fingerprint": "da830ca86d973ef282800d94a4073306b056c17b72e2870d05350a0a8cfa7752",
+      "reflection_fingerprint": "8180413111ea486823c82195837df78b18f4d37764c19693d8588fbe670aecac",
+      "sampled_array_fingerprint": "2df866f14e66d9fc5c243c7fc8ac46cae7490d6452de22eeb13bb6e126fdbdbb",
+      "x_sha256": "1e1fbdde5f68ed0843888284f1787932e771273d24b35dd0aa93001c51456a23",
+      "V_sha256": "d0f5f4e19b576673565f73e61f7572afdd8e6d70b7952b836ca91d9f3e9a3b03",
+      "label_checksum": "00755f439f52a6fc9114f9f4d660a51f7537f5e29348cdffa1d6d673babdac7f"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "6195828856eb7741b0791c11",
+      "augmentation_parent": "6195828856eb7741b0791c11",
+      "family": "fourier_random",
+      "parameters": {
+        "c2": 0.05788919983897358,
+        "shift": -0.78794264793396,
+        "sin": [
+          -0.7335872389376163,
+          0.022846270352602005,
+          -0.15633697683612505,
+          0.10805228818207979,
+          -0.12027003318071365,
+          -0.1564925710360209
+        ],
+        "cos": [
+          0.5166181288659573,
+          0.4800076447427273,
+          -0.648837527881066,
+          -0.36847478803247213,
+          -0.2816600762307644,
+          0.08599799623092015
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        11.862630061866518
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "85dd7519143d395e5ebff9244c151f9ea6719e2e1d89f6dec9fd9c54dc357fa9",
+      "affine_fingerprint": "65e93656231c47679ebd814da7a0da3afd82442dc02710a08cee7a3051ca32ab",
+      "reflection_fingerprint": "c29dee28b6ed985e8d984b5fb11036ed96e326cf23bc207d9fdc751cc1183390",
+      "sampled_array_fingerprint": "0313050922424cc7767ef0135ec994dc1ae31204719b0485c0298dbec3f3bb00",
+      "x_sha256": "6bb983894fed5c41bb9b216e50820662e124808e443b0ed4c2f2762dc48b780f",
+      "V_sha256": "fa328b372e4289bbf408312470a5cdfe007f1e4f8dad4a631f1a9506132c2bb6",
+      "label_checksum": "30e59691b3f3af095ea6cdf0896f1d6eba2a78f6bd4fc2ee0378d951cf2497a6"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "9571d392cd35b210f1a4c535",
+      "augmentation_parent": "9571d392cd35b210f1a4c535",
+      "family": "fourier_random",
+      "parameters": {
+        "c2": 0.07701636811252684,
+        "shift": 0.7774725593626499,
+        "sin": [
+          -0.9928971230983734,
+          0.3112175911664963,
+          -0.06599096457163493,
+          -0.29527536127716303,
+          0.16873128116130828,
+          0.12804917494455972
+        ],
+        "cos": [
+          0.8172156475484371,
+          0.6722423117607832,
+          0.2505177470544974,
+          -0.13016677182167768,
+          0.1507619686424732,
+          -0.30668949832518894
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.36450738790112,
+        12.0
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "dd6194096602cfb0f1ac3bf7f1a3662993e491bbc0004d69f55e8cbbbb20aed5",
+      "affine_fingerprint": "eb4b21e2adcfdf7719ff90d1f9cad1a32ad4dd3898d20e93b6f40989315197c4",
+      "reflection_fingerprint": "eb4b21e2adcfdf7719ff90d1f9cad1a32ad4dd3898d20e93b6f40989315197c4",
+      "sampled_array_fingerprint": "51ac28257f3d048e6c9480f351678b333812bbc14a0cd3cec56597dd8176d5e3",
+      "x_sha256": "9085d8317a3ce949b8985074305273e9f069cfb440a403793a520c8fc345688e",
+      "V_sha256": "f1be1d09211774685991cf7c1475a2b87d6e7b6b10470fe3e488c47b52384438",
+      "label_checksum": "d3170dfbc63d4e4cded8df0140c8cf69b9dbc55d8a811ffd4259966d5d26098e"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "e1ac87b7f976c6d99e0d3590",
+      "augmentation_parent": "e1ac87b7f976c6d99e0d3590",
+      "family": "fourier_random",
+      "parameters": {
+        "c2": 0.05304885481018573,
+        "shift": 0.9215794466435909,
+        "sin": [
+          -0.38660813868045807,
+          -0.406118081882596,
+          0.2534680751462777,
+          0.03351182863116264,
+          0.24189359322190285,
+          0.2598992275695006
+        ],
+        "cos": [
+          -0.20108095929026604,
+          0.26664732955396175,
+          0.3861703909933567,
+          -0.04773070942610502,
+          -0.38709169179201125,
+          0.029400914286573727
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.617184493048434,
+        11.47162458918893
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "66022025805ae2ad0a32ad80b9666f8cbe89651473e75fcce0440d0c61f9c82c",
+      "affine_fingerprint": "8b725edfcb50c9473054ba0bc13bed12e2d299d64520a11f6032c63179f17791",
+      "reflection_fingerprint": "1a37dfbeed0dd68aba7a7a8de07dace77d2557932458dbc5fa7f5cd031f1f8ae",
+      "sampled_array_fingerprint": "98db5e8776bd9fa1604162ae6d99e1918c210c4c5ce77ee9d2b3b0c2dc4d6ec1",
+      "x_sha256": "bf9918250902fda55c7952d800b62477be9a374c27b0b936af88310ba3409ce2",
+      "V_sha256": "08531b391286d82a8205559f1e5a615a365e4673389f67135cdccfd3a1a4307c",
+      "label_checksum": "c0d1216cbc1c5426bfe9d0ca9593d6be3a63128c13839f7d2da3c562cf66447a"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "25aabe1eb9766ecfe3db289d",
+      "augmentation_parent": "25aabe1eb9766ecfe3db289d",
+      "family": "fourier_random",
+      "parameters": {
+        "c2": 0.0552063501207158,
+        "shift": 0.38613051176071167,
+        "sin": [
+          1.329498566687107,
+          0.6444745175540447,
+          0.3538056140144666,
+          0.21132397837936878,
+          0.1532598577439785,
+          -0.27586306259036064
+        ],
+        "cos": [
+          1.5712055936455727,
+          -0.23584629967808723,
+          -0.5808659307658672,
+          -0.47485405672341585,
+          -0.057821718603372575,
+          -0.2684323700765769
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        12.0
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "b9c70040e94fa6ed5c13195a657232e53320479ae3d60779de15aead6e48d5c3",
+      "affine_fingerprint": "626aaf3abde488845cfabd61ec7a6a662df27bf64514c28d07ed7ad2b9a6f9a6",
+      "reflection_fingerprint": "626aaf3abde488845cfabd61ec7a6a662df27bf64514c28d07ed7ad2b9a6f9a6",
+      "sampled_array_fingerprint": "179fa687cb2078437091d3b5e9f2dce2f18e5f1bcf7cdb044ca7eea8dfdf678f",
+      "x_sha256": "064f5b8007ff9569ff4ce90b1426631ff5a8168729978499a042483793117cce",
+      "V_sha256": "89e926caad17a1b499847b9a9af477ed1e93da1a12150d0d21324d894bc8f0cb",
+      "label_checksum": "5abe7eb0f64ac4f9e1e09c860aa7ff68846f21b7475717634632188bd4e06250"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "f02f6a969035c43da602808d",
+      "augmentation_parent": "f02f6a969035c43da602808d",
+      "family": "gaussian_random_field",
+      "parameters": {
+        "c2": 0.05937835962511599,
+        "shift": -0.4228923059999943,
+        "coeff": [
+          -0.8444871800020337,
+          -0.6087218667380512,
+          -0.7409533020108938,
+          0.026665846817195415,
+          0.07696309592574835,
+          0.3859016710581879,
+          0.2775437624326774,
+          -0.22888486040756106,
+          0.23218456655740738,
+          0.03478879341855645
+        ],
+        "phases": [
+          3.625166047105508,
+          6.05122270512042,
+          5.58299509989267,
+          0.8405910664719719,
+          5.767538236455046,
+          3.5787615249137525,
+          1.3949657509970759,
+          2.2819239650297143,
+          6.212929860163934,
+          0.16310351620184624
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        12.0
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "67a44fe52d1307f16acd88b906918df262bbbc4351fb83c44330f3bc8a860013",
+      "affine_fingerprint": "ace3129bd30433acfb3036c5f60aa984865249f6e93bea07af49766d82dd9035",
+      "reflection_fingerprint": "ace3129bd30433acfb3036c5f60aa984865249f6e93bea07af49766d82dd9035",
+      "sampled_array_fingerprint": "196e5c06fa93fc8d65d3ed787d6d712ce487fb9beda3f9dc306c6d442307a5a8",
+      "x_sha256": "064f5b8007ff9569ff4ce90b1426631ff5a8168729978499a042483793117cce",
+      "V_sha256": "0711a9654f2aa6028de8ef74cc2f58b84aab9bcfa4e703104371874138a4f2db",
+      "label_checksum": "aa07d7201d51dbc96f63c16456867706450601f3dbbe72212c6d49255c055557"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "9cc1088a1e9eef230167a3e7",
+      "augmentation_parent": "9cc1088a1e9eef230167a3e7",
+      "family": "gaussian_random_field",
+      "parameters": {
+        "c2": 0.07803178753238171,
+        "shift": -0.5230930652469397,
+        "coeff": [
+          -0.8633662853389978,
+          0.16516882926225662,
+          -0.19224333266417185,
+          0.5206724174786359,
+          -0.4074791297316551,
+          -0.3378371351088087,
+          -0.25074427348694633,
+          0.1446456607664004,
+          0.259971486714979,
+          0.06815126910805702
+        ],
+        "phases": [
+          0.5813257726775332,
+          0.5943606653474194,
+          0.9359308245441518,
+          4.595729438349361,
+          6.081800899693533,
+          3.998006759040565,
+          3.2049607817666854,
+          0.942434817884438,
+          0.5157535419023492,
+          3.4631420474127146
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.871849680243837,
+        9.24728036398966
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "de2373d5615d6d8c1d1b8eeffe7662c2f752b7a1a224fd374ab2c15912394cda",
+      "affine_fingerprint": "2f1eb12a52e9257eaecec5039d2725fa6c4a2e50b8fb7a2d79d68bf657164e39",
+      "reflection_fingerprint": "2f1eb12a52e9257eaecec5039d2725fa6c4a2e50b8fb7a2d79d68bf657164e39",
+      "sampled_array_fingerprint": "7ccae28a3cb3cb7ecef454de69b8dcbb4418d1c08e2bfd657c87e435573d9247",
+      "x_sha256": "9d8838930e72d291885ac1e368acf2f485528bc2af5a07ed8d079d0f008273ce",
+      "V_sha256": "52469cf88e3aa19fa878a0d3b2a690857370d4af6def3bdd43a91506a47e4499",
+      "label_checksum": "62f6d5ce04f353b54300607488634265abe838b906a97e35e8440bb047c52d00"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "bcc67832c8620c86b4a26baa",
+      "augmentation_parent": "bcc67832c8620c86b4a26baa",
+      "family": "gaussian_random_field",
+      "parameters": {
+        "c2": 0.04824187377933413,
+        "shift": 0.9818915091454983,
+        "coeff": [
+          2.4869608972221613,
+          0.9396974951960146,
+          -0.24729909375309944,
+          0.44455681811086833,
+          -0.30943698715418577,
+          0.19084301311522722,
+          0.026505662660513605,
+          -0.015403779107145965,
+          0.136431902129617,
+          0.2061962061561644
+        ],
+        "phases": [
+          1.1973427224046946,
+          4.580515072769965,
+          3.37474863984963,
+          2.986736975892098,
+          4.6846011147942646,
+          5.732730599422964,
+          3.329540415991359,
+          5.373923362187028,
+          3.6828241251387497,
+          4.796616787233784
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.284690565915243,
+        12.0
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "b74b6dbbd0778eed4c8f183a19240b99cda771c10332a9482b4466f8322fd067",
+      "affine_fingerprint": "97ef423ecb45156bd0ad1e09f85bb757cf50274e05e813ad8e68de3e0de1f7b8",
+      "reflection_fingerprint": "beefb57be42c82e8f725e0d09b4c6a95abf925e67e86c33ae18c7a53306780dc",
+      "sampled_array_fingerprint": "fc1894208d3f55a8a5d6b20a77b838264c65a25f47ccbb683f9b71a0c5f0ce76",
+      "x_sha256": "f490ad6c3e7eb0a6dd294321038fb45709427c995b2244353f328f9018f9309b",
+      "V_sha256": "e27c9056db019cf53b18b33c0309d8a1505ad812dbc9175c9830e613ab289a21",
+      "label_checksum": "58e3af938e4fbfda60c15e38ce15a8127f6bf203b9953b6d7c8c06d5c58858cc"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "6ad82fde733ce9ebca2e73d9",
+      "augmentation_parent": "6ad82fde733ce9ebca2e73d9",
+      "family": "gaussian_random_field",
+      "parameters": {
+        "c2": 0.06931481979787349,
+        "shift": -0.4636582229286432,
+        "coeff": [
+          -2.240842436440289,
+          -0.7176939607597888,
+          -0.15318572831650576,
+          0.40647064335644245,
+          -0.3283384442329407,
+          0.4033607974027594,
+          -0.02166233624198607,
+          -0.16062204900663346,
+          -0.06599627693908082,
+          -0.065569959115237
+        ],
+        "phases": [
+          1.0785813650031764,
+          6.182861416469705,
+          2.95104079167703,
+          1.526843696265699,
+          2.3951923459238555,
+          2.3176162461793464,
+          1.6629723606738365,
+          3.494444076296433,
+          5.463131568306887,
+          2.358951640192995
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.932124029265465,
+        7.2590638138704
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "7b42cb7179bb3079e9a6a6a5f72e8228aec1dab81e47a55fc77e8ed809315f30",
+      "affine_fingerprint": "5dfafb7fd456f1c483d274d96b8a8c4a40ba7a38f3ce0f51a5f0f88c3729c9a9",
+      "reflection_fingerprint": "5dfafb7fd456f1c483d274d96b8a8c4a40ba7a38f3ce0f51a5f0f88c3729c9a9",
+      "sampled_array_fingerprint": "04494866b5ab48b76ec93f8a4c055ebd41b40acb70866fbb680419e1387b92b4",
+      "x_sha256": "4eacf32e139dc228a20ada94107427c15201ac02a97757a01a4975ff242dfdd9",
+      "V_sha256": "920424f7b21eef11cc6cc6e5c38dddfad5bd621ba1627092671a4ff8dee13b31",
+      "label_checksum": "1bef98a992385737bbc6aa4a88f34ecbde7a0501b37dd6c3b0718f37903679ac"
+    },
+    {
+      "category": "random_smooth_potentials",
+      "group_id": "e87d3fb8f80d4706fdc281c4",
+      "augmentation_parent": "e87d3fb8f80d4706fdc281c4",
+      "family": "gaussian_random_field",
+      "parameters": {
+        "c2": 0.05609179303981364,
+        "shift": -0.5556684210896492,
+        "coeff": [
+          1.433107117190957,
+          -0.6687858235090971,
+          0.04738852226485809,
+          0.37295867688953876,
+          0.251187521032989,
+          -0.06161770550534129,
+          -0.35440206261617796,
+          -0.05648321530316025,
+          -0.12999669131305483,
+          0.022237183526158333
+        ],
+        "phases": [
+          4.719850395091133,
+          2.6770060993178584,
+          0.02410928786004035,
+          2.5737614399976687,
+          1.67136471207753,
+          3.421033343199021,
+          3.937872920373384,
+          5.960626488178626,
+          1.1190023415905257,
+          5.867357882709694
+        ]
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        9.910439513639497
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "2afb041d1bf5095b26d90890c657f3729af6ed10a924165f09a03873423bd08d",
+      "affine_fingerprint": "0d50cf179942fa6e19903572b4dfd92a614b8d489d9b973fd171f6b983c0a965",
+      "reflection_fingerprint": "0d50cf179942fa6e19903572b4dfd92a614b8d489d9b973fd171f6b983c0a965",
+      "sampled_array_fingerprint": "f60ec585b41a6d88846c8cd5093892a786ce16fdb700aa166c0d08a3b46440e4",
+      "x_sha256": "66433237c835ff1a828c6a1e5c62a8d168362d9b4b5ef0c01929663056af3bfd",
+      "V_sha256": "0aba003e947e1169260951511a83d5493dad1c4a51d860ca69484cc8348c2b46",
+      "label_checksum": "105060c1bd9d53ff2dffe2e838797e101b823ae5d87ea1d13275797661d9c4a1"
+    }
+  ],
+  "anharmonic_wells": [
+    {
+      "category": "anharmonic_wells",
+      "group_id": "e0dbcc79e3f922113ecc85d8",
+      "augmentation_parent": "e0dbcc79e3f922113ecc85d8",
+      "family": "anharmonic_polynomial",
+      "parameters": {
+        "c2": 0.06980262601748109,
+        "shift": 0.3383427355438471,
+        "c4": 0.004580352935940028,
+        "c3": -0.004350207880139351
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.330430026280476,
+        8.388649562747306
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "5d69b0bd750272e20209fc5f23062f78c49c1590b9199f81e011e30a630bc62d",
+      "affine_fingerprint": "35ea5d41d7eaa8eba767378d84eb6031a280f454db03c6909722561be728d4f2",
+      "reflection_fingerprint": "b992e40b5589b637f08ba4fe169c16c2dc2c2882a6d9ea6c855bf9a1a2842455",
+      "sampled_array_fingerprint": "3ef4769556f95a77e04455d5f08cdd1de66b2037e609d5137553d44a68172715",
+      "x_sha256": "d0915dce9096e3dcb56406fec6bbf8864627cd24e2c3d8997493b0256c8a4aa6",
+      "V_sha256": "63dc4f0ee8bcca9ba4708e83fed0b89bdcc937b4986150cf0c8b46d516be6161",
+      "label_checksum": "7df190a79e5f75c614fd9fc4f658c0ab823cd51cd942d95c5fa5328ac2f2018b"
+    },
+    {
+      "category": "anharmonic_wells",
+      "group_id": "45233615b6533eb3bcd62d3a",
+      "augmentation_parent": "45233615b6533eb3bcd62d3a",
+      "family": "anharmonic_polynomial",
+      "parameters": {
+        "c2": 0.04980297983624041,
+        "shift": -0.5730051025748253,
+        "c4": 0.0038376659788191317,
+        "c3": 0.0012397368773818017
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.809746692363483,
+        7.528333680161612
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "3c338fcb0d05e3fd76d3ada04c218f745f8b3fff8736a97bf3b4ee981bb1402a",
+      "affine_fingerprint": "adc505236582afa0669772141e1dc8cc0935ffe69a867233949cdf385034bbf1",
+      "reflection_fingerprint": "adc505236582afa0669772141e1dc8cc0935ffe69a867233949cdf385034bbf1",
+      "sampled_array_fingerprint": "7d67ba420b757c51d08e8aa8e71b682bbe17a977bae1d5a657340b114b13277d",
+      "x_sha256": "db6fb5a1bcddb17fd4baae98dfaa5fd51b9ce218b7aebc6ca4080088770805ef",
+      "V_sha256": "f300f6c49f1dbdc956707928a2a46ed085b9e5e1155121676134e66b7bb417db",
+      "label_checksum": "7652f8d3ff2d3718429a9984c4fc5dd8084a5b4a7348faf5d3fc6b89ee4fc568"
+    },
+    {
+      "category": "anharmonic_wells",
+      "group_id": "1278fa759ebce56d000288cc",
+      "augmentation_parent": "1278fa759ebce56d000288cc",
+      "family": "anharmonic_polynomial",
+      "parameters": {
+        "c2": 0.05651337210554629,
+        "shift": 0.4902165699750185,
+        "c4": 0.001082531701773405,
+        "c3": -0.004761243134737015
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.35313781480086,
+        10.75935146361202
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "cb9a5ee58981f27ed69fe92be7e4fe186146628b18bd51f92476fb304237c98b",
+      "affine_fingerprint": "5211877fa7779d51bba13705e2ff4e8183f08e0b363d13a05615a4d1a3513524",
+      "reflection_fingerprint": "5211877fa7779d51bba13705e2ff4e8183f08e0b363d13a05615a4d1a3513524",
+      "sampled_array_fingerprint": "5fd54d84886e3046ba04c55b9bd9976cbdaf8d208987df0f7a663e2755545999",
+      "x_sha256": "8bfec823ffc633661263b1c9f3c365b0075106eb26d84df8fb62df03fe1cbff6",
+      "V_sha256": "7d603303e0fd28be1dbf56b24bed1fac809085a66dc29b7da1ff9656fb8bd823",
+      "label_checksum": "d1995c5d9549e16d7e246795fe39a0f3579efe4ec99c2e1e963bd9b184d23925"
+    },
+    {
+      "category": "anharmonic_wells",
+      "group_id": "ff65d0903aeb651ece008abb",
+      "augmentation_parent": "ff65d0903aeb651ece008abb",
+      "family": "anharmonic_polynomial",
+      "parameters": {
+        "c2": 0.0726838347548619,
+        "shift": 0.5060954000800848,
+        "c4": 0.004128981858491898,
+        "c3": -0.005017515275627374
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.202534616613381,
+        8.68974191809894
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "69010893203879882ffec580c9868ffff14cbc9031c20c6ed9a5672dac5f01cf",
+      "affine_fingerprint": "756d2ef744164b178b966d9fcc07f543f699d59d1231292bd6de536f0af5ae28",
+      "reflection_fingerprint": "e9080a27f4c3aff015159fa0b7daca4cc0327158aed9f969c63fcc8192a79dd3",
+      "sampled_array_fingerprint": "b99af44fe9c5be5e0b94c351ffbcf887afd0a2b113c977930314aa2795199723",
+      "x_sha256": "847cc63473c82e2e971099879229f7e8846d8615f55dee9cf288ba2d56a9733d",
+      "V_sha256": "27c4cff99663513226a6a9fff6604c114398e81b0f20b4359ea143e3fd13e25a",
+      "label_checksum": "2dac77cd0ccc60c9c01f036bde8c5fc700fa5e891c67195af4cc068d03d62b93"
+    },
+    {
+      "category": "anharmonic_wells",
+      "group_id": "262548d48f9855686b73a53c",
+      "augmentation_parent": "262548d48f9855686b73a53c",
+      "family": "anharmonic_polynomial",
+      "parameters": {
+        "c2": 0.052184846200980246,
+        "shift": -0.15407287143170834,
+        "c4": 0.004685507502406835,
+        "c3": -0.0028215351775288584
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.963007837264404,
+        7.906274926333002
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "3c618441e9b0ebbbc0a2b09a72425fe0ce1ebcf7bff5c6463d51c9edd02b7de1",
+      "affine_fingerprint": "421dfdd177375b7804faddf0a991d8127effe3a141fb8ce171a4445955b6a383",
+      "reflection_fingerprint": "680ed9e2e6942e4d850f644ad7cb2c5a9d16f7d437e3f3e288ed698f50c8e477",
+      "sampled_array_fingerprint": "f29ac962f369722200282984e69450b87dd6050f6c7c502757a86c31c84189f0",
+      "x_sha256": "e8e52e308c00b8ff756ed1029ab55359405e1a2e503532364ae848100c48e5ee",
+      "V_sha256": "b4ea0e12dc0408a1d480d421d5ec125213f64c4f973bee91a5237f16ce9e5477",
+      "label_checksum": "6ba675c7e068b873a79a41ae232b63f431f2cb79420da881f1e427210724ff73"
+    }
+  ],
+  "asymmetric_wells": [
+    {
+      "category": "asymmetric_wells",
+      "group_id": "a56603e985e5d774b014fa6f",
+      "augmentation_parent": "a56603e985e5d774b014fa6f",
+      "family": "asymmetric_well",
+      "parameters": {
+        "c2": 0.07405,
+        "shift": 0.6599999999999999,
+        "tilt": 0.16499999999999998,
+        "soft": 1.83
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        7.748365480491091
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "b7a7c44165088a39a4e8ba38b90ca36010ff13e22de43abb5f871e66f0064dd8",
+      "affine_fingerprint": "3d3556ccc494a6493e98236275cba1c29d9c095dbf3a33e95243ce297aafaeab",
+      "reflection_fingerprint": "6cc6f73fdd2be9c1fb40b343cc5b6326c4921d1dbcd7151fcd0a0e0e3462a368",
+      "sampled_array_fingerprint": "64a19b8627b2f3c8e9c11c8cd1901c3b7eca677f8002806e549cebb025630647",
+      "x_sha256": "c5ddd3db464dec321abdfaa513022943c1ec2bdc150e6b50ceefdef4689aa5fe",
+      "V_sha256": "35830f4ae346f7eb1fcc51c276facfa0cdb8257fde694e0fff954c43268efb7a",
+      "label_checksum": "a89c46e7856909b657cfe0ac6ddaee22f42f239d2176b21ed20eea832919496c"
+    }
+  ],
+  "double_wells": [
+    {
+      "category": "double_wells",
+      "group_id": "8f95f0be90038db465014511",
+      "augmentation_parent": "8f95f0be90038db465014511",
+      "family": "double_well",
+      "parameters": {
+        "a": 0.009690277323126793,
+        "b": 2.741385088860989,
+        "tilt": 0.03451915290206671
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.008079070634777,
+        7.934232273827519
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "0a279015f18e7bbdde4aa0ac3ca39a401c01433977cfec72929e467e3f340728",
+      "affine_fingerprint": "2dc7cf2cd187256b37cbfe2508d4bf4e5ba65bac1d86091676996433c50ff869",
+      "reflection_fingerprint": "b93a3ad78adfe2308e4566ac70252c0e0777d69564295a519d3e1b867cfb8723",
+      "sampled_array_fingerprint": "e598962fcdd859fa62c05556edbae9bcce1dab1643b537651d777282e717cb28",
+      "x_sha256": "e8586e7907bf6ad682773a31ae7f2b4e912edf742ebfa2b5f485b76eca754b33",
+      "V_sha256": "5964ae705cdf09c15e17ae87d5c5b886080b3cad634e887c62b1e3777561d454",
+      "label_checksum": "1fec03ff70eafc9618946307d0e6f718219025a913688ddbc579c1341ddfd5c5"
+    },
+    {
+      "category": "double_wells",
+      "group_id": "6826d82437b4e504b3b2803e",
+      "augmentation_parent": "6826d82437b4e504b3b2803e",
+      "family": "double_well",
+      "parameters": {
+        "a": 0.009262886323034764,
+        "b": 2.5542911395430568,
+        "tilt": 0.03827230632305145
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -7.973168795181082,
+        7.8880813152828955
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "ddf69d13cfd343a6cefa3406274ae980b110f999ffcc0fecb6d2d8a227c643e5",
+      "affine_fingerprint": "6db89a5bbd312f5112b07cc9115312927b5ea7a23e2341df6c6dc9d510958889",
+      "reflection_fingerprint": "6db89a5bbd312f5112b07cc9115312927b5ea7a23e2341df6c6dc9d510958889",
+      "sampled_array_fingerprint": "8b1261dc00ed4793528b3f1bb1cbdfb86d531c9d324e130930c6eb4e3e7a2766",
+      "x_sha256": "a11d34cad23b09d77c73fe73261f63b35a8b7852d85fa34da7dd284827b266ae",
+      "V_sha256": "15e5b6f1b3f7d42f5dbc44cb0a3d3596ea19d1d09454773a24f0e64830e1419a",
+      "label_checksum": "4cdeae8e5150e2e92c2a8f55b6a9533e0cd7c80badf820810753d747ae42a2a2"
+    },
+    {
+      "category": "double_wells",
+      "group_id": "41e384b776a85a8e45b9fabd",
+      "augmentation_parent": "41e384b776a85a8e45b9fabd",
+      "family": "double_well",
+      "parameters": {
+        "a": 0.007114677254110575,
+        "b": 2.389771769195795,
+        "tilt": 0.054760207608342173
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.238214962783449,
+        8.095223466544248
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "bffd3798d20cc27cb7d7283adc147eae1afe333d570efe3bf97fd45b0a49e5cc",
+      "affine_fingerprint": "c7efe24f07ca6bc54aaf142f12bad172bcaaa927fced271b94d77f777bd2ee52",
+      "reflection_fingerprint": "5ffea32fdcab55f73dda9b72f218b633196ab655a78516622f27e488dbb9c013",
+      "sampled_array_fingerprint": "1b0eea8d891bc3ac79f3e0191163c48410d5b32cf083189f9efdc8c51591ed86",
+      "x_sha256": "97300ba58fac03ad8fdcefb808e23ea17e741fb8bf8db2de23b1803b0af5082c",
+      "V_sha256": "2d5af21764756a0464c7b4e1102a3fbb642f87e5078e3d79d58939b1d4fee9fe",
+      "label_checksum": "755ffd2467c94546c39057131ef9f7c2f339bd74e3084ff68e1a9b07a5737337"
+    },
+    {
+      "category": "double_wells",
+      "group_id": "bb6df855193efa2ea433f72d",
+      "augmentation_parent": "bb6df855193efa2ea433f72d",
+      "family": "double_well",
+      "parameters": {
+        "a": 0.00793215909227729,
+        "b": 2.902683732658625,
+        "tilt": 0.07091673035174609
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.370461901676368,
+        8.192430969280608
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "5f92e15aab18ffec81b785ee70d36dbe3400d1f94171472a740ee76a93abbb33",
+      "affine_fingerprint": "06462163f73e9399a3070b746286504e9092433a6aa7461a0b3c6e359a4f6eb2",
+      "reflection_fingerprint": "06462163f73e9399a3070b746286504e9092433a6aa7461a0b3c6e359a4f6eb2",
+      "sampled_array_fingerprint": "910ded6f5203fe4bab32908bc37e6cd9caa7845d3769da46bfb09f5eba2fff7d",
+      "x_sha256": "f0d298622e302fcd119baaf2a26359d3384b29444b0c8c62aee74ad01d39db53",
+      "V_sha256": "d3b06503ff208d0b7cb763939e5f9a40bfc40d370c5778cf4600848c7e2c779c",
+      "label_checksum": "82aa22b7811e14df7ac580179786ea925fa37bfb4bd258b4c2b17a2b30e36cbb"
+    },
+    {
+      "category": "double_wells",
+      "group_id": "1c2fec4200cb9b3f4ef06f03",
+      "augmentation_parent": "1c2fec4200cb9b3f4ef06f03",
+      "family": "double_well",
+      "parameters": {
+        "a": 0.007363695211708546,
+        "b": 2.864060324430466,
+        "tilt": -0.04095088187605143
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.291055699599843,
+        8.394654308503808
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "62237aa2d7fbff68c7fcdc269568004a4d415c88a3d90905391cc0a8a71d32fb",
+      "affine_fingerprint": "c3c93add28a99c4687f2262e247dcc240900dd54aad12f62d75139443acf315b",
+      "reflection_fingerprint": "c3c93add28a99c4687f2262e247dcc240900dd54aad12f62d75139443acf315b",
+      "sampled_array_fingerprint": "155228638bb26a38e1ddeb50f8734c08984b701529d58971471a642dd2b77c7c",
+      "x_sha256": "8cf20dab5159c937e98b312441919c92d0a0898129adfc1b16618c7ba765dea6",
+      "V_sha256": "0bcdee8e56367eec99152b91508092332d3d1a3ffcac477dbcf246ffbb52f9a8",
+      "label_checksum": "6b26127ea5277601e80f2bdab0d9c6540090c380d18b95d16c3cfa98dac1cefe"
+    }
+  ],
+  "multiwell_potentials": [
+    {
+      "category": "multiwell_potentials",
+      "group_id": "14664e4cde1b5109ae0fc628",
+      "augmentation_parent": "14664e4cde1b5109ae0fc628",
+      "family": "multiwell",
+      "parameters": {
+        "c2": 0.07405,
+        "shift": 0.6599999999999999,
+        "amps": [
+          2.6399999999999997,
+          1.3199999999999998,
+          0.8799999999999999,
+          0.6599999999999999
+        ],
+        "centers": [
+          -6.0,
+          -2.0,
+          2.0,
+          6.0
+        ],
+        "width": 1.63
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -8.434165881453852,
+        12.0
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "2b4eef6a40b1e07a435892cc552c84713945739217882e5667da5aa79897a9d2",
+      "affine_fingerprint": "de3a3cbddc38831f78786d52614a08f77ef2fe4b0f8b343719f6a9c2e27a5615",
+      "reflection_fingerprint": "de3a3cbddc38831f78786d52614a08f77ef2fe4b0f8b343719f6a9c2e27a5615",
+      "sampled_array_fingerprint": "6e77dac380e71d71ea1396cb22a77eb23d3e283b5bb374b2fadc7c4ae6888908",
+      "x_sha256": "5fe4145e2eea5df2669f3b63cc707848c6ea289c4107ec02ec1f562a3f6e1341",
+      "V_sha256": "915b5ad53cc24907b5b0da028b54d6304f90f7a025f4074f386f597d1bd61016",
+      "label_checksum": "3acfb1aac0eae8288cd54ff7b48df2b84b37a5679b06b9c1a87cd1b8309dad2b"
+    }
+  ],
+  "barriers": [
+    {
+      "category": "barriers",
+      "group_id": "50ab3eed117b7efb0be8494f",
+      "augmentation_parent": "50ab3eed117b7efb0be8494f",
+      "family": "single_barrier",
+      "parameters": {
+        "c2": 0.05351087677758187,
+        "shift": 0.3306952901184559,
+        "amp": 1.0100505594164133,
+        "center": 2.460797220468521,
+        "width": 0.798841180279851
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.252400267502937,
+        11.91541030777553
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "d8020e77c59a3cb53a4fbb04975be080dd16d9288660f577aa014a4863b34e3e",
+      "affine_fingerprint": "20d8dec2180d13b9affcad7afbe6dd0d2100d321f8599d1346b00a5f57cda9d8",
+      "reflection_fingerprint": "a40e27b41dbe718de050c27d477466074a69cc70ea6cfefd39dce78577106351",
+      "sampled_array_fingerprint": "3a594524308b71495264bd04912ea37d8557a2ba48e995938d5b89710f940c87",
+      "x_sha256": "67edbdd510b384323375ef139e489d41b8c3213097c71898db9b0e4f6f4b736f",
+      "V_sha256": "ee1322fb60d50911f6856f141acb10db5b4adfed38bccecddd9efd90e5514db1",
+      "label_checksum": "cd95b187342ab11d9c385e247da032c74b68ef3981a2119a99be72c97d1b1da8"
+    },
+    {
+      "category": "barriers",
+      "group_id": "158a4779dc745c3ea460257a",
+      "augmentation_parent": "158a4779dc745c3ea460257a",
+      "family": "single_barrier",
+      "parameters": {
+        "c2": 0.06030183270107955,
+        "shift": -0.5289601776748896,
+        "amp": 2.8073532190173864,
+        "center": 0.08537099696695805,
+        "width": 0.7784182345494628
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        10.965390218790358
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "5a5651025e5596718b7c9020bf24096680d00370468fb65db40117bad223bd9c",
+      "affine_fingerprint": "0265fc34877ff09b5eb8b9536ca27174f9006cd16b923cfda944b22f79f20a77",
+      "reflection_fingerprint": "318268b7789ac53cd56f75f2372cf3506f40628a0344876a406e8dbe6b7f0d4c",
+      "sampled_array_fingerprint": "3423caeed48fef0b9e6e0fd8bd3481f70c54dbbaa990e1d8224ebc0cb35f0e27",
+      "x_sha256": "555641f16c678c45ea1e401a9391e5d2bd84d43ff2ae639dc542e7c9349b7e98",
+      "V_sha256": "6edb7aaab2e86a42d108e32b79d725aa6c52239ac2cee99450a39c6bfc0cacd9",
+      "label_checksum": "c51b6019bdc3af1431c5edb6d38aa848286ace0e565a0fc585127b6fac7e894a"
+    },
+    {
+      "category": "barriers",
+      "group_id": "81663d66de447d09f77df644",
+      "augmentation_parent": "81663d66de447d09f77df644",
+      "family": "single_barrier",
+      "parameters": {
+        "c2": 0.07927017010748386,
+        "shift": -0.6180021427571774,
+        "amp": 2.1300078872591257,
+        "center": 2.9475194960832596,
+        "width": 0.649267160333693
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.231807488477497,
+        9.998286762127112
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "8c1d06c48a189a5a978c382fe0449751ea00d1f26d7709fd9e1b500ed17a980e",
+      "affine_fingerprint": "12f06687c42760384312e75b1fc2f32bdeff5514a36d6be9be19a3b743de4402",
+      "reflection_fingerprint": "1c7d212d1b4a46cdcb280d31aecf5248236b92e1a8879fafa9f66e5735fc6b9c",
+      "sampled_array_fingerprint": "456fca895bb6fe767bc199b0e7a9cf310124f4bd83deb8901b9b2e5295c3c5ca",
+      "x_sha256": "a99c9d7b2cfbc2ec6fa90d15c78164c98cdf5a7a97b3bb3d1d02860461a9ae2c",
+      "V_sha256": "4dd1e727de55a8280a8c2c7aaa57f49f173c74955b2a0b0a83ff512bc6a47825",
+      "label_checksum": "8aa1f821535d8dc9cca14531cca2fea45500748fb732fcc21e48a2b8fac53acc"
+    },
+    {
+      "category": "barriers",
+      "group_id": "a58357b123947ead45fca1f3",
+      "augmentation_parent": "a58357b123947ead45fca1f3",
+      "family": "single_barrier",
+      "parameters": {
+        "c2": 0.05905883771833032,
+        "shift": 0.17752563208341599,
+        "amp": 1.7001690790057182,
+        "center": -2.786189692094922,
+        "width": 1.2626299764961004
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -11.379043724513135,
+        11.736196213815504
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "417e4b3e3d3ed6b0bdc09d69c32f55adc7316595fee410026c33709aa53460f1",
+      "affine_fingerprint": "a74d8c6002739b777c9955e1a7aa37e5e5bc1f7c94fa2304174f2349843c3d9d",
+      "reflection_fingerprint": "a74d8c6002739b777c9955e1a7aa37e5e5bc1f7c94fa2304174f2349843c3d9d",
+      "sampled_array_fingerprint": "3ed4f1d7c276572cc46ca32466db311c36bb0751bf2eecfd6533c2cda8aa7244",
+      "x_sha256": "dc75d9413fd7f5c8d1ba25c105221360ed49a2866739c2551794494c7a306467",
+      "V_sha256": "52b26b5d35a4a59702df47edb0d59ef33ca04774450d224eadfa4efcaf905b03",
+      "label_checksum": "9fa14169b36c52264ab289ed4199bedbe7fe4b8c475ab3714b98dba2ff46f9e4"
+    },
+    {
+      "category": "barriers",
+      "group_id": "5f651a741fe361d3d807f0b5",
+      "augmentation_parent": "5f651a741fe361d3d807f0b5",
+      "family": "single_barrier",
+      "parameters": {
+        "c2": 0.055982213700190187,
+        "shift": -0.8622992299497128,
+        "amp": 1.260489208623767,
+        "center": -1.7581178862601519,
+        "width": 1.4201488513499498
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -12.0,
+        10.76051496842096
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "adc392351fce1169d401c61db6ae00cf71cff8c61f40abdb28ce3a8f6a86a435",
+      "affine_fingerprint": "c1380a6b924a2a9e479ebf4f15a8d7487e4567d7afe101a2f3c9a2dd5e4e354d",
+      "reflection_fingerprint": "a787d68d0d330752b885f7da56366a95fb8e1f811f9e37372fe354703806e749",
+      "sampled_array_fingerprint": "8933ffcc8ff6c28df8e6a3264910be173824c57e2f829ce52315c8bd2d2b4915",
+      "x_sha256": "e0b7a05021965b2ffed373e87b4f4bcb8df53343f8b10263d3ec2faa3620061d",
+      "V_sha256": "976902a450109e781d2dd6044a080d52d3adef6df5f45a841c0f6971278150b1",
+      "label_checksum": "c05a2faf93f7a0805fa15be457d0f6dbc4469f274c947380c5c6caf24a86b06f"
+    }
+  ],
+  "multiple_barriers": [
+    {
+      "category": "multiple_barriers",
+      "group_id": "ca14acec471b32d231155e47",
+      "augmentation_parent": "ca14acec471b32d231155e47",
+      "family": "multiple_barriers",
+      "parameters": {
+        "c2": 0.07405,
+        "shift": 0.6599999999999999,
+        "amps": [
+          2.045,
+          2.045
+        ],
+        "centers": [
+          -2.17,
+          2.17
+        ],
+        "width": 1.33
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.700614507025152,
+        12.0
+      ],
+      "domain_factor_from_parent": null,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "faef950cc7112f75ab64b81bd87fa8552a8297539a92ddce945c50ed81a1b1d9",
+      "affine_fingerprint": "c6a383266475164dc116f2fe5e03f3bc6839ebb0941f00eb9918a6c052c23be1",
+      "reflection_fingerprint": "c77d69c295786d49edebbf0d4bdb0b596bdfc27d177cd6f3e927ed4df542546a",
+      "sampled_array_fingerprint": "877bff1c7723926607bacbe9d90542a43569ce3fd2f97ff0375f4c7bcf5576dd",
+      "x_sha256": "ff7ae315fffd7f0ccb7ee1b19107eca575d42914ecf7d61fab46ab300098b5b7",
+      "V_sha256": "40b1bfb348a466244460475d5b622dfbca553aaf8c46f4f9f2f900c6c5af59b1",
+      "label_checksum": "edd80a6512f26b1081ea7589c437bad1e55b4ac47035c184956418d331ab5cad"
+    }
+  ],
+  "localized_defects": [
+    {
+      "category": "localized_defects",
+      "group_id": "eb0f368bf04a69bbdccb4786",
+      "augmentation_parent": "eb0f368bf04a69bbdccb4786",
+      "family": "localized_defect",
+      "parameters": {
+        "c2": 0.04755857424344867,
+        "shift": 0.7911014277487993,
+        "amp": -3.200857188552618,
+        "center": -1.5901788342744112,
+        "width": 0.28042630925774575
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.845592240093584,
+        12.0
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "4d6b0a29c43b1431682c3f74fbd46d36106f2e0db3916f664dd1fd9211e7b628",
+      "affine_fingerprint": "979d41e4b4e7d393aac20229dfcd4c19f748e5ec065e4b12878ac3c5e3f41611",
+      "reflection_fingerprint": "3251bba3c95ea9fa6f68a4b40b1410b26854c6574c47c58e23ef2843ad70322f",
+      "sampled_array_fingerprint": "418f7b71075260db21da18e350d455ac97444859f33050af49136a5a9ba0f4ce",
+      "x_sha256": "1c51aeec4f1baedf64318b08f54db57bb2675b184a6946690b772edaa60b10cb",
+      "V_sha256": "b40a44fc4725f4cf68b3291a12c19b09b4a1e0dee3c7f69d7b8934a41456169e",
+      "label_checksum": "e429699d8ceaa72bb5871a81a7a9194289ae33deb38844996f342e24f626f214"
+    },
+    {
+      "category": "localized_defects",
+      "group_id": "28855a5d3a96a8718654d4c6",
+      "augmentation_parent": "28855a5d3a96a8718654d4c6",
+      "family": "localized_defect",
+      "parameters": {
+        "c2": 0.07482710957527161,
+        "shift": -0.08938409201800823,
+        "amp": -2.340318124741316,
+        "center": 1.1122455429285765,
+        "width": 0.3237472891807556
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.51245090690019,
+        10.33218060225102
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "cb31caa19082a09e83654dcf0dc07c14885b811224423014dc048588e8f391a0",
+      "affine_fingerprint": "ce3c617af8653011c98e6f81420b373031981e9b5d0fbb9416bfe8fa31f40e43",
+      "reflection_fingerprint": "74cdfc9fad666f171e7b6b4f04a6dd7c9133c436c4ad61b5f82b83d9b581fb6f",
+      "sampled_array_fingerprint": "6c86be546cf7e6b838c8a250ebef6b71f90b7e2300d3abbc590d83aa4840a520",
+      "x_sha256": "11d956aca6cce3931a824cabfc3f7b99e0b348a170403bdff5984a42f3f532c7",
+      "V_sha256": "603ac07c6834e3da08e73b07028e57cde64d9d05ed9adab6724f3ce0759f2f64",
+      "label_checksum": "f548fbc6f91b86cecc6bd53b44bbd9ba3052934aa94d2ab5b34f4ee13d4616d8"
+    },
+    {
+      "category": "localized_defects",
+      "group_id": "da93b664b6d9fc82b9722a72",
+      "augmentation_parent": "da93b664b6d9fc82b9722a72",
+      "family": "localized_defect",
+      "parameters": {
+        "c2": 0.06430912112351507,
+        "shift": -0.4239554703235626,
+        "amp": -5.578713443130255,
+        "center": -1.0542181134223938,
+        "width": 0.6962889063172042
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.829180772751672,
+        9.984310754492734
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "f24e6afc681a129c3affa0004fcf552150082d96630c3847ce7f7a4afac0c744",
+      "affine_fingerprint": "69a47c59ce714235a1f3d296f9957486375fc5df2b295549d9999a919b94ccb2",
+      "reflection_fingerprint": "9ede977e189cb2e5a93293f05dd94cbfee0991dd24e794e86df423f6c458d428",
+      "sampled_array_fingerprint": "e4f22cbfe2c9c2cb61f587d84470305b4b4f19825041f818930c15dc64c2fd8a",
+      "x_sha256": "b96d778eabe703f9fc075f804d0087bde178b5215ecab7bc35f8cb7b98fa1989",
+      "V_sha256": "807e474e5c89c8a19aecdf5a7a94339775e4d488f0c4c8c541af8c4e0aac0ff9",
+      "label_checksum": "39956b890c18611d30ce7ee7e53c3f37912860cc82d6ad916d340e5a43174560"
+    },
+    {
+      "category": "localized_defects",
+      "group_id": "0e16aa23aa1ffc156edf6b60",
+      "augmentation_parent": "0e16aa23aa1ffc156edf6b60",
+      "family": "localized_defect",
+      "parameters": {
+        "c2": 0.06906658799853176,
+        "shift": 0.6407052762806416,
+        "amp": -5.038316532969475,
+        "center": 1.4139815457165241,
+        "width": 0.5143934896215796
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -9.758344139403762,
+        11.037577024756976
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 257,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "ee2b4b95e846e8cf5a8cacafe811318073ad9681c8f69f4a1e95eb28e997fd9a",
+      "affine_fingerprint": "17036f19ba6067c4093081092f3f564b8d2355b0e2d51e3f734808317393dfbd",
+      "reflection_fingerprint": "033b2c26b200675353a430d61d1b068cbc709c7255e833c9d59d89d41ebf92a6",
+      "sampled_array_fingerprint": "63ced16f675ae82994ef7679d5936456c0adb2d2d22f2176c6efeb95b9677550",
+      "x_sha256": "76fe8c252ee79a1aaa56be65ab9666b2c1ae4613cf06187d5da0208878b88b84",
+      "V_sha256": "e2c7e5826c228d0c8f5d891d1f5cf49e7f504220074748c60467846053a64fc9",
+      "label_checksum": "0053d27eef4e8ba25d1d247b8c17daa539af6d211ca43ee547364e2a64a702a0"
+    },
+    {
+      "category": "localized_defects",
+      "group_id": "6245bccdbf00799ca89a1193",
+      "augmentation_parent": "6245bccdbf00799ca89a1193",
+      "family": "localized_defect",
+      "parameters": {
+        "c2": 0.07408708007540554,
+        "shift": 0.4339376911520958,
+        "amp": 3.1680222004652023,
+        "center": -1.8041978627443314,
+        "width": 0.6743824969045817
+      },
+      "geometry": "truncated_line",
+      "boundary_condition": "dirichlet",
+      "domain": [
+        -10.48839846917678,
+        11.356439717067307
+      ],
+      "domain_factor_from_parent": 1.0,
+      "grid_nodes": 129,
+      "grid_variant": null,
+      "constant_shift_from_parent": null,
+      "continuum_threshold": null,
+      "valid_states": 11,
+      "potential_fingerprint": "60fa4a42c83e8bf3f776b750bed1ddafb4ddbdab9611cde5da7368a7b4b065b5",
+      "affine_fingerprint": "f199c318e92b346028f4e33cf884f845b21d3520cf905ee5a31bd06a54c818f9",
+      "reflection_fingerprint": "f199c318e92b346028f4e33cf884f845b21d3520cf905ee5a31bd06a54c818f9",
+      "sampled_array_fingerprint": "7d2c22dc37d3e3dd95d2bdb0ebd0c957d70882ef07ac494f45de59cbf8e09675",
+      "x_sha256": "565d97c93d57834f1e4a4b7e3102da4b4b46dffeff58ce8315ed56fbfc10cb7c",
+      "V_sha256": "736f0747c56fcedff3a6a5f6675739d6ee9ff0d4ad7c38c64a257e38f4a757a6",
+      "label_checksum": "2a7bc494153317c2cb4ed2318f58b06db3be486d93577562537040172c984da9"
+    }
+  ]
+}

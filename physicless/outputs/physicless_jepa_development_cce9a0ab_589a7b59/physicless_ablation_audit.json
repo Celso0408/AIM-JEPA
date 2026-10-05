@@ -1,0 +1,12 @@
+{
+  "run": "physicless_jepa_quick_cce9a0ab_589a7b59",
+  "status": "PASS",
+  "same_fem_solver": "mapped-p1-fem-gl4-v3-bound-state-validation",
+  "same_split_as_available_baseline": true,
+  "split_disjoint": true,
+  "target_free_inference": true,
+  "checkpoint_integrity": true,
+  "finite_metrics": true,
+  "removed_training_losses_absent": true,
+  "no_ritz_or_refinement": true
+}

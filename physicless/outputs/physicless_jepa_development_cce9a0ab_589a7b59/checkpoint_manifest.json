@@ -1,0 +1,42 @@
+{
+  "normalization_hash": "5082f68f0f0743ffa5b40a5a9e45f77bbdb1ea2dce53c0fa3c710278fb1a42a9",
+  "checkpoints": {
+    "best.pt": {
+      "role": "validation_best",
+      "file_sha256": "f68f55035dc392c0aba460bec08f61cbf9b0e945cdd44477f5dff368fa6ffe2c",
+      "model_state_sha256": "9ffafc0d249bffee4b495f59a2eb80cff96be528ccb0aaa9e7f068b08eaed86f",
+      "state_origin": {
+        "stage": "G_joint_finetune",
+        "stage_epoch": 0,
+        "global_step": 24,
+        "global_epoch": 6,
+        "stage_update": 4,
+        "history_row_index": 5,
+        "selection": "thresholded_full_state_validation_selection"
+      }
+    },
+    "last.pt": {
+      "role": "literal_last",
+      "file_sha256": "93cc40969d41129acfc72f567da9324acd010a6789fc4dea675316e1ebeea697",
+      "model_state_sha256": "9ffafc0d249bffee4b495f59a2eb80cff96be528ccb0aaa9e7f068b08eaed86f",
+      "state_origin": {
+        "stage": "G_joint_finetune",
+        "stage_epoch": 0,
+        "global_step": 24,
+        "global_epoch": 6,
+        "stage_update": 4,
+        "history_row_index": 5,
+        "selection": "literal_last_optimizer_update_before_stage_rollback"
+      }
+    },
+    "solution_autoencoder.pt": {
+      "role": "solution_autoencoder_best",
+      "file_sha256": "77f4e69cd868be0b5560511e9628e7161f923c605c0afac70e5652515ad6441d",
+      "model_state_sha256": "8e65f3f2688541f199ad95aaf9eaa1effd9da9adc5adb5d9fce79c932dc7aad8",
+      "state_origin": {
+        "stage": "B_solution_autoencoder",
+        "stage_epoch": 7
+      }
+    }
+  }
+}

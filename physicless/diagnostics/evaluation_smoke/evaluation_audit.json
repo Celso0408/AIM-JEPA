@@ -1,0 +1,32 @@
+{
+  "mode": "QUICK",
+  "route": "direct_unconstrained",
+  "id_hamiltonians": 13,
+  "id_states": 143,
+  "ood_categories": [
+    "anharmonic_wells",
+    "asymmetric_wells",
+    "barriers",
+    "changed_domain_same_physical_operator",
+    "constant_potential_shift",
+    "controlled_smooth_perturbations",
+    "double_wells",
+    "joint_parameter_extrapolation",
+    "localized_defects",
+    "multiple_barriers",
+    "multiwell_potentials",
+    "near_continuum_states",
+    "nonuniform_resolution",
+    "random_smooth_potentials",
+    "seen_basis_reparameterization",
+    "single_parameter_extrapolation",
+    "unseen_analytical_functional_forms",
+    "valid_spatial_reflection",
+    "variable_uniform_resolution",
+    "within_range_unseen_parameter_interpolation"
+  ],
+  "target_free_forward": true,
+  "same_split_manifest_hash": "3c02a739ddb5d4161a2be8cab7310e750e9b80562fdb7f0f90f4832533447528",
+  "finite_core_metrics": true,
+  "no_ritz_or_refinement_route": true
+}

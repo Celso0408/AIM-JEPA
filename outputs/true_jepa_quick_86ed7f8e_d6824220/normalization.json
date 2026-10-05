@@ -1,0 +1,242 @@
+{
+  "dimensionless_U_scale": 2321.3531709823665,
+  "estimator": "hierarchical_equal-family_equal-hamiltonian_quadrature-weighted-quantile-v1",
+  "fit_split": "train",
+  "quantile": 0.75,
+  "hierarchy": "equal_family_equal_hamiltonian_quadrature_node_mass",
+  "convention": "t=(x-left)/L; U_input=(min(V,Vcap)-weighted_median(V))*L^2/kappa; Vcap from V-only Weyl proxy at 70%; epsilon=(E-gauge)*L^2/kappa",
+  "normalization_hash": "7e782149f0b4b997d89d53a20f0c1927099371e6df464e3052bcf48071a0a907",
+  "dimensionless_U_scale_audit": {
+    "estimator": "hierarchical_equal-family_equal-hamiltonian_quadrature-weighted-quantile-v1",
+    "fit_split": "train",
+    "quantile": 0.75,
+    "absolute_dimensionless_U": true,
+    "families": 27,
+    "hamiltonians": 54,
+    "total_assigned_mass": 1.0,
+    "family_statistics": [
+      {
+        "family": "anharmonic_polynomial",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2739.375009533139
+      },
+      {
+        "family": "asymmetric_well",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2367.381331319893
+      },
+      {
+        "family": "asymptotically_constant",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2326.730954784312
+      },
+      {
+        "family": "chebyshev_random",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2287.85696822166
+      },
+      {
+        "family": "composite_confining",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2809.742313142161
+      },
+      {
+        "family": "double_well",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 3417.4813164583916
+      },
+      {
+        "family": "fourier_random",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2294.4446596455564
+      },
+      {
+        "family": "gaussian_barrier",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2152.241370739772
+      },
+      {
+        "family": "gaussian_random_field",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2301.1531452887584
+      },
+      {
+        "family": "gaussian_well",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2578.715834330165
+      },
+      {
+        "family": "half_harmonic",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2318.2825492866004
+      },
+      {
+        "family": "harmonic",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2268.8064580193045
+      },
+      {
+        "family": "harmonic_compact",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2197.1495159221918
+      },
+      {
+        "family": "infinite_box",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 0.0
+      },
+      {
+        "family": "kratzer",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2650.7400694016746
+      },
+      {
+        "family": "localized_defect",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2631.864267764727
+      },
+      {
+        "family": "morse",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2166.509180289936
+      },
+      {
+        "family": "multiple_barriers",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2574.2838689451564
+      },
+      {
+        "family": "multiwell",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2857.1931495965923
+      },
+      {
+        "family": "poschl_h",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2470.6246831378135
+      },
+      {
+        "family": "poschl_t",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 168.18416259549588
+      },
+      {
+        "family": "procedural_composite",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2963.852901507173
+      },
+      {
+        "family": "radial_coulomb",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 1424.210699811173
+      },
+      {
+        "family": "radial_oscillator",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2464.910955959795
+      },
+      {
+        "family": "reflected_potential",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2555.547743611169
+      },
+      {
+        "family": "single_barrier",
+        "hamiltonians": 2,
+        "assigned_mass": 0.037037037037037035,
+        "weighted_abs_U_quantile": 2450.9321618206645
+      },
+      {
+        "family": "smooth_perturbed",
+        "hamiltonians": 2,
+        "assigned_mass": 0.03703703703703704,
+        "weighted_abs_U_quantile": 2258.2152493340195
+      }
+    ],
+    "hamiltonian_assigned_masses": {
+      "29a3985d0b8c448fd3d9c9f4": 0.018518518518518517,
+      "27255fd038c4523d298870ad": 0.018518518518518517,
+      "487644a7da6a1b2af46e7a4f": 0.018518518518518517,
+      "23f18d0fecfd161f335e848f": 0.018518518518518517,
+      "420ab18ba97c730c11bc06d5": 0.018518518518518517,
+      "0267db3440c5adca80d4d099": 0.018518518518518517,
+      "cedc133a5a138e433f8ee97b": 0.018518518518518517,
+      "fdb8fdf4a851fca136f46e86": 0.018518518518518517,
+      "da083699b9851113a2d42e1b": 0.018518518518518517,
+      "2cc430c128e823850c4c1223": 0.018518518518518517,
+      "c484352c7d6775fd0913eca5": 0.018518518518518517,
+      "564dcd463b0547db83a50d6f": 0.018518518518518517,
+      "426c655124472a9150bdff63": 0.018518518518518517,
+      "ad2b9610606ba4437b564242": 0.018518518518518517,
+      "14c5ea0be9b54e81367cf4a9": 0.018518518518518517,
+      "93471e5319e464ee22746423": 0.018518518518518517,
+      "13f12eff29edb0c8a52fa91b": 0.018518518518518517,
+      "69dfc5a605eb4251ec626b1d": 0.018518518518518517,
+      "4ff5c6f30f9f0965db57b28f": 0.018518518518518517,
+      "8070cabd8379b6f8b809a15c": 0.018518518518518517,
+      "e830b5f9f34670cfb16b850d": 0.018518518518518517,
+      "162126a16803d72072690eaa": 0.018518518518518517,
+      "cec36658ac8565d46bd255fa": 0.018518518518518517,
+      "7183f46ae4f6809b4a1cca2e": 0.018518518518518517,
+      "2b7b19457edea386e4683870": 0.018518518518518517,
+      "cc9e1528709faf771cc46f07": 0.018518518518518517,
+      "fd8d043515dc06ac2b014b2c": 0.018518518518518517,
+      "dea2f27c778acfa337dbe49a": 0.018518518518518517,
+      "464e63df9f2d99e5ce6b929d": 0.01851851851851852,
+      "8a8ee8193efc9d9a5b6d1211": 0.018518518518518517,
+      "43e201503e7666068ed6213c": 0.018518518518518517,
+      "e1119b1bd7959ed1c9eba23b": 0.018518518518518517,
+      "34d615fc8e4289164d554017": 0.018518518518518517,
+      "64ec82b41315f1f02b8ab88c": 0.018518518518518517,
+      "faeb700e92c34791792f08b9": 0.018518518518518517,
+      "d62e9d5be2789dbb7eb1154d": 0.018518518518518517,
+      "d2ae381416e8035414225fcf": 0.018518518518518517,
+      "489e916b319c630cf2591405": 0.018518518518518517,
+      "bde19aec6b730e424e9ed4da": 0.018518518518518517,
+      "05e0ced05a4438041fa6b284": 0.018518518518518517,
+      "46fa9383f6d1d06ebea1247d": 0.018518518518518517,
+      "59f95cefab35d35d9c096812": 0.018518518518518517,
+      "490d6e0aa1d663bcca6480f3": 0.018518518518518517,
+      "1831e9f38bbba2a0ca64be2d": 0.018518518518518517,
+      "b058b3af0541f532568d06d2": 0.018518518518518517,
+      "41899d2df9c8edac12f02fbd": 0.018518518518518517,
+      "e17d46041d2480af76206bb9": 0.018518518518518517,
+      "9549789e5819c1d9fa42d519": 0.018518518518518517,
+      "ee016d3fa180faff6e1afed9": 0.018518518518518517,
+      "b509266d717abde6296da5f0": 0.018518518518518517,
+      "7202672589a2c326a9611329": 0.018518518518518517,
+      "a805aba93f0a3770bc29a284": 0.018518518518518517,
+      "5f276e725104da82364f3719": 0.01851851851851852,
+      "4e9602af81d32ebec5bfed39": 0.018518518518518517
+    }
+  },
+  "legacy_diagnostics": {
+    "V_median": 0.688639723308877,
+    "V_scale": 4.77571099214345
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "experiment_name": "physicless_jepa_quick_cce9a0ab_589a7b59",
+  "run_mode": "QUICK",
+  "seed": 7,
+  "architecture_version": "psi-jepa-1d-physicless-direct-v1",
+  "source_sha256": "30ed1bcff0df9669d1e1f8902a7b845827645f83441b4540ef9f9c3a90913c9a",
+  "config_hash": "cce9a0ab7e39b835",
+  "code_hash": "589a7b591d933523",
+  "dataset_manifest_hash": "578413b49bc520c59322c40f74f73099edf7da5575ee494afc2c1522f29503ec",
+  "split_manifest_hash": "3c02a739ddb5d4161a2be8cab7310e750e9b80562fdb7f0f90f4832533447528",
+  "checkpoint_role": "validation_best",
+  "selected_stage": "G_joint_finetune",
+  "selected_epoch": 0,
+  "optimizer_updates": 24,
+  "parameter_count": 223893,
+  "trainable_parameter_count": 165693,
+  "id_hamiltonians": 13,
+  "ood_categories": 20,
+  "id_mean_fidelity": 0.0592055814202766,
+  "id_mean_independent_residual": 0.5870868267944841,
+  "id_raw_node_accuracy": 0.08391608391608392,
+  "id_mean_gram_error": 0.9993422687289683,
+  "reference_baselines": [
+    {
+      "run": "true_jepa_quick_3fbeb531_9ec5219d",
+      "split_manifest_hash": "3c02a739ddb5d4161a2be8cab7310e750e9b80562fdb7f0f90f4832533447528",
+      "identical_split": true
+    }
+  ],
+  "removed_principles": [
+    "Schrodinger residual training",
+    "Sturm nodal architecture and supervision",
+    "positive spectral gaps",
+    "state orthogonality constraint",
+    "Rayleigh-Ritz variational path"
+  ],
+  "retained_principles": [
+    "Dirichlet boundary",
+    "unit normalization",
+    "density",
+    "H1 supervision",
+    "tail localization",
+    "reflection consistency",
+    "spectral subspace supervision"
+  ],
+  "audit": "PASS"
+}

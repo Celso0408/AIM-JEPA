@@ -1,0 +1,15 @@
+{
+  "signature": "centered-shape_dimensionless-strength_kinetic-scale-v1",
+  "threshold": 0.0001,
+  "minimum_cross_split_distance": 0.0011972015092558408,
+  "closest_pair": {
+    "distance": 0.0011972015092558408,
+    "orientation": "direct",
+    "split_a": "val",
+    "group_id_a": "1a81792ed19ab72065ac96cd",
+    "family_a": "half_harmonic",
+    "split_b": "test",
+    "group_id_b": "db9f074dd689c702975c5188",
+    "family_b": "half_harmonic"
+  }
+}

@@ -1,0 +1,515 @@
+[
+  {
+    "file": "01_infinite_box.png",
+    "family": "infinite_box",
+    "parameters": {
+      "L": 11.499308526800588
+    },
+    "geometry": "finite_interval",
+    "domain": [
+      0.0,
+      11.499308526800588
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "02_harmonic.png",
+    "family": "harmonic",
+    "parameters": {
+      "omega": 0.804960169440043,
+      "x0": -0.2484873032594197
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -9.722451300865831,
+      9.225476694346991
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "03_half_harmonic.png",
+    "family": "half_harmonic",
+    "parameters": {
+      "omega": 1.265858340358914
+    },
+    "geometry": "half_line",
+    "domain": [
+      0.0,
+      10.665683508259596
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "04_morse.png",
+    "family": "morse",
+    "parameters": {
+      "a": 0.20505999455187032,
+      "D": 55.54605185970638,
+      "xe": 0.7863109280127528
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -8.213689071987247,
+      30.786310928012753
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "05_poschl_h.png",
+    "family": "poschl_h",
+    "parameters": {
+      "a": 0.2381891186995886,
+      "lambda": 14.44547245468552,
+      "x0": -0.2806422860464959
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -49.745096846854665,
+      49.18381227476168
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "06_poschl_t.png",
+    "family": "poschl_t",
+    "parameters": {
+      "a": 0.2021687164107949,
+      "A": 3.3049808739538964,
+      "B": 2.040212241934794
+    },
+    "geometry": "singular_interval",
+    "domain": [
+      0.0,
+      7.769729929941936
+    ],
+    "singular_boundaries": 2
+  },
+  {
+    "file": "07_radial_coulomb.png",
+    "family": "radial_coulomb",
+    "parameters": {
+      "Z": 1.975345695675606,
+      "ell": 1
+    },
+    "geometry": "radial_reduced",
+    "domain": [
+      0.0,
+      1020.5808554995684
+    ],
+    "singular_boundaries": 1
+  },
+  {
+    "file": "08_radial_oscillator.png",
+    "family": "radial_oscillator",
+    "parameters": {
+      "omega": 1.0681531231989583,
+      "ell": 1
+    },
+    "geometry": "radial_reduced",
+    "domain": [
+      0.0,
+      13.546006458750139
+    ],
+    "singular_boundaries": 1
+  },
+  {
+    "file": "09_kratzer.png",
+    "family": "kratzer",
+    "parameters": {
+      "D": 6.2200280052034245,
+      "re": 1.5763096377977828,
+      "ell": 2
+    },
+    "geometry": "radial_reduced",
+    "domain": [
+      0.0,
+      196.63813857978406
+    ],
+    "singular_boundaries": 1
+  },
+  {
+    "file": "10_anharmonic_polynomial.png",
+    "family": "anharmonic_polynomial",
+    "parameters": {
+      "c2": 0.07907118463444672,
+      "shift": -0.39105173780745717,
+      "c4": 0.0015669466396998825,
+      "c3": -0.005261907810853877
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "11_asymmetric_well.png",
+    "family": "asymmetric_well",
+    "parameters": {
+      "c2": 0.07999789055074939,
+      "shift": -0.01052545744301514,
+      "tilt": -0.2235688988460074,
+      "soft": 1.0132228075158873
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "12_double_well.png",
+    "family": "double_well",
+    "parameters": {
+      "a": 0.009018326908507335,
+      "b": 2.7903292707344787,
+      "tilt": -0.0427326897093101
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "13_multiwell.png",
+    "family": "multiwell",
+    "parameters": {
+      "c2": 0.055752899747187785,
+      "shift": -0.8287975640670626,
+      "amps": [
+        0.6618764413946607,
+        -1.2953654331228344,
+        -0.16860698033890534,
+        0.04189440350489093
+      ],
+      "centers": [
+        -6.0,
+        -2.0,
+        2.0,
+        6.0
+      ],
+      "width": 1.3073632091805263
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "14_single_barrier.png",
+    "family": "single_barrier",
+    "parameters": {
+      "c2": 0.058755964287390335,
+      "shift": -0.7044196073638713,
+      "amp": 2.010689669662847,
+      "center": -1.9210313262667622,
+      "width": 1.3659714689515834
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "15_multiple_barriers.png",
+    "family": "multiple_barriers",
+    "parameters": {
+      "c2": 0.06469933581078197,
+      "shift": -0.335402286061274,
+      "amps": [
+        2.0721700792146747,
+        1.6360823738896706
+      ],
+      "centers": [
+        -2.173986573971849,
+        2.4478336592066254
+      ],
+      "width": 1.3833087665220714
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "16_gaussian_well.png",
+    "family": "gaussian_well",
+    "parameters": {
+      "c2": 0.07974858241431221,
+      "shift": 0.28182932232184865,
+      "amp": -7.00298491101205,
+      "center": 0.6654257535373482,
+      "width": 1.996385410640858
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "17_gaussian_barrier.png",
+    "family": "gaussian_barrier",
+    "parameters": {
+      "c2": 0.07103835320961345,
+      "shift": 0.7075694431313033,
+      "amp": 2.572529086219738,
+      "center": 0.5277039188234864,
+      "width": 0.9550042137394624
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "18_localized_defect.png",
+    "family": "localized_defect",
+    "parameters": {
+      "c2": 0.06901090523913583,
+      "shift": -0.07885722096355141,
+      "amp": 1.478159501137784,
+      "center": 1.0734556238426056,
+      "width": 0.6904241489698622
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "19_harmonic_compact.png",
+    "family": "harmonic_compact",
+    "parameters": {
+      "c2": 0.07718678957189096,
+      "shift": 0.48373618310928435,
+      "amp": -1.669544970016833,
+      "center": -0.15774055384706243,
+      "radius": 2.250427116885925
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "20_fourier_random.png",
+    "family": "fourier_random",
+    "parameters": {
+      "c2": 0.06759386738724804,
+      "shift": -0.6957980308710985,
+      "sin": [
+        -0.34696458880474834,
+        -0.8441422545955641,
+        0.009015557651795921,
+        -0.019705296144806317,
+        0.395060474873613,
+        0.3027288120093816
+      ],
+      "cos": [
+        -0.08047435729489294,
+        0.33369316766805834,
+        -0.48510827516830474,
+        -0.4455293258564532,
+        0.2943795443412949,
+        -0.09847872273262263
+      ]
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "21_chebyshev_random.png",
+    "family": "chebyshev_random",
+    "parameters": {
+      "c2": 0.07476821538231403,
+      "shift": -0.417618991106786,
+      "coeff": [
+        0.9473787361298633,
+        0.6953311549776429,
+        -0.5928011613299536,
+        0.009563840053307416,
+        0.23074947750247615,
+        -0.09412274616449184,
+        -0.09929661586548998,
+        0.09079143393748257
+      ]
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "22_gaussian_random_field.png",
+    "family": "gaussian_random_field",
+    "parameters": {
+      "c2": 0.06816233023956564,
+      "shift": 0.5282437416761805,
+      "coeff": [
+        0.7995158531304281,
+        0.8527397544503035,
+        -0.7415841227427776,
+        0.4414121854195612,
+        -0.38943687181732445,
+        0.007835153274083443,
+        -0.22467191248393978,
+        0.2510507760342483,
+        0.2528305085270596,
+        0.15595406488857633
+      ],
+      "phases": [
+        0.6946886225132003,
+        3.2006683175072586,
+        1.1652752903527537,
+        5.665430329324868,
+        6.001038339080928,
+        5.101369231795462,
+        5.8403007436271706,
+        3.480861758496967,
+        2.7268343266089996,
+        3.133606843906926
+      ]
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "23_reflected_potential.png",
+    "family": "reflected_potential",
+    "parameters": {
+      "c2": 0.07578822129803128,
+      "shift": 0.09299813113822797,
+      "tilt": 0.3,
+      "defect": -4.3371300069418846,
+      "reflect": true
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "24_smooth_perturbed.png",
+    "family": "smooth_perturbed",
+    "parameters": {
+      "c2": 0.07401489439398941,
+      "shift": 0.07638215625984812,
+      "amp": -1.193602827150448,
+      "freq": 4
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "25_composite_confining.png",
+    "family": "composite_confining",
+    "parameters": {
+      "c2": 0.05776845476527439,
+      "shift": 0.28272939015253007,
+      "c4": 0.003173391141837508,
+      "gauss": [
+        4.520015245437822,
+        0.7761439360702455,
+        -1.3275346932896088
+      ],
+      "centers": [
+        -4.0,
+        0.0,
+        4.0
+      ]
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "26_procedural_composite.png",
+    "family": "procedural_composite",
+    "parameters": {
+      "c2": 0.025065620914038814,
+      "c4": 0.0010842146459477742,
+      "tilt": 0.017064204712018055,
+      "amps": [
+        -0.16267929613173293,
+        -1.6840264119115318,
+        0.15221949182240302
+      ],
+      "centers": [
+        -5.704988760334966,
+        4.486481796052825,
+        6.8223661710434325
+      ],
+      "widths": [
+        0.6503123189712237,
+        2.061060889947216,
+        1.3850051589310444
+      ],
+      "sin": [
+        -0.05405454834712637,
+        -0.22959587137418733
+      ],
+      "cos": [
+        0.4925347115982994,
+        -0.45173534504919804
+      ]
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -12.0,
+      12.0
+    ],
+    "singular_boundaries": 0
+  },
+  {
+    "file": "27_asymptotically_constant.png",
+    "family": "asymptotically_constant",
+    "parameters": {
+      "a": 0.24313533778590973,
+      "depth": 17.37023446327293,
+      "tilt": -0.45100101902571443
+    },
+    "geometry": "truncated_line",
+    "domain": [
+      -35.0,
+      35.0
+    ],
+    "singular_boundaries": 0
+  }
+]

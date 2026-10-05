@@ -1,0 +1,2 @@
+decoder_type,decoder_parameters,total_parameters,trainable_parameters,parameter_matched
+unconstrained,5967,223893,165693,True

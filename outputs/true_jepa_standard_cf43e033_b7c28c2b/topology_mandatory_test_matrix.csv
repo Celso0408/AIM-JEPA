@@ -1,0 +1,18 @@
+index,requirement,status,evidence
+1,finite/boundary/normalization/rho/amplitude/CDF/theta/phase crossings,PASS,Topology decoder enforces positive amplitude and exact Sturm phase
+2,persistent sampled node count when resolution gate passes,PASS,Topology decoder enforces positive amplitude and exact Sturm phase
+3,finite nonzero gradients through topology losses,PASS,Topology node lobe and phase-resolution losses have constructed-case behavior
+4,padded nodes and intervals contribute exactly zero,PASS,Topology decoder enforces positive amplitude and exact Sturm phase; Refinement is stable to mixed-resolution padding and isolated across peers
+5,multiple resolutions and nonuniform grids,PASS,Topology decoder enforces positive amplitude and exact Sturm phase; Nonuniform grids
+6,translation and Schrodinger-dilation covariance,PASS,Translation and Schrödinger-dilation covariance
+7,reflection amplitude/phase/waveform transformation,PASS,Topology reflection transforms amplitude phase and waveform
+8,constructed node-phase and lobe-mass losses near zero,PASS,Topology node lobe and phase-resolution losses have constructed-case behavior
+9,shifted nodes increase node-phase loss,PASS,Topology node lobe and phase-resolution losses have constructed-case behavior
+10,concentrated phase activates resolution loss,PASS,Topology node lobe and phase-resolution losses have constructed-case behavior
+11,target node and topology-field labels absent from inference,PASS,Target-free inference; Both decoder types checkpoint and serialize target-free inference
+12,changing any target topology tensor cannot alter forward_operator,PASS,Both decoder types checkpoint and serialize target-free inference
+13,no solution target reaches direct decoder,PASS,No exact target latent reaches main decoder
+14,topology safeguard rejects wrong-node lower-residual control,PASS,Both decoder types checkpoint and serialize target-free inference
+15,direct topology remains available on hybrid failure,PASS,Both decoder types checkpoint and serialize target-free inference
+16,checkpoint/load and target-free serialization for both decoders,PASS,Both decoder types checkpoint and serialize target-free inference
+17,tiny-batch topology overfit with fidelity and topology retained,PASS,tiny_result measured trajectory

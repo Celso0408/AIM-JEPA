@@ -1,0 +1,413 @@
+{
+  "train": [
+    {
+      "group_id": "fd8d043515dc06ac2b014b2c",
+      "family": "infinite_box",
+      "parent": "fd8d043515dc06ac2b014b2c"
+    },
+    {
+      "group_id": "dea2f27c778acfa337dbe49a",
+      "family": "infinite_box",
+      "parent": "dea2f27c778acfa337dbe49a"
+    },
+    {
+      "group_id": "cec36658ac8565d46bd255fa",
+      "family": "harmonic",
+      "parent": "cec36658ac8565d46bd255fa"
+    },
+    {
+      "group_id": "7183f46ae4f6809b4a1cca2e",
+      "family": "harmonic",
+      "parent": "7183f46ae4f6809b4a1cca2e"
+    },
+    {
+      "group_id": "e830b5f9f34670cfb16b850d",
+      "family": "half_harmonic",
+      "parent": "e830b5f9f34670cfb16b850d"
+    },
+    {
+      "group_id": "162126a16803d72072690eaa",
+      "family": "half_harmonic",
+      "parent": "162126a16803d72072690eaa"
+    },
+    {
+      "group_id": "34d615fc8e4289164d554017",
+      "family": "morse",
+      "parent": "34d615fc8e4289164d554017"
+    },
+    {
+      "group_id": "64ec82b41315f1f02b8ab88c",
+      "family": "morse",
+      "parent": "64ec82b41315f1f02b8ab88c"
+    },
+    {
+      "group_id": "bde19aec6b730e424e9ed4da",
+      "family": "poschl_h",
+      "parent": "bde19aec6b730e424e9ed4da"
+    },
+    {
+      "group_id": "05e0ced05a4438041fa6b284",
+      "family": "poschl_h",
+      "parent": "05e0ced05a4438041fa6b284"
+    },
+    {
+      "group_id": "46fa9383f6d1d06ebea1247d",
+      "family": "poschl_t",
+      "parent": "46fa9383f6d1d06ebea1247d"
+    },
+    {
+      "group_id": "59f95cefab35d35d9c096812",
+      "family": "poschl_t",
+      "parent": "59f95cefab35d35d9c096812"
+    },
+    {
+      "group_id": "b058b3af0541f532568d06d2",
+      "family": "radial_coulomb",
+      "parent": "b058b3af0541f532568d06d2"
+    },
+    {
+      "group_id": "41899d2df9c8edac12f02fbd",
+      "family": "radial_coulomb",
+      "parent": "41899d2df9c8edac12f02fbd"
+    },
+    {
+      "group_id": "e17d46041d2480af76206bb9",
+      "family": "radial_oscillator",
+      "parent": "e17d46041d2480af76206bb9"
+    },
+    {
+      "group_id": "9549789e5819c1d9fa42d519",
+      "family": "radial_oscillator",
+      "parent": "9549789e5819c1d9fa42d519"
+    },
+    {
+      "group_id": "464e63df9f2d99e5ce6b929d",
+      "family": "kratzer",
+      "parent": "464e63df9f2d99e5ce6b929d"
+    },
+    {
+      "group_id": "8a8ee8193efc9d9a5b6d1211",
+      "family": "kratzer",
+      "parent": "8a8ee8193efc9d9a5b6d1211"
+    },
+    {
+      "group_id": "29a3985d0b8c448fd3d9c9f4",
+      "family": "anharmonic_polynomial",
+      "parent": "29a3985d0b8c448fd3d9c9f4"
+    },
+    {
+      "group_id": "27255fd038c4523d298870ad",
+      "family": "anharmonic_polynomial",
+      "parent": "27255fd038c4523d298870ad"
+    },
+    {
+      "group_id": "8c4a5e97d3047c067e78f5a9",
+      "family": "asymmetric_well",
+      "parent": "8c4a5e97d3047c067e78f5a9"
+    },
+    {
+      "group_id": "487644a7da6a1b2af46e7a4f",
+      "family": "asymmetric_well",
+      "parent": "487644a7da6a1b2af46e7a4f"
+    },
+    {
+      "group_id": "c484352c7d6775fd0913eca5",
+      "family": "double_well",
+      "parent": "c484352c7d6775fd0913eca5"
+    },
+    {
+      "group_id": "564dcd463b0547db83a50d6f",
+      "family": "double_well",
+      "parent": "564dcd463b0547db83a50d6f"
+    },
+    {
+      "group_id": "d2ae381416e8035414225fcf",
+      "family": "multiwell",
+      "parent": "d2ae381416e8035414225fcf"
+    },
+    {
+      "group_id": "489e916b319c630cf2591405",
+      "family": "multiwell",
+      "parent": "489e916b319c630cf2591405"
+    },
+    {
+      "group_id": "7202672589a2c326a9611329",
+      "family": "single_barrier",
+      "parent": "7202672589a2c326a9611329"
+    },
+    {
+      "group_id": "a805aba93f0a3770bc29a284",
+      "family": "single_barrier",
+      "parent": "a805aba93f0a3770bc29a284"
+    },
+    {
+      "group_id": "faeb700e92c34791792f08b9",
+      "family": "multiple_barriers",
+      "parent": "faeb700e92c34791792f08b9"
+    },
+    {
+      "group_id": "d62e9d5be2789dbb7eb1154d",
+      "family": "multiple_barriers",
+      "parent": "d62e9d5be2789dbb7eb1154d"
+    },
+    {
+      "group_id": "4ff5c6f30f9f0965db57b28f",
+      "family": "gaussian_well",
+      "parent": "4ff5c6f30f9f0965db57b28f"
+    },
+    {
+      "group_id": "8070cabd8379b6f8b809a15c",
+      "family": "gaussian_well",
+      "parent": "8070cabd8379b6f8b809a15c"
+    },
+    {
+      "group_id": "14c5ea0be9b54e81367cf4a9",
+      "family": "gaussian_barrier",
+      "parent": "14c5ea0be9b54e81367cf4a9"
+    },
+    {
+      "group_id": "93471e5319e464ee22746423",
+      "family": "gaussian_barrier",
+      "parent": "93471e5319e464ee22746423"
+    },
+    {
+      "group_id": "43e201503e7666068ed6213c",
+      "family": "localized_defect",
+      "parent": "43e201503e7666068ed6213c"
+    },
+    {
+      "group_id": "e1119b1bd7959ed1c9eba23b",
+      "family": "localized_defect",
+      "parent": "e1119b1bd7959ed1c9eba23b"
+    },
+    {
+      "group_id": "2b7b19457edea386e4683870",
+      "family": "harmonic_compact",
+      "parent": "2b7b19457edea386e4683870"
+    },
+    {
+      "group_id": "cc9e1528709faf771cc46f07",
+      "family": "harmonic_compact",
+      "parent": "cc9e1528709faf771cc46f07"
+    },
+    {
+      "group_id": "426c655124472a9150bdff63",
+      "family": "fourier_random",
+      "parent": "426c655124472a9150bdff63"
+    },
+    {
+      "group_id": "ad2b9610606ba4437b564242",
+      "family": "fourier_random",
+      "parent": "ad2b9610606ba4437b564242"
+    },
+    {
+      "group_id": "cedc133a5a138e433f8ee97b",
+      "family": "chebyshev_random",
+      "parent": "cedc133a5a138e433f8ee97b"
+    },
+    {
+      "group_id": "fdb8fdf4a851fca136f46e86",
+      "family": "chebyshev_random",
+      "parent": "fdb8fdf4a851fca136f46e86"
+    },
+    {
+      "group_id": "13f12eff29edb0c8a52fa91b",
+      "family": "gaussian_random_field",
+      "parent": "13f12eff29edb0c8a52fa91b"
+    },
+    {
+      "group_id": "69dfc5a605eb4251ec626b1d",
+      "family": "gaussian_random_field",
+      "parent": "69dfc5a605eb4251ec626b1d"
+    },
+    {
+      "group_id": "ee016d3fa180faff6e1afed9",
+      "family": "reflected_potential",
+      "parent": "ee016d3fa180faff6e1afed9"
+    },
+    {
+      "group_id": "b509266d717abde6296da5f0",
+      "family": "reflected_potential",
+      "parent": "b509266d717abde6296da5f0"
+    },
+    {
+      "group_id": "5f276e725104da82364f3719",
+      "family": "smooth_perturbed",
+      "parent": "5f276e725104da82364f3719"
+    },
+    {
+      "group_id": "4e9602af81d32ebec5bfed39",
+      "family": "smooth_perturbed",
+      "parent": "4e9602af81d32ebec5bfed39"
+    },
+    {
+      "group_id": "da083699b9851113a2d42e1b",
+      "family": "composite_confining",
+      "parent": "da083699b9851113a2d42e1b"
+    },
+    {
+      "group_id": "2cc430c128e823850c4c1223",
+      "family": "composite_confining",
+      "parent": "2cc430c128e823850c4c1223"
+    },
+    {
+      "group_id": "490d6e0aa1d663bcca6480f3",
+      "family": "procedural_composite",
+      "parent": "490d6e0aa1d663bcca6480f3"
+    },
+    {
+      "group_id": "1831e9f38bbba2a0ca64be2d",
+      "family": "procedural_composite",
+      "parent": "1831e9f38bbba2a0ca64be2d"
+    },
+    {
+      "group_id": "420ab18ba97c730c11bc06d5",
+      "family": "asymptotically_constant",
+      "parent": "420ab18ba97c730c11bc06d5"
+    },
+    {
+      "group_id": "0267db3440c5adca80d4d099",
+      "family": "asymptotically_constant",
+      "parent": "0267db3440c5adca80d4d099"
+    }
+  ],
+  "val": [
+    {
+      "group_id": "17934e5806e50797b4de389d",
+      "family": "infinite_box",
+      "parent": "17934e5806e50797b4de389d"
+    },
+    {
+      "group_id": "f8613cbc19ec9028c6b6dd33",
+      "family": "half_harmonic",
+      "parent": "f8613cbc19ec9028c6b6dd33"
+    },
+    {
+      "group_id": "0e4d6bcc05e131ec8de7ea20",
+      "family": "poschl_h",
+      "parent": "0e4d6bcc05e131ec8de7ea20"
+    },
+    {
+      "group_id": "0afed2617c23430c1d1bfa31",
+      "family": "radial_coulomb",
+      "parent": "0afed2617c23430c1d1bfa31"
+    },
+    {
+      "group_id": "240c21a9c8f22d0a7e2e1257",
+      "family": "kratzer",
+      "parent": "240c21a9c8f22d0a7e2e1257"
+    },
+    {
+      "group_id": "23f18d0fecfd161f335e848f",
+      "family": "asymmetric_well",
+      "parent": "23f18d0fecfd161f335e848f"
+    },
+    {
+      "group_id": "a797a0c6ca9dccba6e40838a",
+      "family": "multiwell",
+      "parent": "a797a0c6ca9dccba6e40838a"
+    },
+    {
+      "group_id": "967fa3841f3a61cac20137e5",
+      "family": "multiple_barriers",
+      "parent": "967fa3841f3a61cac20137e5"
+    },
+    {
+      "group_id": "2b8454960e5ef2dc4ab42205",
+      "family": "gaussian_barrier",
+      "parent": "2b8454960e5ef2dc4ab42205"
+    },
+    {
+      "group_id": "47046133e52c50e71b7051e0",
+      "family": "harmonic_compact",
+      "parent": "47046133e52c50e71b7051e0"
+    },
+    {
+      "group_id": "ef727abc86dd0c71efd3f578",
+      "family": "chebyshev_random",
+      "parent": "ef727abc86dd0c71efd3f578"
+    },
+    {
+      "group_id": "47cfcfccc354acc52f9f57a7",
+      "family": "reflected_potential",
+      "parent": "47cfcfccc354acc52f9f57a7"
+    },
+    {
+      "group_id": "b25e11cdb4957be9395398da",
+      "family": "composite_confining",
+      "parent": "b25e11cdb4957be9395398da"
+    },
+    {
+      "group_id": "80a71395e6ddc51af5335fcd",
+      "family": "asymptotically_constant",
+      "parent": "80a71395e6ddc51af5335fcd"
+    }
+  ],
+  "test": [
+    {
+      "group_id": "e51b0c876b7609a9f8ab12c8",
+      "family": "harmonic",
+      "parent": "e51b0c876b7609a9f8ab12c8"
+    },
+    {
+      "group_id": "603ec09312511efbe81774c9",
+      "family": "morse",
+      "parent": "603ec09312511efbe81774c9"
+    },
+    {
+      "group_id": "5863819323742ff19490b372",
+      "family": "poschl_t",
+      "parent": "5863819323742ff19490b372"
+    },
+    {
+      "group_id": "2c71c563f315d83448c59840",
+      "family": "radial_oscillator",
+      "parent": "2c71c563f315d83448c59840"
+    },
+    {
+      "group_id": "8e6039c19ac0a51c335cbbe5",
+      "family": "anharmonic_polynomial",
+      "parent": "8e6039c19ac0a51c335cbbe5"
+    },
+    {
+      "group_id": "6f0d4a48acc0def46741d821",
+      "family": "double_well",
+      "parent": "6f0d4a48acc0def46741d821"
+    },
+    {
+      "group_id": "ea6f18fa3a748b314b2b36a7",
+      "family": "single_barrier",
+      "parent": "ea6f18fa3a748b314b2b36a7"
+    },
+    {
+      "group_id": "73e9a743ff5d0a34712d7246",
+      "family": "gaussian_well",
+      "parent": "73e9a743ff5d0a34712d7246"
+    },
+    {
+      "group_id": "28855a5d3a96a8718654d4c6",
+      "family": "localized_defect",
+      "parent": "28855a5d3a96a8718654d4c6"
+    },
+    {
+      "group_id": "49d7d9686c55a6e7e539492a",
+      "family": "fourier_random",
+      "parent": "49d7d9686c55a6e7e539492a"
+    },
+    {
+      "group_id": "9b3139d61f503a1b3d81558a",
+      "family": "gaussian_random_field",
+      "parent": "9b3139d61f503a1b3d81558a"
+    },
+    {
+      "group_id": "ce2c673ac31fa8164547a4fa",
+      "family": "smooth_perturbed",
+      "parent": "ce2c673ac31fa8164547a4fa"
+    },
+    {
+      "group_id": "5ccdcb824960bb83ef4b75cb",
+      "family": "procedural_composite",
+      "parent": "5ccdcb824960bb83ef4b75cb"
+    }
+  ]
+}

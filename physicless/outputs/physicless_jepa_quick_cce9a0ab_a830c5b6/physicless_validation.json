@@ -1,0 +1,8 @@
+{
+  "target_free_inference": true,
+  "finite_forward_and_backward": true,
+  "dirichlet_and_normalization": true,
+  "no_sturm_or_order_hard_constraint": true,
+  "removed_losses_absent": true,
+  "diagnostics_detached": true
+}

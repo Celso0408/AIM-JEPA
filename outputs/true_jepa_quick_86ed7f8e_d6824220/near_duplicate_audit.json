@@ -1,0 +1,15 @@
+{
+  "signature": "centered-shape_dimensionless-strength_kinetic-scale-v1",
+  "threshold": 0.0001,
+  "minimum_cross_split_distance": 0.03701146546016496,
+  "closest_pair": {
+    "distance": 0.03701146546016496,
+    "orientation": "direct",
+    "split_a": "train",
+    "group_id_a": "5f276e725104da82364f3719",
+    "family_a": "smooth_perturbed",
+    "split_b": "val",
+    "group_id_b": "a797a0c6ca9dccba6e40838a",
+    "family_b": "multiwell"
+  }
+}

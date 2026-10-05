@@ -1,0 +1,194 @@
+{
+  "intended_use": "A STANDARD run of a restricted learned surrogate for scalar real one-dimensional self-adjoint Schr\u00f6dinger eigensystems within a documented operator and training distribution; topology preservation alone is not evidence of OOD generalization.",
+  "states": "n=0..10 only",
+  "supported_geometries": [
+    "finite_interval",
+    "truncated_line",
+    "half_line",
+    "radial_reduced",
+    "singular_interval"
+  ],
+  "supported_boundary_conditions": [
+    "dirichlet",
+    "friedrichs_dirichlet",
+    "periodic"
+  ],
+  "architecture": "operator-only JEPA with a nodewise positive-amplitude/strictly-monotone-phase direct decoder and an optional safeguarded weak-residual/Jacobi/Rayleigh--Ritz hybrid",
+  "energy_parameterization": "operator-only sine-Galerkin reference with a learned scaled ground correction and learned positive log-gap ratios; trained against exact energies and the direct weak Rayleigh quotient",
+  "recurrent_refinement": {
+    "method": "weak-FEM residual / positive learned Jacobi modulation / weighted projection / damped Ritz backtracking",
+    "training_steps": 3,
+    "inference_max_steps": 5,
+    "id": {
+      "hamiltonians": 513,
+      "direct_fidelity": 0.9858704804530214,
+      "initial_ritz_fidelity": 0.9966608237118199,
+      "hybrid_fidelity": 0.9858869079783784,
+      "hybrid_minus_direct_fidelity": 1.642752535702119e-05,
+      "direct_independent_residual": 0.09409221489126336,
+      "hybrid_independent_residual": 0.09365315417197775,
+      "hybrid_minus_direct_residual": -0.0004390607192856083,
+      "direct_gram_error": 0.08705900557413293,
+      "hybrid_gram_error": 0.08663798390949631,
+      "direct_persistent_topology": 0.9471912103491051,
+      "hybrid_persistent_topology": 0.9471912103491051,
+      "direct_fallback_fraction": 0.9610136452241715,
+      "accepted_steps_per_hamiltonian": 0.18908382066276802,
+      "iterations_used_per_hamiltonian": 2.115009746588694
+    },
+    "unseen_functional_forms": {
+      "hamiltonians": 192,
+      "direct_fidelity": 0.7718990605686117,
+      "initial_ritz_fidelity": 0.7216434855572857,
+      "hybrid_fidelity": 0.7718990605686117,
+      "hybrid_minus_direct_fidelity": 0.0,
+      "direct_independent_residual": 0.2590071479609937,
+      "hybrid_independent_residual": 0.2590071479609937,
+      "hybrid_minus_direct_residual": 0.0,
+      "direct_gram_error": 0.3215585074930698,
+      "hybrid_gram_error": 0.3215585074930698,
+      "direct_persistent_topology": 1.0,
+      "hybrid_persistent_topology": 1.0,
+      "direct_fallback_fraction": 1.0,
+      "accepted_steps_per_hamiltonian": 0.0,
+      "iterations_used_per_hamiltonian": 2.0
+    },
+    "trace_file": "refinement_iteration_metrics.csv",
+    "depth_ablation_file": "refinement_depth_ablation.csv",
+    "dashboard": "recurrent_refinement_dashboard.png"
+  },
+  "primary_inference_features": "operator-only; continuum threshold omitted; no solution-derived state mask, target node, density, energy, wavefunction, or target latent",
+  "topology_scope": "scalar real one-dimensional self-adjoint Sturm--Liouville/Schrodinger operators with supported separated Dirichlet/Friedrichs boundaries",
+  "unsupported": "periodic boundaries; coupled-channel or matrix-valued potentials; non-Hermitian operators; complex wavefunctions; higher dimensions; continuum states; unsupported internal singularities; higher-state extrapolation; exact/universal-solver claims",
+  "limitations": [
+    "finite grid resolution",
+    "finite/truncated domains",
+    "singular endpoint resolution",
+    "radial mappings",
+    "near-continuum states",
+    "numerical reference error",
+    "distribution shift",
+    "no geometry-specific endpoint amplitude factor is imposed because its exponent is not uniformly available as legitimate inference metadata; phase zeros remain exact but higher-order endpoint asymptotics are not structurally guaranteed",
+    "the safeguarded loop can reject or stagnate; fallback_recommended is reported but no automatic classical solve replaces the surrogate output",
+    "a decreasing training weak residual does not guarantee that the lowest 11-state eigenspace was found; supervised projector and Ky--Fan checks remain necessary",
+    "solution autoencoder uses a trainable near-identity signed-carrier warm start; raw 1e-8 and 1e-5 node counts are discontinuous diagnostics, while the hard topology gate uses target-matched 2e-3 persistence",
+    "a compressed non-identity AE remains a pending experiment",
+    "QUICK is a smoke run and is not scientific acceptance evidence"
+  ],
+  "run_status": "STANDARD_RUN_COMPLETED_NOT_SCIENTIFICALLY_ACCEPTED",
+  "unexecuted_experiments": {
+    "matched_ablations": [
+      {
+        "ablation": "Spectral sine-residual decoder",
+        "status": "one-step optimizer smoke executed; parameter count reported; matched training pending"
+      },
+      {
+        "ablation": "Topology phase decoder",
+        "status": "main STANDARD plus one-step optimizer smoke; parameter count reported; matched multi-seed training pending"
+      },
+      {
+        "ablation": "Topology without node-phase loss",
+        "status": "one-step optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Topology without lobe-mass loss",
+        "status": "one-step optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Topology without phase-resolution regularization",
+        "status": "one-step optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Direct topology versus hybrid output",
+        "status": "both one-step routes executed from identical split/backbone/seed; matched training pending"
+      },
+      {
+        "ablation": "Hybrid topology safeguard on/off",
+        "status": "both one-step routes executed from identical split/backbone/seed; matched training pending"
+      },
+      {
+        "ablation": "Direct strong baseline",
+        "status": "one-step optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "GNN with MLP",
+        "status": "one-step optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "GNN-KAN Chebyshev",
+        "status": "main STANDARD plus optimizer smoke; matched multi-seed training pending"
+      },
+      {
+        "ablation": "GNN-KAN Legendre",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "GNN-KAN normalized Hermite",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Direct supervised without JEPA",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "JEPA without physics",
+        "status": "optimizer smoke plus stage D/E trajectory; matched training pending"
+      },
+      {
+        "ablation": "JEPA with physics",
+        "status": "optimizer wiring smoke executed; main curriculum activated in STANDARD; applied weights logged; matched training pending"
+      },
+      {
+        "ablation": "Local graph only",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Multiscale graph",
+        "status": "optimizer smoke executed without global context; matched training pending"
+      },
+      {
+        "ablation": "Multiscale plus global context",
+        "status": "optimizer smoke plus main STANDARD; matched training pending"
+      },
+      {
+        "ablation": "Orthogonality loss only",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Explicit orthonormalization",
+        "status": "regularized L\u00f6wdin and L\u00f6wdin-plus-loss optimizer smokes executed; post-Gram result reported; matched training pending"
+      },
+      {
+        "ablation": "Energy head only",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Rayleigh-coupled energy",
+        "status": "optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "With continuum threshold metadata",
+        "status": "assisted optimizer smoke executed; matched training pending"
+      },
+      {
+        "ablation": "Recurrent eigenspace refinement",
+        "status": "T=0/1/3/5 hybrid and T=3 classical optimizer smokes executed; matched DEVELOPMENT retraining comparison pending"
+      },
+      {
+        "ablation": "SIGReg off/on",
+        "status": "collapse demonstrated; controlled pooled-head comparison pending"
+      },
+      {
+        "ablation": "KAN degrees 3/5/7",
+        "status": "all recurrence/layer backward smokes executed; matched training pending"
+      },
+      {
+        "ablation": "KAN ranks 2/4/8",
+        "status": "all factorized-layer backward smokes executed; matched training pending"
+      }
+    ],
+    "leave_one_family_out": "pending matched retraining; executable manifest exported",
+    "multi_seed_modes": "DEVELOPMENT, STANDARD, and FULL not run",
+    "near_continuum": "only one diagnostic test Hamiltonian run; production sweep pending"
+  }
+}

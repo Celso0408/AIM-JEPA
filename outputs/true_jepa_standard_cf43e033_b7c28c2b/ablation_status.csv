@@ -1,0 +1,29 @@
+ablation,status
+Spectral sine-residual decoder,one-step optimizer smoke executed; parameter count reported; matched training pending
+Topology phase decoder,main STANDARD plus one-step optimizer smoke; parameter count reported; matched multi-seed training pending
+Topology without node-phase loss,one-step optimizer smoke executed; matched training pending
+Topology without lobe-mass loss,one-step optimizer smoke executed; matched training pending
+Topology without phase-resolution regularization,one-step optimizer smoke executed; matched training pending
+Direct topology versus hybrid output,both one-step routes executed from identical split/backbone/seed; matched training pending
+Hybrid topology safeguard on/off,both one-step routes executed from identical split/backbone/seed; matched training pending
+Direct strong baseline,one-step optimizer smoke executed; matched training pending
+GNN with MLP,one-step optimizer smoke executed; matched training pending
+GNN-KAN Chebyshev,main STANDARD plus optimizer smoke; matched multi-seed training pending
+GNN-KAN Legendre,optimizer smoke executed; matched training pending
+GNN-KAN normalized Hermite,optimizer smoke executed; matched training pending
+Direct supervised without JEPA,optimizer smoke executed; matched training pending
+JEPA without physics,optimizer smoke plus stage D/E trajectory; matched training pending
+JEPA with physics,optimizer wiring smoke executed; main curriculum activated in STANDARD; applied weights logged; matched training pending
+Local graph only,optimizer smoke executed; matched training pending
+Multiscale graph,optimizer smoke executed without global context; matched training pending
+Multiscale plus global context,optimizer smoke plus main STANDARD; matched training pending
+Orthogonality loss only,optimizer smoke executed; matched training pending
+Explicit orthonormalization,regularized Löwdin and Löwdin-plus-loss optimizer smokes executed; post-Gram result reported; matched training pending
+Energy head only,optimizer smoke executed; matched training pending
+Rayleigh-coupled energy,optimizer smoke executed; matched training pending
+With continuum threshold metadata,assisted optimizer smoke executed; matched training pending
+Without continuum threshold metadata,operator-only optimizer smoke plus primary STANDARD
+Recurrent eigenspace refinement,T=0/1/3/5 hybrid and T=3 classical optimizer smokes executed; matched DEVELOPMENT retraining comparison pending
+SIGReg off/on,collapse demonstrated; controlled pooled-head comparison pending
+KAN degrees 3/5/7,all recurrence/layer backward smokes executed; matched training pending
+KAN ranks 2/4/8,all factorized-layer backward smokes executed; matched training pending
