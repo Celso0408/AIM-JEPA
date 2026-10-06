@@ -1,0 +1,28 @@
+# Periodic JEPA V31
+# Recommended interpreter: Python 3.12
+#
+# PyTorch note:
+# Install the wheel compatible with the CUDA driver on the target machine.
+# The generic constraint below is sufficient for CPU environments and for
+# platforms whose package index resolves the appropriate CUDA dependencies.
+
+# Core numerical and data stack
+numpy>=1.26,<3.0
+pandas>=2.0,<3.0
+scipy>=1.11,<2.0
+pyarrow>=15
+netCDF4>=1.6,<2.0
+
+# Model and periodic graph
+torch>=2.2,<3.0
+torch-geometric>=2.5,<3.0
+
+# Figures
+matplotlib>=3.8,<4.0
+
+# Notebook kernel and headless execution
+ipython>=8.18
+ipykernel>=6.29
+jupyter>=1.0,<2.0
+nbconvert>=7.16,<8.0
+nbclient>=0.10,<1.0
