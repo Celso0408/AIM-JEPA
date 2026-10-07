@@ -1,0 +1,177 @@
+file,source,interpretation,caveat
+00_overview/stage_costs.png,history_*.csv,Stage-local optimizer updates and wall time,
+00_overview/stage_decisions.png,history_*.csv,"Observed readiness and checkpoint acceptance, not inferred from stage name",
+00_overview/objective_availability.png,history_*.csv,Availability of logged objective components by curriculum stage,
+00_overview/architecture_trainability_matrix.png,trainability_by_stage.csv,Which parameter groups can update in each curriculum stage,
+00_overview/architecture_parameter_budget.png,trainability_by_stage.csv,Trainable and frozen parameter counts per observed stage,
+08_audits/split_counts.png,split_manifest.json,"Sizes of configured train, validation, ID test and family-OOD splits",Test/OOD performance is unavailable
+05_ni_transfer/ni_adaptation_fraction.png,ni_finetune_data_audit.json,Ni training configurations versus eligible ID pool,
+00_overview/source_domain_energy_readiness.png,source_domain_readiness.json,Al/Fe energy diagnostics at source readiness,Validation data; not held-out test performance.
+03_curriculum/transition_objective_targets.png,stage_transition_audit.jsonl,End-of-stage objective targets from the transition protocol,
+02_jepa_latent/spectral_band_unlock_events.png,stage_transition_audit.jsonl,Recorded middle/high spectral unlock progress,
+01_autoencoder/autoencoder_01_total_objective.png,history_autoencoder.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_02_components.png,history_autoencoder.csv,Training and validation component losses,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_05_physical_validation.png,history_autoencoder.csv,"Element-wise validation errors for density, potential and energy",Validation data; not held-out test performance.
+01_autoencoder/autoencoder_06_readiness.png,history_autoencoder.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+01_autoencoder/autoencoder_07_learning_rates.png,history_autoencoder.csv,Stage-level mean learning rate for each trainable parameter group,
+01_autoencoder/autoencoder_08_generalization_gap.png,history_autoencoder.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_09_ema.png,history_autoencoder.csv,EMA decay and target update count,
+01_autoencoder/autoencoder_10_throughput.png,history_autoencoder.csv,Elapsed time and throughput by epoch,
+02_jepa_latent/d_latent_01_total_objective.png,history_D_latent.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_02_components.png,history_D_latent.csv,Training and validation component losses,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_03_objective_weights.png,history_D_latent.csv,Effective objective-weight ramps,
+02_jepa_latent/d_latent_04_spectral_bands.png,history_D_latent.csv,Low/middle/high Fourier-band cosine similarities,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_06_readiness.png,history_D_latent.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+02_jepa_latent/d_latent_07_learning_rates.png,history_D_latent.csv,Stage-level mean learning rate for each trainable parameter group,
+02_jepa_latent/d_latent_08_generalization_gap.png,history_D_latent.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_09_ema.png,history_D_latent.csv,EMA decay and target update count,
+02_jepa_latent/d_latent_10_throughput.png,history_D_latent.csv,Elapsed time and throughput by epoch,
+03_curriculum/e_density_01_total_objective.png,history_E_density.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+03_curriculum/e_density_02_components.png,history_E_density.csv,Training and validation component losses,Validation data; not held-out test performance.
+03_curriculum/e_density_03_objective_weights.png,history_E_density.csv,Effective objective-weight ramps,
+03_curriculum/e_density_04_spectral_bands.png,history_E_density.csv,Low/middle/high Fourier-band cosine similarities,Validation data; not held-out test performance.
+03_curriculum/e_density_05b_field_competence.png,history_E_density.csv,Element-wise density and potential gate diagnostics,Validation data; not held-out test performance.
+03_curriculum/e_density_06_readiness.png,history_E_density.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+03_curriculum/e_density_07_learning_rates.png,history_E_density.csv,Stage-level mean learning rate for each trainable parameter group,
+03_curriculum/e_density_08_generalization_gap.png,history_E_density.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+03_curriculum/e_density_09_ema.png,history_E_density.csv,EMA decay and target update count,
+03_curriculum/e_density_10_throughput.png,history_E_density.csv,Elapsed time and throughput by epoch,
+03_curriculum/e_density_potential_01_total_objective.png,history_E_density_potential.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_02_components.png,history_E_density_potential.csv,Training and validation component losses,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_03_objective_weights.png,history_E_density_potential.csv,Effective objective-weight ramps,
+03_curriculum/e_density_potential_04_spectral_bands.png,history_E_density_potential.csv,Low/middle/high Fourier-band cosine similarities,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_05b_field_competence.png,history_E_density_potential.csv,Element-wise density and potential gate diagnostics,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_06_readiness.png,history_E_density_potential.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+03_curriculum/e_density_potential_07_learning_rates.png,history_E_density_potential.csv,Stage-level mean learning rate for each trainable parameter group,
+03_curriculum/e_density_potential_08_generalization_gap.png,history_E_density_potential.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_09_ema.png,history_E_density_potential.csv,EMA decay and target update count,
+03_curriculum/e_density_potential_10_throughput.png,history_E_density_potential.csv,Elapsed time and throughput by epoch,
+03_curriculum/e_full_01_total_objective.png,history_E_full.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+03_curriculum/e_full_02_components.png,history_E_full.csv,Training and validation component losses,Validation data; not held-out test performance.
+03_curriculum/e_full_03_objective_weights.png,history_E_full.csv,Effective objective-weight ramps,
+03_curriculum/e_full_04_spectral_bands.png,history_E_full.csv,Low/middle/high Fourier-band cosine similarities,Validation data; not held-out test performance.
+03_curriculum/e_full_05b_field_competence.png,history_E_full.csv,Element-wise density and potential gate diagnostics,Validation data; not held-out test performance.
+03_curriculum/e_full_06_readiness.png,history_E_full.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+03_curriculum/e_full_07_learning_rates.png,history_E_full.csv,Stage-level mean learning rate for each trainable parameter group,
+03_curriculum/e_full_08_generalization_gap.png,history_E_full.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+03_curriculum/e_full_09_ema.png,history_E_full.csv,EMA decay and target update count,
+03_curriculum/e_full_10_throughput.png,history_E_full.csv,Elapsed time and throughput by epoch,
+03_curriculum/f_periodic_ramp_01_total_objective.png,history_F_periodic_ramp.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_02_components.png,history_F_periodic_ramp.csv,Training and validation component losses,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_03_objective_weights.png,history_F_periodic_ramp.csv,Effective objective-weight ramps,
+03_curriculum/f_periodic_ramp_04_spectral_bands.png,history_F_periodic_ramp.csv,Low/middle/high Fourier-band cosine similarities,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_05b_field_competence.png,history_F_periodic_ramp.csv,Element-wise density and potential gate diagnostics,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_05c_periodic_consistency.png,history_F_periodic_ramp.csv,Periodic-consistency validation trajectory,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_06_readiness.png,history_F_periodic_ramp.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+03_curriculum/f_periodic_ramp_07_learning_rates.png,history_F_periodic_ramp.csv,Stage-level mean learning rate for each trainable parameter group,
+03_curriculum/f_periodic_ramp_08_generalization_gap.png,history_F_periodic_ramp.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_09_ema.png,history_F_periodic_ramp.csv,EMA decay and target update count,
+03_curriculum/f_periodic_ramp_10_throughput.png,history_F_periodic_ramp.csv,Elapsed time and throughput by epoch,
+04_energy_refinement/p_cohesive_refinement_01_total_objective.png,history_P_cohesive_refinement.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+04_energy_refinement/p_cohesive_refinement_02_components.png,history_P_cohesive_refinement.csv,Training and validation component losses,Validation data; not held-out test performance.
+04_energy_refinement/p_cohesive_refinement_05b_field_competence.png,history_P_cohesive_refinement.csv,Element-wise density and potential gate diagnostics,Validation data; not held-out test performance.
+04_energy_refinement/p_cohesive_refinement_06_readiness.png,history_P_cohesive_refinement.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+04_energy_refinement/p_cohesive_refinement_07_learning_rates.png,history_P_cohesive_refinement.csv,Stage-level mean learning rate for each trainable parameter group,
+04_energy_refinement/p_cohesive_refinement_08_generalization_gap.png,history_P_cohesive_refinement.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+04_energy_refinement/p_cohesive_refinement_09_ema.png,history_P_cohesive_refinement.csv,EMA decay and target update count,
+04_energy_refinement/p_cohesive_refinement_10_throughput.png,history_P_cohesive_refinement.csv,Elapsed time and throughput by epoch,
+05_ni_transfer/g_cohesive_calibration_01_total_objective.png,history_G_cohesive_calibration.csv,Within-stage training and validation objectives,Validation data; not held-out test performance.
+05_ni_transfer/g_cohesive_calibration_02_components.png,history_G_cohesive_calibration.csv,Training and validation component losses,Validation data; not held-out test performance.
+05_ni_transfer/g_cohesive_calibration_03_objective_weights.png,history_G_cohesive_calibration.csv,Effective objective-weight ramps,
+05_ni_transfer/g_cohesive_calibration_05b_field_competence.png,history_G_cohesive_calibration.csv,Element-wise density and potential gate diagnostics,Validation data; not held-out test performance.
+05_ni_transfer/g_cohesive_calibration_06_readiness.png,history_G_cohesive_calibration.csv,Consecutive readiness streak and actual accepted-checkpoint events,
+05_ni_transfer/g_cohesive_calibration_07_learning_rates.png,history_G_cohesive_calibration.csv,Stage-level mean learning rate for each trainable parameter group,
+05_ni_transfer/g_cohesive_calibration_08_generalization_gap.png,history_G_cohesive_calibration.csv,Validation minus training losses; not a held-out generalization estimate,Validation data; not held-out test performance.
+05_ni_transfer/g_cohesive_calibration_09_ema.png,history_G_cohesive_calibration.csv,EMA decay and target update count,
+05_ni_transfer/g_cohesive_calibration_10_throughput.png,history_G_cohesive_calibration.csv,Elapsed time and throughput by epoch,
+01_autoencoder/ae_field_gates.png,autoencoder_field_gate*.csv,AE density and potential field errors against configured limits,Validation data; not held-out test performance.
+01_autoencoder/ae_latent_eigenspectrum.png,autoencoder_latent_covariance_eigenvalues.csv; autoencoder_latent_audit.json,AE covariance spectrum and cumulative explained variance,Audit sample only; covariance eigenvalues are not per-mode Fourier amplitudes
+01_autoencoder/small_set_overfit_diagnostic.png,diagnostic_overfit_history.csv,Fit capacity under diagnostic conditions,"Training-only, cloned-model diagnostic"
+02_jepa_latent/jepa_alignment_by_band.png,D_latent_alignment_gate.csv,Full-spectrum and band-resolved alignment by element and field,Validation data; not held-out test performance.
+02_jepa_latent/jepa_rank_and_dominance.png,D_latent_alignment_gate.csv,Predicted/target rank and dominant-fraction diagnostics,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_physical_distributions.png,physical_validation_autoencoder.csv,Validation sample distributions by element,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_energy_parity_and_residuals.png,physical_validation_autoencoder.csv,Energy predictions and signed residuals by element,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_family_error_matrix.png,physical_validation_autoencoder.csv,Mean validation errors by structural family and element,Validation data; not held-out test performance.
+01_autoencoder/autoencoder_weak_binding.png,physical_validation_autoencoder.csv,Mean energy error in weak-binding and other samples with counts,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_physical_distributions.png,physical_validation_D_latent.csv,Validation sample distributions by element,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_energy_parity_and_residuals.png,physical_validation_D_latent.csv,Energy predictions and signed residuals by element,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_family_error_matrix.png,physical_validation_D_latent.csv,Mean validation errors by structural family and element,Validation data; not held-out test performance.
+02_jepa_latent/d_latent_weak_binding.png,physical_validation_D_latent.csv,Mean energy error in weak-binding and other samples with counts,Validation data; not held-out test performance.
+03_curriculum/e_density_physical_distributions.png,physical_validation_E_density.csv,Validation sample distributions by element,Validation data; not held-out test performance.
+03_curriculum/e_density_energy_parity_and_residuals.png,physical_validation_E_density.csv,Energy predictions and signed residuals by element,Validation data; not held-out test performance.
+03_curriculum/e_density_family_error_matrix.png,physical_validation_E_density.csv,Mean validation errors by structural family and element,Validation data; not held-out test performance.
+03_curriculum/e_density_weak_binding.png,physical_validation_E_density.csv,Mean energy error in weak-binding and other samples with counts,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_physical_distributions.png,physical_validation_E_density_potential.csv,Validation sample distributions by element,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_energy_parity_and_residuals.png,physical_validation_E_density_potential.csv,Energy predictions and signed residuals by element,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_family_error_matrix.png,physical_validation_E_density_potential.csv,Mean validation errors by structural family and element,Validation data; not held-out test performance.
+03_curriculum/e_density_potential_weak_binding.png,physical_validation_E_density_potential.csv,Mean energy error in weak-binding and other samples with counts,Validation data; not held-out test performance.
+03_curriculum/e_full_physical_distributions.png,physical_validation_E_full.csv,Validation sample distributions by element,Validation data; not held-out test performance.
+03_curriculum/e_full_energy_parity_and_residuals.png,physical_validation_E_full.csv,Energy predictions and signed residuals by element,Validation data; not held-out test performance.
+03_curriculum/e_full_family_error_matrix.png,physical_validation_E_full.csv,Mean validation errors by structural family and element,Validation data; not held-out test performance.
+03_curriculum/e_full_weak_binding.png,physical_validation_E_full.csv,Mean energy error in weak-binding and other samples with counts,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_physical_distributions.png,physical_validation_F_periodic_ramp.csv,Validation sample distributions by element,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_energy_parity_and_residuals.png,physical_validation_F_periodic_ramp.csv,Energy predictions and signed residuals by element,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_family_error_matrix.png,physical_validation_F_periodic_ramp.csv,Mean validation errors by structural family and element,Validation data; not held-out test performance.
+03_curriculum/f_periodic_ramp_weak_binding.png,physical_validation_F_periodic_ramp.csv,Mean energy error in weak-binding and other samples with counts,Validation data; not held-out test performance.
+04_energy_refinement/p_cohesive_refinement_physical_distributions.png,physical_validation_P_cohesive_refinement.csv,Validation sample distributions by element,Candidate evaluation only; the P checkpoint was not accepted in the supplied run.
+04_energy_refinement/p_cohesive_refinement_energy_parity_and_residuals.png,physical_validation_P_cohesive_refinement.csv,Energy predictions and signed residuals by element,Candidate evaluation only; the P checkpoint was not accepted in the supplied run.
+04_energy_refinement/p_cohesive_refinement_family_error_matrix.png,physical_validation_P_cohesive_refinement.csv,Mean validation errors by structural family and element,Candidate evaluation only; the P checkpoint was not accepted in the supplied run.
+04_energy_refinement/p_cohesive_refinement_weak_binding.png,physical_validation_P_cohesive_refinement.csv,Mean energy error in weak-binding and other samples with counts,Candidate evaluation only; the P checkpoint was not accepted in the supplied run.
+00_overview/physical_metrics_across_stages.png,physical_validation_*.csv,Stage-by-stage element-wise field and energy validation metrics,No P checkpoint adoption inferred from candidate evaluation
+06_comparisons/paired_autoencoder_to_d_latent.png,physical_validation_autoencoder.csv; physical_validation_D_latent.csv,Paired per-configuration changes rather than unpaired mean differences,"A rejected candidate is a comparison, not an accepted model"
+06_comparisons/paired_d_latent_to_e_density.png,physical_validation_D_latent.csv; physical_validation_E_density.csv,Paired per-configuration changes rather than unpaired mean differences,"A rejected candidate is a comparison, not an accepted model"
+06_comparisons/paired_e_density_to_e_density_potential.png,physical_validation_E_density.csv; physical_validation_E_density_potential.csv,Paired per-configuration changes rather than unpaired mean differences,"A rejected candidate is a comparison, not an accepted model"
+06_comparisons/paired_e_density_potential_to_e_full.png,physical_validation_E_density_potential.csv; physical_validation_E_full.csv,Paired per-configuration changes rather than unpaired mean differences,"A rejected candidate is a comparison, not an accepted model"
+06_comparisons/paired_e_full_to_f_periodic_ramp.png,physical_validation_E_full.csv; physical_validation_F_periodic_ramp.csv,Paired per-configuration changes rather than unpaired mean differences,"A rejected candidate is a comparison, not an accepted model"
+06_comparisons/paired_f_periodic_ramp_to_p_cohesive_refinement.png,physical_validation_F_periodic_ramp.csv; physical_validation_P_cohesive_refinement.csv,Paired per-configuration changes rather than unpaired mean differences,"A rejected candidate is a comparison, not an accepted model"
+03_curriculum/curriculum_chronological_timeline.png,data_curriculum_history.csv,Stage-continuous difficulty and active-record timeline,
+03_curriculum/curriculum_coverage_and_difficulty.png,data_curriculum_history.csv,"Coverage, unique records, difficulty and full-data exposure by stage",
+03_curriculum/curriculum_tier_exposure.png,data_curriculum_history.csv,Epoch counts under each logged curriculum tier,
+03_curriculum/data_curriculum_manifest_pretrain_alfe.png,data_curriculum_manifest_pretrain_AlFe.csv,Selected training-pool difficulty distribution and family composition,
+03_curriculum/data_curriculum_manifest_ni_selected_only.png,data_curriculum_manifest_Ni_selected_only.csv,Selected training-pool difficulty distribution and family composition,
+03_curriculum/curriculum_actual_exposure.png,sample_stage_exposure.csv,Element-wise draws and distinct configurations by stage,
+03_curriculum/curriculum_difficulty_vs_exposure.png,sample_stage_exposure.csv,Sample draw allocation over difficulty,
+07_optimization/autoencoder_optimizer_lr.png,optimizer_history_autoencoder.csv,Median per-epoch optimizer group trajectories,
+07_optimization/autoencoder_optimizer_grad_norm.png,optimizer_history_autoencoder.csv,Median per-epoch optimizer group trajectories,
+07_optimization/autoencoder_optimizer_clipping.png,optimizer_history_autoencoder.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/autoencoder_optimizer_loss_spread.png,optimizer_history_autoencoder.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/d_latent_optimizer_lr.png,optimizer_history_D_latent.csv,Median per-epoch optimizer group trajectories,
+07_optimization/d_latent_optimizer_grad_norm.png,optimizer_history_D_latent.csv,Median per-epoch optimizer group trajectories,
+07_optimization/d_latent_optimizer_clipping.png,optimizer_history_D_latent.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/d_latent_optimizer_loss_spread.png,optimizer_history_D_latent.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/e_density_optimizer_lr.png,optimizer_history_E_density.csv,Median per-epoch optimizer group trajectories,
+07_optimization/e_density_optimizer_grad_norm.png,optimizer_history_E_density.csv,Median per-epoch optimizer group trajectories,
+07_optimization/e_density_optimizer_clipping.png,optimizer_history_E_density.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/e_density_optimizer_loss_spread.png,optimizer_history_E_density.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/e_density_potential_optimizer_lr.png,optimizer_history_E_density_potential.csv,Median per-epoch optimizer group trajectories,
+07_optimization/e_density_potential_optimizer_grad_norm.png,optimizer_history_E_density_potential.csv,Median per-epoch optimizer group trajectories,
+07_optimization/e_density_potential_optimizer_clipping.png,optimizer_history_E_density_potential.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/e_density_potential_optimizer_loss_spread.png,optimizer_history_E_density_potential.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/e_full_optimizer_lr.png,optimizer_history_E_full.csv,Median per-epoch optimizer group trajectories,
+07_optimization/e_full_optimizer_grad_norm.png,optimizer_history_E_full.csv,Median per-epoch optimizer group trajectories,
+07_optimization/e_full_optimizer_clipping.png,optimizer_history_E_full.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/e_full_optimizer_loss_spread.png,optimizer_history_E_full.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/f_periodic_ramp_optimizer_lr.png,optimizer_history_F_periodic_ramp.csv,Median per-epoch optimizer group trajectories,
+07_optimization/f_periodic_ramp_optimizer_grad_norm.png,optimizer_history_F_periodic_ramp.csv,Median per-epoch optimizer group trajectories,
+07_optimization/f_periodic_ramp_optimizer_clipping.png,optimizer_history_F_periodic_ramp.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/f_periodic_ramp_optimizer_loss_spread.png,optimizer_history_F_periodic_ramp.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/p_cohesive_refinement_optimizer_lr.png,optimizer_history_P_cohesive_refinement.csv,Median per-epoch optimizer group trajectories,
+07_optimization/p_cohesive_refinement_optimizer_grad_norm.png,optimizer_history_P_cohesive_refinement.csv,Median per-epoch optimizer group trajectories,
+07_optimization/p_cohesive_refinement_optimizer_clipping.png,optimizer_history_P_cohesive_refinement.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/p_cohesive_refinement_optimizer_loss_spread.png,optimizer_history_P_cohesive_refinement.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/g_cohesive_calibration_optimizer_lr.png,optimizer_history_G_cohesive_calibration.csv,Median per-epoch optimizer group trajectories,
+07_optimization/g_cohesive_calibration_optimizer_grad_norm.png,optimizer_history_G_cohesive_calibration.csv,Median per-epoch optimizer group trajectories,
+07_optimization/g_cohesive_calibration_optimizer_clipping.png,optimizer_history_G_cohesive_calibration.csv,Fraction of optimizer updates clipped in each parameter group,
+07_optimization/g_cohesive_calibration_optimizer_loss_spread.png,optimizer_history_G_cohesive_calibration.csv,Median and 10–90th percentiles of update-level loss,
+07_optimization/gradient_conflict_matrix.png,gradient_conflicts.csv,Observed pairwise gradient conflict frequency under non-zero gradients,
+07_optimization/gradient_cosine_and_conflict_rate.png,gradient_conflicts.csv,Non-zero objective pair cosine distributions and conflict rate,
+07_optimization/invalid_optimizer_updates.png,invalid_optimizer_updates.jsonl,Invalid optimizer events by stage,
+05_ni_transfer/ni_calibration_energy_gates.png,history_G_cohesive_calibration.csv; run_configuration_contract.json,Measured Ni energy errors against V31 gate limits,Validation data; not held-out test performance.
+05_ni_transfer/ni_affine_parameters.png,history_G_cohesive_calibration.csv,Ni energy-only affine scale and offset,
+05_ni_transfer/ni_fields_diagnostics.png,history_G_cohesive_calibration.csv,Detailed Ni physical validation diagnostics,Validation data; not held-out test performance.
+05_ni_transfer/ni_energy_diagnostics.png,history_G_cohesive_calibration.csv,Detailed Ni physical validation diagnostics,Validation data; not held-out test performance.
+05_ni_transfer/ni_retention_max_excess.png,history_G_cohesive_calibration.csv,Worst Al/Fe retention excess during Ni calibration,
+05_ni_transfer/al_fe_retention_heatmap.png,retention_metrics_by_component.csv,Metric-specific retention excess by element and evaluation call,
+05_ni_transfer/ni_source_energy_retention.png,history_G_cohesive_calibration.csv,Al and Fe energy MAE/bias during Ni calibration,Validation data; not held-out test performance.
+08_audits/spectral_resolution_sensitivity.png,spectral_resolution_validation.csv,Error across available Fourier-mode counts,
+08_audits/data_physical_integrity.png,data_audit.csv,Input-record charge and potential-gauge checks,
