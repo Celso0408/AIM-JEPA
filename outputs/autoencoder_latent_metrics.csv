@@ -1,0 +1,2 @@
+records,population_tokens,rho_reconstruction_loss,potential_reconstruction_loss,latent_variance,effective_rank,active_covariance_rank,condition_number,active_condition_number,dominant_covariance_fraction,near_zero_variance_fraction,finite,variance_in_range,effective_rank_ok,active_rank_ok,active_condition_ok,near_zero_fraction_ok,dominant_fraction_ok,all_latent_gates_passed
+400,800,0.018890005154535174,0.008387260930612683,0.5619276830247633,12.044165977162955,176,inf,960563.6525693228,0.41934367641401654,0.0,True,True,True,True,True,True,True,True

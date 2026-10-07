@@ -1,0 +1,19 @@
+{
+  "stage": "autoencoder",
+  "run_mode": "DEVELOPMENT",
+  "rows": [
+    {
+      "element": "Al",
+      "rho_relative_l2": 0.007619303201629532,
+      "potential_relative_l2": 0.02601661380970537,
+      "passed": true
+    },
+    {
+      "element": "Fe",
+      "rho_relative_l2": 0.08341975988011167,
+      "potential_relative_l2": 0.019241385190098576,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

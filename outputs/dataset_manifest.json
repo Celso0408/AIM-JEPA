@@ -1,0 +1,114 @@
+{
+  "data_schema_version": "siesta-periodic-fields-v1",
+  "solver_version": "precomputed-siesta-5.4.2-pbe-tzp-nonspin",
+  "configured_dataset_root": "/home/ubuntu/JEPA-periodic/public_core/data",
+  "resolved_dataset_root": "/home/ubuntu/JEPA-periodic/public_core/data",
+  "configured_index_path": "/home/ubuntu/JEPA-periodic/public_core/index_full.parquet",
+  "index_path": "/home/ubuntu/JEPA-periodic/public_core/index_full.parquet",
+  "index_file_size_bytes": 2602229,
+  "record_count": 30000,
+  "element_counts": {
+    "Al": 10000,
+    "Fe": 10000,
+    "Ni": 10000
+  },
+  "family_counts": {
+    "disp": 9000,
+    "iso": 9000,
+    "aniso": 7500,
+    "shear": 3000,
+    "combo": 1500
+  },
+  "family_source_counts": {
+    "cfg_range": 30000
+  },
+  "family_range_fallback_enabled": true,
+  "family_ranges": [
+    {
+      "start": 0,
+      "end": 2999,
+      "family": "disp"
+    },
+    {
+      "start": 3000,
+      "end": 5999,
+      "family": "iso"
+    },
+    {
+      "start": 6000,
+      "end": 8499,
+      "family": "aniso"
+    },
+    {
+      "start": 8500,
+      "end": 9499,
+      "family": "shear"
+    },
+    {
+      "start": 9500,
+      "end": 9999,
+      "family": "combo"
+    }
+  ],
+  "expected_family_counts_per_element": {
+    "disp": 3000,
+    "iso": 3000,
+    "aniso": 2500,
+    "shear": 1000,
+    "combo": 500
+  },
+  "scf_converged_count": 30000,
+  "complete_output_count": 29997,
+  "incomplete_output_count": 3,
+  "energy_repair_count": 3,
+  "energy_range_ev_by_element": {
+    "Al": {
+      "minimum": -124.471018,
+      "maximum": -122.170843
+    },
+    "Fe": {
+      "minimum": -6820.683413,
+      "maximum": -6819.656499
+    },
+    "Ni": {
+      "minimum": -9131.074785,
+      "maximum": -9129.680621
+    }
+  },
+  "fermi_range_ev_by_element": {
+    "Al": {
+      "minimum": -9.592492,
+      "maximum": -8.58299
+    },
+    "Fe": {
+      "minimum": -7.552918,
+      "maximum": -7.1377
+    },
+    "Ni": {
+      "minimum": -6.150423,
+      "maximum": -5.948248
+    }
+  },
+  "required_index_columns": [
+    "calc_dir",
+    "calc_id",
+    "element",
+    "final_energy_ev",
+    "ion_xml_path",
+    "out_path",
+    "rho_nc_path",
+    "scf_converged",
+    "struct_out_path",
+    "vh_nc_path"
+  ],
+  "path_columns": [
+    "fdf_path",
+    "ion_path",
+    "ion_xml_path",
+    "out_path",
+    "rho_nc_path",
+    "struct_out_path",
+    "vh_nc_path",
+    "xv_path"
+  ]
+}
