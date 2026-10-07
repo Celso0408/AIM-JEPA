@@ -1,0 +1,14 @@
+{
+  "checkpoint":"\/tmp\/v31_f_periodic_ramp_fef4ojpg\/best.pt",
+  "stage":"F_periodic_ramp",
+  "checkpoint_role":"validation_best",
+  "global_step":10224,
+  "best_validation":0.0022456392,
+  "n_predictions":4699,
+  "splits":{
+    "OOD family holdout (shear\/combo)":3000,
+    "Al ID holdout":870,
+    "Fe ID holdout":829
+  },
+  "energy_error_sign":"prediction minus DFT target; positive means overprediction"
+}

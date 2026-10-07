@@ -1,0 +1,9 @@
+evaluation_split,element,task,TN,FP,FN,TP
+OOD family holdout (shear/combo),Al,density_high,65282932,936626,808078,6700364
+OOD family holdout (shear/combo),Al,potential_positive,19017249,238564,65605,54406582
+OOD family holdout (shear/combo),Fe,density_high,66363261,8333,164901,7191505
+OOD family holdout (shear/combo),Fe,potential_positive,15443241,171850,155498,57957411
+Al ID holdout,Al,density_high,37884408,547229,463161,3867442
+Al ID holdout,Al,potential_positive,11029471,137932,38968,31555869
+Fe ID holdout,Fe,density_high,36676996,4627,91219,3974166
+Fe ID holdout,Fe,potential_positive,8534093,95806,85307,32031802
