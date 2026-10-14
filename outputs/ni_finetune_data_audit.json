@@ -1,0 +1,12 @@
+{
+  "eligible_ni_id": 6797,
+  "unique_training_ni": 679,
+  "used_fraction": 0.09989701338825953,
+  "joint_replay_counts": {
+    "Ni": 679
+  },
+  "normalization_uses_ni": false,
+  "ood_optimized": false,
+  "retention_stream_enabled": true,
+  "hidden_replay": false
+}
