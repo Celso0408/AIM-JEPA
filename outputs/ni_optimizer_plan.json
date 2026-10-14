@@ -1,0 +1,17 @@
+{
+  "schedule": [
+    [
+      "G_cohesive_calibration",
+      30
+    ],
+    [
+      "G_adapter_warmup",
+      30
+    ],
+    [
+      "G_joint_finetune",
+      80
+    ]
+  ],
+  "ni_lr_planned_updates": 6020
+}
