@@ -1,0 +1,14 @@
+{
+  "checkpoint":"\/tmp\/v31_g_joint_finetune_zvy15jrw\/best.pt",
+  "stage":"G_joint_finetune",
+  "checkpoint_role":"literal_last",
+  "global_step":0,
+  "best_validation":0.0131981079,
+  "n_predictions":4699,
+  "splits":{
+    "OOD family holdout (shear\/combo)":3000,
+    "Al ID holdout":870,
+    "Fe ID holdout":829
+  },
+  "energy_error_sign":"prediction minus DFT target; positive means overprediction"
+}
