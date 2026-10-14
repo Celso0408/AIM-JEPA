@@ -1,0 +1,178 @@
+{
+  "source": "pretrain_train ONLY",
+  "calc_ids": [
+    "Al__cfg_0074",
+    "Fe__cfg_0082",
+    "Al__cfg_0937",
+    "Fe__cfg_3966",
+    "Al__cfg_1236",
+    "Fe__cfg_4623",
+    "Al__cfg_1730",
+    "Fe__cfg_4698",
+    "Al__cfg_5572",
+    "Fe__cfg_6060",
+    "Al__cfg_5685",
+    "Fe__cfg_6356",
+    "Al__cfg_7724",
+    "Fe__cfg_6388",
+    "Al__cfg_8021",
+    "Fe__cfg_8235"
+  ],
+  "cloned_model": true,
+  "dropout_disabled": true,
+  "ema_teacher_fixed": true,
+  "optimization": "fixed final spectral weights; no curriculum",
+  "scenarios": [
+    {
+      "translations": false,
+      "records": 16,
+      "steps": 200,
+      "seconds": 23.448940202011727,
+      "before": [
+        {
+          "element": "Al",
+          "field": "density",
+          "cosine_full": 0.6327522769570351,
+          "cosine_low": 0.5853509902954102,
+          "cosine_middle": 0.6108127385377884,
+          "cosine_high": 0.6644735410809517
+        },
+        {
+          "element": "Al",
+          "field": "potential",
+          "cosine_full": -0.020937449182383716,
+          "cosine_low": 0.09763044118881226,
+          "cosine_middle": -0.037736531579867005,
+          "cosine_high": -0.02696241211378947
+        },
+        {
+          "element": "Fe",
+          "field": "density",
+          "cosine_full": 0.5710269063711166,
+          "cosine_low": -0.21505317650735378,
+          "cosine_middle": 0.6309423223137856,
+          "cosine_high": 0.7139765098690987
+        },
+        {
+          "element": "Fe",
+          "field": "potential",
+          "cosine_full": 0.09279196429997683,
+          "cosine_low": 0.19025320187211037,
+          "cosine_middle": 0.1763514894992113,
+          "cosine_high": -0.009542343788780272
+        }
+      ],
+      "after": [
+        {
+          "element": "Al",
+          "field": "density",
+          "cosine_full": 0.8906332403421402,
+          "cosine_low": 0.9150241911411285,
+          "cosine_middle": 0.8651173338294029,
+          "cosine_high": 0.9111465662717819
+        },
+        {
+          "element": "Al",
+          "field": "potential",
+          "cosine_full": 0.6721297353506088,
+          "cosine_low": 0.861449122428894,
+          "cosine_middle": 0.8192003220319748,
+          "cosine_high": 0.6508875861763954
+        },
+        {
+          "element": "Fe",
+          "field": "density",
+          "cosine_full": 0.8982822597026825,
+          "cosine_low": 0.9226951897144318,
+          "cosine_middle": 0.8816040828824043,
+          "cosine_high": 0.9079044908285141
+        },
+        {
+          "element": "Fe",
+          "field": "potential",
+          "cosine_full": 0.4181361086666584,
+          "cosine_low": 0.9478867575526237,
+          "cosine_middle": 0.6215209811925888,
+          "cosine_high": 0.045376887486781925
+        }
+      ],
+      "evaluation": "same unshifted training records in both scenarios"
+    },
+    {
+      "translations": true,
+      "records": 16,
+      "steps": 200,
+      "seconds": 23.58657590392977,
+      "before": [
+        {
+          "element": "Al",
+          "field": "density",
+          "cosine_full": 0.6327522769570351,
+          "cosine_low": 0.5853509902954102,
+          "cosine_middle": 0.6108127385377884,
+          "cosine_high": 0.6644735410809517
+        },
+        {
+          "element": "Al",
+          "field": "potential",
+          "cosine_full": -0.020937449182383716,
+          "cosine_low": 0.09763044118881226,
+          "cosine_middle": -0.037736531579867005,
+          "cosine_high": -0.02696241211378947
+        },
+        {
+          "element": "Fe",
+          "field": "density",
+          "cosine_full": 0.5710269063711166,
+          "cosine_low": -0.21505317650735378,
+          "cosine_middle": 0.6309423223137856,
+          "cosine_high": 0.7139765098690987
+        },
+        {
+          "element": "Fe",
+          "field": "potential",
+          "cosine_full": 0.09279196429997683,
+          "cosine_low": 0.19025320187211037,
+          "cosine_middle": 0.1763514894992113,
+          "cosine_high": -0.009542343788780272
+        }
+      ],
+      "after": [
+        {
+          "element": "Al",
+          "field": "density",
+          "cosine_full": 0.8958075866103172,
+          "cosine_low": 0.923063226044178,
+          "cosine_middle": 0.8699134290218353,
+          "cosine_high": 0.9161365106701851
+        },
+        {
+          "element": "Al",
+          "field": "potential",
+          "cosine_full": 0.7451715990900993,
+          "cosine_low": 0.9098187163472176,
+          "cosine_middle": 0.8666141927242279,
+          "cosine_high": 0.7143209278583527
+        },
+        {
+          "element": "Fe",
+          "field": "density",
+          "cosine_full": 0.9075970649719238,
+          "cosine_low": 0.9347545281052589,
+          "cosine_middle": 0.8955247923731804,
+          "cosine_high": 0.9128706529736519
+        },
+        {
+          "element": "Fe",
+          "field": "potential",
+          "cosine_full": 0.447246041148901,
+          "cosine_low": 0.946331076323986,
+          "cosine_middle": 0.6473621651530266,
+          "cosine_high": 0.0740992370992899
+        }
+      ],
+      "evaluation": "same unshifted training records in both scenarios"
+    }
+  ],
+  "warning": "Fit diagnostic only. Does not establish generalization or optimal hyperparameters."
+}
