@@ -783,7 +783,14 @@ class HamiltonianDataset(Dataset):
     """Stateless, epoch-keyed train transforms; validation/test records stay immutable."""
     def __init__(self,rows:Sequence[Mapping[str,Any]],augment:bool=False):
         self.rows=list(rows); self.augment=augment; self.epoch=0; self.resample_cache:dict[tuple[str,int],dict[str,Any]]={}; self.resample_failures=[]
-    def set_epoch(self,epoch:int)->None: self.epoch=int(epoch)
+    def set_epoch(self,epoch:int)->None:
+        # The resample cache is keyed by (group_id, epoch) and group_id is unique per record,
+        # so an entry is written and read once inside the same epoch and can never be hit
+        # again afterwards.  Without this reset the dictionary keeps one projected record per
+        # resampled sample per epoch for the whole run, which grows into gigabytes of host
+        # memory over a long curriculum.  Dropping stale epochs changes no sampled value.
+        if int(epoch)!=self.epoch: self.resample_cache.clear()
+        self.epoch=int(epoch)
     def __len__(self)->int: return len(self.rows)
     def __getitem__(self,index:int)->Mapping[str,Any]:
         base=self.rows[index]
@@ -829,14 +836,43 @@ def collate_training_records(rows:Sequence[Mapping[str,Any]])->dict[str,Any]:
     return batch
 
 
+def dataloader_worker_count()->int:
+    """Workers for batch preparation, or 0 when the process model cannot support them.
+
+    The stages are executed with exec() into main.py's namespace, so HamiltonianDataset is
+    defined in a module that a child process cannot import.  Under the "fork" start method
+    the child inherits the objects and nothing is pickled, so workers are safe; under
+    "spawn" (Windows, macOS) the worker would fail to rebuild the dataset.  The count is
+    therefore forced to 0 unless the platform default is fork.
+
+    Override with PSI_JEPA_DATALOADER_WORKERS; 0 restores the single-process behaviour.
+    """
+    import multiprocessing
+    requested=os.environ.get("PSI_JEPA_DATALOADER_WORKERS")
+    start_method=multiprocessing.get_start_method(allow_none=False)
+    if start_method!="fork":
+        if requested not in (None,"0"):
+            print(f"Ignoring PSI_JEPA_DATALOADER_WORKERS={requested}: "
+                  f"the start method is {start_method}, not fork.")
+        return 0
+    if requested is not None: return max(0,int(requested))
+    return min(8,max(0,(os.cpu_count() or 1)-2))
+
+
 def make_loader(rows:Sequence[Mapping[str,Any]],shuffle:bool,include_targets:bool=True)->DataLoader:
     generator=torch.Generator().manual_seed(CFG.seed)
     dataset=HamiltonianDataset(rows,augment=shuffle and include_targets)
     collate_fn=collate_training_records if shuffle and include_targets else lambda batch:collate_records(batch,include_targets=include_targets)
     batch_size=TRAINING_MICROBATCH_SIZE if shuffle and include_targets else EVALUATION_BATCH_SIZE
+    workers=dataloader_worker_count() if shuffle and include_targets else 0
+    extra={"prefetch_factor":4} if workers else {}
+    # persistent_workers stays off on purpose: s05 calls dataset.set_epoch() between epochs,
+    # and a persistent worker would keep its own copy of the dataset frozen at epoch 0, which
+    # silently freezes the training augmentations instead of raising.
     return DataLoader(dataset,batch_size=min(batch_size,max(1,len(rows))),shuffle=shuffle,
                       collate_fn=collate_fn,generator=generator,
-                      num_workers=0,pin_memory=DEVICE.type=="cuda")
+                      num_workers=workers,pin_memory=DEVICE.type=="cuda",
+                      persistent_workers=False,**extra)
 
 
 loaders={name:make_loader(rows,shuffle=name=="train") for name,rows in splits.items()}
