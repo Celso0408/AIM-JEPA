@@ -645,26 +645,55 @@ def operator_only_record(record:Mapping[str,Any],include_continuum_threshold:boo
     return out
 
 
+EDGE_TOPOLOGY_CACHE:dict[tuple[int,tuple[int,...]],tuple[np.ndarray,np.ndarray,np.ndarray]]={}
+
+
+def edge_topology(n:int,dilations:tuple[int,...])->tuple[np.ndarray,np.ndarray,np.ndarray]:
+    """Edge indices and the dilation column; they depend only on n and on the dilations.
+
+    The emission order reproduces the original nested loops exactly: the self-loops first,
+    then, for each dilation, the pairs (i,j) and (j,i) interleaved.  Message passing sums
+    over incoming edges, so preserving this order keeps the float accumulation identical.
+    """
+    key=(n,dilations); cached=EDGE_TOPOLOGY_CACHE.get(key)
+    if cached is not None: return cached
+    scale=max(max(dilations),1); sources=[]; destinations=[]; dilation_columns=[]
+    for dilation in (0,*dilations):
+        if dilation==0:
+            index=np.arange(n,dtype=np.int64); sources.append(index); destinations.append(index)
+            dilation_columns.append(np.full(n,dilation/scale,dtype=np.float64))
+        else:
+            count=max(0,n-dilation); i=np.arange(count,dtype=np.int64); j=i+dilation
+            sources.append(np.stack([i,j],axis=1).ravel()); destinations.append(np.stack([j,i],axis=1).ravel())
+            dilation_columns.append(np.full(2*count,dilation/scale,dtype=np.float64))
+    built=(np.concatenate(sources),np.concatenate(destinations),np.concatenate(dilation_columns))
+    EDGE_TOPOLOGY_CACHE[key]=built; return built
+
+
 def build_graph_edges(x:torch.Tensor,node_mask:torch.Tensor,potential_valid:torch.Tensor,
                       dilations:Sequence[int]=CFG.graph_dilations)->tuple[torch.Tensor,torch.Tensor]:
-    B,N=x.shape; pairs=[]; attrs=[]
+    # Vectorized form of the original per-edge Python loop.  Verified bit-identical
+    # (torch.equal on both returned tensors) across geometries, batch shapes and grid
+    # sizes from n=1 to n=513; see bench/bench_build_graph_edges.py in the review kit.
+    B,N=x.shape; dilations=tuple(dilations); pair_blocks=[]; attribute_blocks=[]
     for b in range(B):
-        n=int(node_mask[b].sum()); length=float(x[b,n-1]-x[b,0]); local=x[b,1:n]-x[b,:n-1]
-        for dilation in (0,*dilations):
-            if dilation==0:
-                iterator=((i,i) for i in range(n))
-            else:
-                iterator=((i,i+dilation) for i in range(max(0,n-dilation)))
-            for i,j in iterator:
-                directions=((i,j),) if i==j else ((i,j),(j,i))
-                for src,dst in directions:
-                    dx=float(x[b,dst]-x[b,src]); adx=abs(dx); hs=float(local[min(src,n-2)]) if n>1 else length
-                    hd=float(local[min(dst,n-2)]) if n>1 else length
-                    pairs.append((b*N+src,b*N+dst))
-                    attrs.append((dx/max(length,1e-12),adx/max(length,1e-12),math.log(adx/max(length,1e-12)+1e-8),
-                                  0.0 if dx==0 else math.copysign(1.0,dx),dilation/max(max(dilations),1),
-                                  math.log((hs+1e-12)/(hd+1e-12)),float(potential_valid[b,src] and potential_valid[b,dst])))
-    return torch.tensor(pairs,dtype=torch.long).T.contiguous(),torch.tensor(attrs,dtype=torch.float32)
+        n=int(node_mask[b].sum()); row=x[b]
+        # length and local stay float32 subtractions before the upcast, as in the original.
+        length=float(row[n-1]-row[0])
+        local=(row[1:n]-row[:n-1]).to(torch.float64).numpy() if n>1 else None
+        source,destination,dilation_column=edge_topology(n,dilations)
+        dx=(row[torch.from_numpy(destination)]-row[torch.from_numpy(source)]).to(torch.float64).numpy()
+        adx=np.abs(dx); denominator=max(length,1e-12)
+        if n>1: hs=local[np.minimum(source,n-2)]; hd=local[np.minimum(destination,n-2)]
+        else: hs=np.full(source.shape,length,dtype=np.float64); hd=hs
+        valid=potential_valid[b].numpy()
+        attribute_blocks.append(np.stack([dx/denominator,adx/denominator,np.log(adx/denominator+1e-8),
+                                          np.where(dx==0,0.0,np.copysign(1.0,dx)),dilation_column,
+                                          np.log((hs+1e-12)/(hd+1e-12)),
+                                          (valid[source]&valid[destination]).astype(np.float64)],axis=1))
+        pair_blocks.append(np.stack([b*N+source,b*N+destination],axis=1))
+    pairs=np.concatenate(pair_blocks,axis=0); attrs=np.concatenate(attribute_blocks,axis=0)
+    return torch.from_numpy(pairs).T.contiguous(),torch.tensor(attrs,dtype=torch.float32)
 
 
 def collate_records(rows:Sequence[Mapping[str,Any]],include_targets:bool=True,
@@ -777,7 +806,11 @@ class HamiltonianDataset(Dataset):
                 except Exception as exc:
                     self.resample_failures.append({"epoch":self.epoch,"group_id":base["group_id"],"reason":str(exc)}); self.resample_cache[key]=out
             out=self.resample_cache[key]
-        out=copy.deepcopy(dict(out)); out["_request_reflection_pair"]=bool(out["geometry"] in ("finite_interval","truncated_line") and rng.random()<CFG.reflection_pair_probability)
+        # A shallow copy is enough to attach the flag without touching the stored record:
+        # every augmentation above already returns a fresh dict, and collation only reads
+        # the arrays (np.asarray / torch.as_tensor into a preallocated slice, which copies).
+        # The resample cache is shared across samples, so it must not be mutated either.
+        out=dict(out); out["_request_reflection_pair"]=bool(out["geometry"] in ("finite_interval","truncated_line") and rng.random()<CFG.reflection_pair_probability)
         return out
 
 

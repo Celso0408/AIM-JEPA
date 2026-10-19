@@ -70,3 +70,6 @@ dist/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Local reference library (copyrighted PDFs); kept outside version control.
+contexto/

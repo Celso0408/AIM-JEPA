@@ -237,35 +237,62 @@ def validation_metric_score(metrics:Mapping[str,float])->float:
             .05*float(metrics["residual"])+.02*float(metrics["orthogonality"]))
 
 
+CACHE_VALIDATION_BATCHES=os.environ.get("PSI_JEPA_CACHE_VALIDATION_BATCHES","1")=="1"
+
+
+def family_grouped_batches(loader:DataLoader)->list[tuple[str,dict[str,Any]]]:
+    """Validation batches that never mix families, collated once and reused.
+
+    Validation and test records are immutable by construction: HamiltonianDataset is built
+    with augment=False whenever shuffle is False, so the collated tensors can be built once
+    and reused across epochs.  Keeping every batch inside a single family lets a single pass
+    produce both the global metrics and the per-family metrics.
+
+    Each family keeps its dataset order and the evaluation batch size, so the per-family
+    batches are exactly the ones the previous per-family loaders produced.
+    """
+    dataset=loader.dataset
+    cached=getattr(dataset,"_family_grouped_batches",None)
+    if cached is not None: return cached
+    grouped:dict[str,list[Mapping[str,Any]]]={}
+    for record in getattr(dataset,"rows",[]) or []:
+        grouped.setdefault(str(record["family"]),[]).append(record)
+    batches=[]
+    for family in sorted(grouped):
+        rows=grouped[family]; size=min(EVALUATION_BATCH_SIZE,max(1,len(rows)))
+        for start in range(0,len(rows),size):
+            batches.append((family,collate_records(rows[start:start+size],include_targets=True)))
+    if CACHE_VALIDATION_BATCHES: dataset._family_grouped_batches=batches
+    return batches
+
+
 def validation_summary(m:TrueSchrodingerJEPA,loader:DataLoader,active_states:int|None=None,
                        include_group_robustness:bool=True)->dict[str,float]:
     """Raw validation diagnostics; physics terms are never hidden by training ramps."""
-    m.eval(); totals={}; count=0
+    m.eval(); totals={}; count=0; group_totals:dict[str,dict[str,float]]={}; group_counts:dict[str,int]={}
     with torch.no_grad():
-        for raw in loader:
+        for family,raw in family_grouped_batches(loader):
             b=to_device(raw); out=m.forward_training(b,detach_ritz_vectors=True)
             _,terms=compute_losses(out,b,DEFAULT_LOSS_WEIGHTS,loss_model=m,active_states=active_states)
             weight=len(raw["operator_records"]); count+=weight
+            bucket=group_totals.setdefault(family,{}); group_counts[family]=group_counts.get(family,0)+weight
             for key,value in terms.items():
-                if value.ndim==0: totals[key]=totals.get(key,0.0)+weight*float(value)
+                if value.ndim==0:
+                    scalar=float(value); totals[key]=totals.get(key,0.0)+weight*scalar
+                    bucket[key]=bucket.get(key,0.0)+weight*scalar
     result={key:value/max(count,1) for key,value in totals.items()}
-    if include_group_robustness:
-        rows=getattr(loader.dataset,"rows",None)
-        if rows:
-            groups=sorted({str(record["family"]) for record in rows})
-            group_scores=[]
-            for group in groups:
-                group_rows=[record for record in rows if str(record["family"])==group]
-                group_metrics=validation_summary(m,make_loader(group_rows,shuffle=False),active_states,False)
-                group_scores.append(validation_metric_score(group_metrics))
-            ordered=sorted(group_scores,reverse=True); hard_count=max(1,math.ceil(.25*len(ordered)))
-            result["validation_global_score"]=validation_metric_score(result)
-            result["validation_hard_group_score"]=float(np.mean(ordered[:hard_count]))
-            result["validation_worst_group_score"]=float(ordered[0])
-            result["validation_group_count"]=float(len(ordered))
-            result["robust_validation_score"]=(.55*result["validation_global_score"]+
-                                                 .30*result["validation_hard_group_score"]+
-                                                 .15*result["validation_worst_group_score"])
+    if include_group_robustness and group_counts:
+        group_scores=[validation_metric_score({key:value/max(group_counts[family],1)
+                                               for key,value in group_totals[family].items()})
+                      for family in sorted(group_counts)]
+        ordered=sorted(group_scores,reverse=True); hard_count=max(1,math.ceil(.25*len(ordered)))
+        result["validation_global_score"]=validation_metric_score(result)
+        result["validation_hard_group_score"]=float(np.mean(ordered[:hard_count]))
+        result["validation_worst_group_score"]=float(ordered[0])
+        result["validation_group_count"]=float(len(ordered))
+        result["robust_validation_score"]=(.55*result["validation_global_score"]+
+                                             .30*result["validation_hard_group_score"]+
+                                             .15*result["validation_worst_group_score"])
     return result
 
 
