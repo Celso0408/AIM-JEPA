@@ -1,0 +1,11 @@
+{
+  "balanced_batches": true,
+  "unique_records_per_element": {
+    "Al": 6787,
+    "Fe": 6813
+  },
+  "batches_per_epoch": 3407,
+  "draws_per_epoch": 13628,
+  "tail_oversampling_added": false,
+  "rule": "complete shuffled pool cycles; equal Al/Fe per batch; minority uniformly repeated"
+}

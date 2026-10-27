@@ -1,0 +1,4 @@
+calc_id,index_energy_ev,parsed_etot_ev,output_complete,corrected,issue,out_path
+Fe__cfg_2335,-6820.622674,-6820.622674,False,False,incomplete_output,/home/ubuntu/JEPA-periodic/public_core/data/Fe/cfg_2335/Fe.out
+Fe__cfg_6424,-6820.624424,-6820.624424,False,False,incomplete_output,/home/ubuntu/JEPA-periodic/public_core/data/Fe/cfg_6424/Fe.out
+Ni__cfg_6092,-1436.698243,-9131.058318,False,True,,/home/ubuntu/JEPA-periodic/public_core/data/Ni/cfg_6092/Ni.out

@@ -1,0 +1,7 @@
+{
+  "strategy": "same-mode complex intertwiner projection; DC real affine",
+  "discarded_weight_l2": 1.9535386829964334,
+  "source_weight_l2": 50.03783968548827,
+  "discarded_bias_l2": 0.03315222454151798,
+  "residual": "fresh small nonzero equivariant network; amplitude correction starts at one"
+}

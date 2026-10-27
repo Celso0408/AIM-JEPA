@@ -1,0 +1,6 @@
+{
+  "stage": "F_periodic_ramp",
+  "planned_from_epochs": 10224,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 10224
+}

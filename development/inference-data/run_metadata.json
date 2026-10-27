@@ -1,0 +1,76 @@
+{
+  "checkpoint_source": "/home/rafael/Documentos/Pos_doc-BIO-IA/Task-1/single-element_GNN-JEPA/V33/inference-joint/G_joint_finetune.zip",
+  "checkpoint_member": "G_joint_finetune/last.pt",
+  "stage": "G_joint_finetune",
+  "checkpoint_role": "literal_last",
+  "epoch": 84,
+  "global_step": 3655,
+  "best_validation": 0.015489164785572556,
+  "architecture_version": "periodic-field-jepa-v33-bispectrum-geometry-equivariant",
+  "n_predictions": 7049,
+  "splits": {
+    "Al ID holdout": {
+      "records": 870,
+      "test_type": "ID",
+      "families": {
+        "disp": 318,
+        "iso": 316,
+        "aniso": 236
+      }
+    },
+    "Fe ID holdout": {
+      "records": 829,
+      "test_type": "ID",
+      "families": {
+        "iso": 298,
+        "disp": 268,
+        "aniso": 263
+      }
+    },
+    "Ni ID holdout": {
+      "records": 849,
+      "test_type": "ID",
+      "families": {
+        "disp": 300,
+        "iso": 299,
+        "aniso": 250
+      }
+    },
+    "Al OOD family holdout": {
+      "records": 1500,
+      "test_type": "OOD",
+      "families": {
+        "shear": 1000,
+        "combo": 500
+      }
+    },
+    "Fe OOD family holdout": {
+      "records": 1500,
+      "test_type": "OOD",
+      "families": {
+        "shear": 1000,
+        "combo": 500
+      }
+    },
+    "Ni OOD family holdout": {
+      "records": 1501,
+      "test_type": "OOD",
+      "families": {
+        "shear": 1000,
+        "combo": 500,
+        "iso": 1
+      }
+    }
+  },
+  "density_matrices_exported": 7049,
+  "density_matrices_grid": "canonical z,y,x; density e/Bohr^3",
+  "classification_tasks": [
+    "density_high",
+    "potential_positive",
+    "weak_cohesion",
+    "energy_high_tail"
+  ],
+  "confusion_layout": "rows reference [negative, positive]; columns prediction [negative, positive]",
+  "classification_count_units": "voxels for density/potential; configurations for energy",
+  "energy_error_sign": "prediction minus DFT target; positive means overprediction"
+}

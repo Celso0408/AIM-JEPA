@@ -1,0 +1,115 @@
+{
+  "stage": "D_latent",
+  "run_mode": "DEVELOPMENT",
+  "rows": [
+    {
+      "element": "Al",
+      "field": "density",
+      "records": 202,
+      "cosine_similarity": 0.9907816052436829,
+      "cosine_by_band": {
+        "low": 0.9994836449623108,
+        "middle": 0.9895362257957458,
+        "high": 0.9892970323562622
+      },
+      "criteria": {
+        "cosine_ok": true,
+        "low_band_ok": true,
+        "middle_band_ok": true,
+        "high_band_ok": true,
+        "rank_ok": true,
+        "dominant_fraction_ok": true
+      },
+      "failed_criteria": [],
+      "predicted_effective_rank": 9.221219525869861,
+      "target_effective_rank": 9.061142041021393,
+      "predicted_dominant_fraction": 0.323045605909028,
+      "target_dominant_fraction": 0.3242636505742159,
+      "required_rank": 4.530571020510696,
+      "allowed_dominant_fraction": 0.8,
+      "passed": true
+    },
+    {
+      "element": "Al",
+      "field": "potential",
+      "records": 202,
+      "cosine_similarity": 0.9946731925010681,
+      "cosine_by_band": {
+        "low": 0.999598503112793,
+        "middle": 0.9968716502189636,
+        "high": 0.9936215877532959
+      },
+      "criteria": {
+        "cosine_ok": true,
+        "low_band_ok": true,
+        "middle_band_ok": true,
+        "high_band_ok": true,
+        "rank_ok": true,
+        "dominant_fraction_ok": true
+      },
+      "failed_criteria": [],
+      "predicted_effective_rank": 9.228071061705775,
+      "target_effective_rank": 9.575075961242675,
+      "predicted_dominant_fraction": 0.3329509769355901,
+      "target_dominant_fraction": 0.3231383338362345,
+      "required_rank": 4.787537980621337,
+      "allowed_dominant_fraction": 0.8,
+      "passed": true
+    },
+    {
+      "element": "Fe",
+      "field": "density",
+      "records": 198,
+      "cosine_similarity": 0.9992126226425171,
+      "cosine_by_band": {
+        "low": 0.9995699524879456,
+        "middle": 0.999017059803009,
+        "high": 0.9993205070495605
+      },
+      "criteria": {
+        "cosine_ok": true,
+        "low_band_ok": true,
+        "middle_band_ok": true,
+        "high_band_ok": true,
+        "rank_ok": true,
+        "dominant_fraction_ok": true
+      },
+      "failed_criteria": [],
+      "predicted_effective_rank": 9.524816280718953,
+      "target_effective_rank": 9.559838872279101,
+      "predicted_dominant_fraction": 0.27848219738052327,
+      "target_dominant_fraction": 0.27869538714943115,
+      "required_rank": 4.779919436139551,
+      "allowed_dominant_fraction": 0.8,
+      "passed": true
+    },
+    {
+      "element": "Fe",
+      "field": "potential",
+      "records": 198,
+      "cosine_similarity": 0.9971960783004761,
+      "cosine_by_band": {
+        "low": 0.9998558759689331,
+        "middle": 0.9984715580940247,
+        "high": 0.99517422914505
+      },
+      "criteria": {
+        "cosine_ok": true,
+        "low_band_ok": true,
+        "middle_band_ok": true,
+        "high_band_ok": true,
+        "rank_ok": true,
+        "dominant_fraction_ok": true
+      },
+      "failed_criteria": [],
+      "predicted_effective_rank": 9.805491591728824,
+      "target_effective_rank": 10.161946805154288,
+      "predicted_dominant_fraction": 0.2672048952778752,
+      "target_dominant_fraction": 0.26070143119210964,
+      "required_rank": 5.0,
+      "allowed_dominant_fraction": 0.8,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

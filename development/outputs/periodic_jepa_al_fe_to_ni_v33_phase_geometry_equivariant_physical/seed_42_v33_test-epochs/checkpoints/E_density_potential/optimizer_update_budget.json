@@ -1,0 +1,6 @@
+{
+  "stage": "E_density_potential",
+  "planned_from_epochs": 12780,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 12780
+}

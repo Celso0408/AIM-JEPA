@@ -1,0 +1,6 @@
+{
+  "stage": "E_density",
+  "planned_from_epochs": 8520,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 8520
+}

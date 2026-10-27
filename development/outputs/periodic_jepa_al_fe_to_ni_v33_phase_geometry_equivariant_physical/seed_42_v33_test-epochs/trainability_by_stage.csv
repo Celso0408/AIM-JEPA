@@ -1,0 +1,121 @@
+stage,module,parameters,trainable_parameters,trainable_percent,frozen_parameters,adam_source_stage,adam_states_restored,adam_states_initialized,adam_states_removed,learning_rates,ema_frozen
+autoencoder,context_encoder,742532,0,0.0,742532,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,ni_energy_calibration,2,0,0.0,2,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,ni_shared_gain,2,0,0.0,2,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,ni_field_adapter,30400,0,0.0,30400,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,energy_descriptor,0,0,0.0,0,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,cohesive_head,458753,458753,100.0,0,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,field_online_encoder,292,292,100.0,0,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,field_target_encoder,292,0,0.0,292,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,electronic_online_encoder,292,0,0.0,292,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,field_reconstruction_decoder,2099200,2099200,100.0,0,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,field_prediction_decoder,40333,0,0.0,40333,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+autoencoder,predictor,444359,0,0.0,444359,,0,28,0,"{""solution_online_encoder"": 0.0001, ""reconstruction_decoder"": 0.0001, ""cohesive_head"": 5e-05}",False
+D_latent,context_encoder,742532,742404,99.98276168569166,128,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,ni_energy_calibration,2,0,0.0,2,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,ni_shared_gain,2,0,0.0,2,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,ni_field_adapter,30400,0,0.0,30400,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,energy_descriptor,0,0,0.0,0,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,cohesive_head,458753,0,0.0,458753,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,field_online_encoder,292,0,0.0,292,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,field_target_encoder,292,0,0.0,292,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,electronic_online_encoder,292,292,100.0,0,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,field_reconstruction_decoder,2099200,0,0.0,2099200,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,field_prediction_decoder,40333,0,0.0,40333,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+D_latent,predictor,444359,444359,100.0,0,autoencoder,0,177,28,"{""potential_context"": 0.0001, ""predictor"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,context_encoder,742532,742404,99.98276168569166,128,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,ni_energy_calibration,2,0,0.0,2,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,ni_shared_gain,2,0,0.0,2,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,ni_field_adapter,30400,0,0.0,30400,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,energy_descriptor,0,0,0.0,0,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,cohesive_head,458753,0,0.0,458753,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,field_online_encoder,292,0,0.0,292,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,field_target_encoder,292,0,0.0,292,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,electronic_online_encoder,292,292,100.0,0,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,field_reconstruction_decoder,2099200,0,0.0,2099200,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,field_prediction_decoder,40333,40333,100.0,0,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density,predictor,444359,444359,100.0,0,D_latent,177,18,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,context_encoder,742532,742404,99.98276168569166,128,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,ni_energy_calibration,2,0,0.0,2,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,ni_shared_gain,2,0,0.0,2,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,ni_field_adapter,30400,0,0.0,30400,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,energy_descriptor,0,0,0.0,0,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,cohesive_head,458753,0,0.0,458753,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,field_online_encoder,292,0,0.0,292,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,field_target_encoder,292,0,0.0,292,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,electronic_online_encoder,292,292,100.0,0,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,field_reconstruction_decoder,2099200,0,0.0,2099200,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,field_prediction_decoder,40333,40333,100.0,0,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_density_potential,predictor,444359,444359,100.0,0,E_density,195,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""electronic_online_encoder"": 5e-06}",False
+E_full,context_encoder,742532,742404,99.98276168569166,128,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,ni_energy_calibration,2,0,0.0,2,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,ni_shared_gain,2,0,0.0,2,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,ni_field_adapter,30400,0,0.0,30400,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,energy_descriptor,0,0,0.0,0,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,cohesive_head,458753,458753,100.0,0,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,field_online_encoder,292,0,0.0,292,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,field_target_encoder,292,0,0.0,292,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,electronic_online_encoder,292,292,100.0,0,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,field_reconstruction_decoder,2099200,0,0.0,2099200,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,field_prediction_decoder,40333,40333,100.0,0,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+E_full,predictor,444359,444359,100.0,0,E_density_potential,195,20,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,context_encoder,742532,742404,99.98276168569166,128,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,ni_energy_calibration,2,0,0.0,2,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,ni_shared_gain,2,0,0.0,2,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,ni_field_adapter,30400,0,0.0,30400,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,energy_descriptor,0,0,0.0,0,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,cohesive_head,458753,458753,100.0,0,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,field_online_encoder,292,0,0.0,292,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,field_target_encoder,292,0,0.0,292,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,electronic_online_encoder,292,292,100.0,0,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,field_reconstruction_decoder,2099200,0,0.0,2099200,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,field_prediction_decoder,40333,40333,100.0,0,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+F_periodic_ramp,predictor,444359,444359,100.0,0,E_full,215,0,0,"{""potential_context"": 5e-05, ""predictor"": 5e-05, ""prediction_decoder"": 0.0001, ""cohesive_head"": 5e-05, ""electronic_online_encoder"": 5e-06}",False
+P_cohesive_refinement,context_encoder,742532,0,0.0,742532,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,ni_energy_calibration,2,0,0.0,2,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,ni_shared_gain,2,0,0.0,2,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,ni_field_adapter,30400,0,0.0,30400,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,energy_descriptor,0,0,0.0,0,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,cohesive_head,458753,458753,100.0,0,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,field_online_encoder,292,0,0.0,292,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,field_target_encoder,292,0,0.0,292,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,electronic_online_encoder,292,0,0.0,292,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,field_reconstruction_decoder,2099200,0,0.0,2099200,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,field_prediction_decoder,40333,0,0.0,40333,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+P_cohesive_refinement,predictor,444359,0,0.0,444359,F_periodic_ramp,20,0,195,"{""cohesive_head"": 1e-05}",False
+G_cohesive_calibration,context_encoder,742532,0,0.0,742532,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,ni_energy_calibration,2,2,100.0,0,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,ni_shared_gain,2,0,0.0,2,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,ni_field_adapter,30400,0,0.0,30400,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,energy_descriptor,0,0,0.0,0,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,cohesive_head,458753,0,0.0,458753,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,field_online_encoder,292,0,0.0,292,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,field_target_encoder,292,0,0.0,292,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,electronic_online_encoder,292,0,0.0,292,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,field_reconstruction_decoder,2099200,0,0.0,2099200,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,field_prediction_decoder,40333,0,0.0,40333,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_cohesive_calibration,predictor,444359,0,0.0,444359,P_cohesive_refinement,0,2,20,"{""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,context_encoder,742532,128,0.0172383143083395,742404,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,ni_energy_calibration,2,2,100.0,0,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,ni_shared_gain,2,2,100.0,0,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,ni_field_adapter,30400,30400,100.0,0,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,energy_descriptor,0,0,0.0,0,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,cohesive_head,458753,0,0.0,458753,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,field_online_encoder,292,0,0.0,292,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,field_target_encoder,292,0,0.0,292,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,electronic_online_encoder,292,0,0.0,292,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,field_reconstruction_decoder,2099200,0,0.0,2099200,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,field_prediction_decoder,40333,0,0.0,40333,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_adapter_warmup,predictor,444359,0,0.0,444359,G_cohesive_calibration,2,18,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05}",True
+G_joint_finetune,context_encoder,742532,173505,23.366669719284825,569027,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,ni_energy_calibration,2,2,100.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,ni_shared_gain,2,2,100.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,ni_field_adapter,30400,30400,100.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,energy_descriptor,0,0,0.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,cohesive_head,458753,458753,100.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,field_online_encoder,292,0,0.0,292,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,field_target_encoder,292,0,0.0,292,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,electronic_online_encoder,292,0,0.0,292,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,field_reconstruction_decoder,2099200,0,0.0,2099200,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,field_prediction_decoder,40333,40333,100.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True
+G_joint_finetune,predictor,444359,444359,100.0,0,G_adapter_warmup,20,128,0,"{""ni_embedding"": 2.5e-05, ""ni_field_adapter"": 2.5e-05, ""ni_shared_gain"": 5e-05, ""ni_energy_calibration"": 5e-05, ""cohesive_head"": 1.25e-05, ""predictor"": 5e-06, ""prediction_decoder"": 1e-05, ""structural_last_block"": 2.5e-06}",True

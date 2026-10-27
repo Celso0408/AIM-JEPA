@@ -1,0 +1,113 @@
+aggregation_level,evaluation_split,task,count_unit,configurations,tn,fp,fn,tp,element,family
+split,Al ID holdout,density_high,voxels,870,38174390,211013,285418,4091419,,
+split,Al ID holdout,energy_high_tail,configurations,870,784,1,0,85,,
+split,Al ID holdout,potential_positive,voxels,870,11031689,135714,48590,31546247,,
+split,Al ID holdout,weak_cohesion,configurations,870,782,0,0,88,,
+split,Al OOD family holdout,density_high,voxels,1500,65770781,368779,487947,7100493,,
+split,Al OOD family holdout,energy_high_tail,configurations,1500,1353,1,1,145,,
+split,Al OOD family holdout,potential_positive,voxels,1500,19017760,238053,85218,54386969,,
+split,Al OOD family holdout,weak_cohesion,configurations,1500,1360,3,3,134,,
+split,Fe ID holdout,density_high,voxels,829,36655423,12794,71426,4007365,,
+split,Fe ID holdout,energy_high_tail,configurations,829,731,2,11,85,,
+split,Fe ID holdout,potential_positive,voxels,829,8503102,126796,72598,32044512,,
+split,Fe ID holdout,weak_cohesion,configurations,829,738,2,3,86,,
+split,Fe OOD family holdout,density_high,voxels,1500,66324303,22790,129224,7251683,,
+split,Fe OOD family holdout,energy_high_tail,configurations,1500,1344,3,14,139,,
+split,Fe OOD family holdout,potential_positive,voxels,1500,15388577,226514,133613,57979296,,
+split,Fe OOD family holdout,weak_cohesion,configurations,1500,1349,3,1,147,,
+split,Ni ID holdout,density_high,voxels,849,37541087,19063,49141,4120757,,
+split,Ni ID holdout,energy_high_tail,configurations,849,771,16,56,6,,
+split,Ni ID holdout,potential_positive,voxels,849,9034391,119715,77696,32498246,,
+split,Ni ID holdout,weak_cohesion,configurations,849,793,6,2,48,,
+split,Ni OOD family holdout,density_high,voxels,1501,66377677,33261,84921,7281293,,
+split,Ni OOD family holdout,energy_high_tail,configurations,1501,1347,36,105,13,,
+split,Ni OOD family holdout,potential_positive,voxels,1501,15965645,212642,135551,57463314,,
+split,Ni OOD family holdout,weak_cohesion,configurations,1501,1405,16,2,78,,
+split_element,Al ID holdout,density_high,voxels,870,38174390,211013,285418,4091419,Al,
+split_element,Al ID holdout,energy_high_tail,configurations,870,784,1,0,85,Al,
+split_element,Al ID holdout,potential_positive,voxels,870,11031689,135714,48590,31546247,Al,
+split_element,Al ID holdout,weak_cohesion,configurations,870,782,0,0,88,Al,
+split_element,Al OOD family holdout,density_high,voxels,1500,65770781,368779,487947,7100493,Al,
+split_element,Al OOD family holdout,energy_high_tail,configurations,1500,1353,1,1,145,Al,
+split_element,Al OOD family holdout,potential_positive,voxels,1500,19017760,238053,85218,54386969,Al,
+split_element,Al OOD family holdout,weak_cohesion,configurations,1500,1360,3,3,134,Al,
+split_element,Fe ID holdout,density_high,voxels,829,36655423,12794,71426,4007365,Fe,
+split_element,Fe ID holdout,energy_high_tail,configurations,829,731,2,11,85,Fe,
+split_element,Fe ID holdout,potential_positive,voxels,829,8503102,126796,72598,32044512,Fe,
+split_element,Fe ID holdout,weak_cohesion,configurations,829,738,2,3,86,Fe,
+split_element,Fe OOD family holdout,density_high,voxels,1500,66324303,22790,129224,7251683,Fe,
+split_element,Fe OOD family holdout,energy_high_tail,configurations,1500,1344,3,14,139,Fe,
+split_element,Fe OOD family holdout,potential_positive,voxels,1500,15388577,226514,133613,57979296,Fe,
+split_element,Fe OOD family holdout,weak_cohesion,configurations,1500,1349,3,1,147,Fe,
+split_element,Ni ID holdout,density_high,voxels,849,37541087,19063,49141,4120757,Ni,
+split_element,Ni ID holdout,energy_high_tail,configurations,849,771,16,56,6,Ni,
+split_element,Ni ID holdout,potential_positive,voxels,849,9034391,119715,77696,32498246,Ni,
+split_element,Ni ID holdout,weak_cohesion,configurations,849,793,6,2,48,Ni,
+split_element,Ni OOD family holdout,density_high,voxels,1501,66377677,33261,84921,7281293,Ni,
+split_element,Ni OOD family holdout,energy_high_tail,configurations,1501,1347,36,105,13,Ni,
+split_element,Ni OOD family holdout,potential_positive,voxels,1501,15965645,212642,135551,57463314,Ni,
+split_element,Ni OOD family holdout,weak_cohesion,configurations,1501,1405,16,2,78,Ni,
+split_element_family,Al ID holdout,density_high,voxels,236,10350754,57903,78992,1112223,Al,aniso
+split_element_family,Al ID holdout,energy_high_tail,configurations,236,217,0,0,19,Al,aniso
+split_element_family,Al ID holdout,potential_positive,voxels,236,2992965,36311,13498,8557098,Al,aniso
+split_element_family,Al ID holdout,weak_cohesion,configurations,236,211,0,0,25,Al,aniso
+split_element_family,Al ID holdout,density_high,voxels,318,13950255,77656,103228,1499197,Al,disp
+split_element_family,Al ID holdout,energy_high_tail,configurations,318,289,0,0,29,Al,disp
+split_element_family,Al ID holdout,potential_positive,voxels,318,4032006,50040,17709,11530581,Al,disp
+split_element_family,Al ID holdout,weak_cohesion,configurations,318,292,0,0,26,Al,disp
+split_element_family,Al ID holdout,density_high,voxels,316,13873381,75454,103198,1479999,Al,iso
+split_element_family,Al ID holdout,energy_high_tail,configurations,316,278,1,0,37,Al,iso
+split_element_family,Al ID holdout,potential_positive,voxels,316,4006718,49363,17383,11458568,Al,iso
+split_element_family,Al ID holdout,weak_cohesion,configurations,316,279,0,0,37,Al,iso
+split_element_family,Al OOD family holdout,density_high,voxels,500,21955801,122002,162660,2335537,Al,combo
+split_element_family,Al OOD family holdout,energy_high_tail,configurations,500,451,0,0,49,Al,combo
+split_element_family,Al OOD family holdout,potential_positive,voxels,500,6340018,78203,28631,18129148,Al,combo
+split_element_family,Al OOD family holdout,weak_cohesion,configurations,500,449,0,0,51,Al,combo
+split_element_family,Al OOD family holdout,density_high,voxels,1000,43814980,246777,325287,4764956,Al,shear
+split_element_family,Al OOD family holdout,energy_high_tail,configurations,1000,902,1,1,96,Al,shear
+split_element_family,Al OOD family holdout,potential_positive,voxels,1000,12677742,159850,56587,36257821,Al,shear
+split_element_family,Al OOD family holdout,weak_cohesion,configurations,1000,911,3,3,83,Al,shear
+split_element_family,Fe ID holdout,density_high,voxels,263,11628101,4134,22521,1272220,Fe,aniso
+split_element_family,Fe ID holdout,energy_high_tail,configurations,263,227,1,3,32,Fe,aniso
+split_element_family,Fe ID holdout,potential_positive,voxels,263,2698060,40329,23386,10165201,Fe,aniso
+split_element_family,Fe ID holdout,weak_cohesion,configurations,263,238,1,0,24,Fe,aniso
+split_element_family,Fe ID holdout,density_high,voxels,268,11851397,4116,23182,1294041,Fe,disp
+split_element_family,Fe ID holdout,energy_high_tail,configurations,268,243,0,2,23,Fe,disp
+split_element_family,Fe ID holdout,potential_positive,voxels,268,2748483,40657,23458,10360138,Fe,disp
+split_element_family,Fe ID holdout,weak_cohesion,configurations,268,229,1,2,36,Fe,disp
+split_element_family,Fe ID holdout,density_high,voxels,298,13175925,4544,25723,1441104,Fe,iso
+split_element_family,Fe ID holdout,energy_high_tail,configurations,298,261,1,6,30,Fe,iso
+split_element_family,Fe ID holdout,potential_positive,voxels,298,3056559,45810,25754,11519173,Fe,iso
+split_element_family,Fe ID holdout,weak_cohesion,configurations,298,271,0,1,26,Fe,iso
+split_element_family,Fe OOD family holdout,density_high,voxels,500,22109119,7508,42838,2416535,Fe,combo
+split_element_family,Fe OOD family holdout,energy_high_tail,configurations,500,452,0,6,42,Fe,combo
+split_element_family,Fe OOD family holdout,potential_positive,voxels,500,5129074,75783,44513,19326630,Fe,combo
+split_element_family,Fe OOD family holdout,weak_cohesion,configurations,500,443,1,0,56,Fe,combo
+split_element_family,Fe OOD family holdout,density_high,voxels,1000,44215184,15282,86386,4835148,Fe,shear
+split_element_family,Fe OOD family holdout,energy_high_tail,configurations,1000,892,3,8,97,Fe,shear
+split_element_family,Fe OOD family holdout,potential_positive,voxels,1000,10259503,150731,89100,38652666,Fe,shear
+split_element_family,Fe OOD family holdout,weak_cohesion,configurations,1000,906,2,1,91,Fe,shear
+split_element_family,Ni ID holdout,density_high,voxels,250,11055693,5746,14287,1212274,Ni,aniso
+split_element_family,Ni ID holdout,energy_high_tail,configurations,250,228,7,14,1,Ni,aniso
+split_element_family,Ni ID holdout,potential_positive,voxels,250,2659065,35391,22231,9571313,Ni,aniso
+split_element_family,Ni ID holdout,weak_cohesion,configurations,250,232,3,1,14,Ni,aniso
+split_element_family,Ni ID holdout,density_high,voxels,300,13264359,6593,17418,1457230,Ni,disp
+split_element_family,Ni ID holdout,energy_high_tail,configurations,300,267,5,27,1,Ni,disp
+split_element_family,Ni ID holdout,potential_positive,voxels,300,3193746,41792,27521,11482541,Ni,disp
+split_element_family,Ni ID holdout,weak_cohesion,configurations,300,283,3,1,13,Ni,disp
+split_element_family,Ni ID holdout,density_high,voxels,299,13221035,6724,17436,1451253,Ni,iso
+split_element_family,Ni ID holdout,energy_high_tail,configurations,299,276,4,15,4,Ni,iso
+split_element_family,Ni ID holdout,potential_positive,voxels,299,3181580,42532,27944,11444392,Ni,iso
+split_element_family,Ni ID holdout,weak_cohesion,configurations,299,278,0,0,21,Ni,iso
+split_element_family,Ni OOD family holdout,density_high,voxels,500,22111981,11497,28246,2424276,Ni,combo
+split_element_family,Ni OOD family holdout,energy_high_tail,configurations,500,452,11,33,4,Ni,combo
+split_element_family,Ni OOD family holdout,potential_positive,voxels,500,5317038,71367,45292,19142303,Ni,combo
+split_element_family,Ni OOD family holdout,weak_cohesion,configurations,500,464,7,1,28,Ni,combo
+split_element_family,Ni OOD family holdout,density_high,voxels,1,44186,17,56,4893,Ni,iso
+split_element_family,Ni OOD family holdout,energy_high_tail,configurations,1,1,0,0,0,Ni,iso
+split_element_family,Ni OOD family holdout,potential_positive,voxels,1,10685,123,88,38256,Ni,iso
+split_element_family,Ni OOD family holdout,weak_cohesion,configurations,1,1,0,0,0,Ni,iso
+split_element_family,Ni OOD family holdout,density_high,voxels,1000,44221510,21747,56619,4852124,Ni,shear
+split_element_family,Ni OOD family holdout,energy_high_tail,configurations,1000,894,25,72,9,Ni,shear
+split_element_family,Ni OOD family holdout,potential_positive,voxels,1000,10637922,141152,90171,38282755,Ni,shear
+split_element_family,Ni OOD family holdout,weak_cohesion,configurations,1000,940,9,1,50,Ni,shear

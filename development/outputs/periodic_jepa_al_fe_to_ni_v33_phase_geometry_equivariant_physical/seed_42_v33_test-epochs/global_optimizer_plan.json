@@ -1,0 +1,41 @@
+{
+  "stages": [
+    [
+      "autoencoder",
+      25,
+      0.0001
+    ],
+    [
+      "D_latent",
+      30,
+      0.0001
+    ],
+    [
+      "E_density",
+      10,
+      0.0001
+    ],
+    [
+      "E_density_potential",
+      15,
+      0.0001
+    ],
+    [
+      "E_full",
+      13,
+      0.0001
+    ],
+    [
+      "F_periodic_ramp",
+      12,
+      0.0001
+    ],
+    [
+      "P_cohesive_refinement",
+      10,
+      1e-05
+    ]
+  ],
+  "global_alfe_updates": 90000,
+  "source_lr_planned_updates": 68160
+}

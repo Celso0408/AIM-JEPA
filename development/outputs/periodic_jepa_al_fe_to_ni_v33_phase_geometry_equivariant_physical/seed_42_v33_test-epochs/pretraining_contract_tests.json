@@ -1,0 +1,12 @@
+{
+  "cell_graph_translation_dilation_shear_and_reciprocity": true,
+  "operator_target_guard": true,
+  "no_random_ni_lookup": true,
+  "learned_shared_latent_and_cohesive_translation": true,
+  "cohesive_gradient_both_channels_and_encoder": true,
+  "all_stage_backward_contracts_including_refinement": true,
+  "automatic_train_only_cohesive_calibration": true,
+  "global_train_only_cohesive_roundtrip": true,
+  "rng_roundtrip": true,
+  "structural_reader_no_target_io": true
+}

@@ -1,0 +1,6 @@
+{
+  "stage": "P_cohesive_refinement",
+  "planned_from_epochs": 540,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 540
+}

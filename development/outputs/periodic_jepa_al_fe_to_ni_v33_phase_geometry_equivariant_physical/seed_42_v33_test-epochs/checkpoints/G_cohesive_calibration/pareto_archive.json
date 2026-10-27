@@ -1,0 +1,15 @@
+[
+  {
+    "stage": "G_cohesive_calibration",
+    "epoch": 44,
+    "ni_score": 0.023011296001202112,
+    "retention_excess": 0.0,
+    "checkpoint": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/G_cohesive_calibration/candidate_epoch_0044.pt",
+    "validation_unbounded_ni_score": 0.023011296001202112,
+    "validation_retention_excess": 0.0,
+    "validation_constraints_passed": true,
+    "validation_field_constraints_passed": true,
+    "validation_field_violations": "",
+    "validation_energy_mae_ev_per_atom": 0.023011296150154088
+  }
+]

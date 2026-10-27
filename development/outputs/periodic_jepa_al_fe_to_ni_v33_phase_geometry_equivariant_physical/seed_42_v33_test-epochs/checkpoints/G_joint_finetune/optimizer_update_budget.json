@@ -1,0 +1,6 @@
+{
+  "stage": "G_joint_finetune",
+  "planned_from_epochs": 3655,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 3655
+}

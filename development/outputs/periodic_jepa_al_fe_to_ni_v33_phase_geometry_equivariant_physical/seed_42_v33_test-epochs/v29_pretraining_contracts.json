@@ -1,0 +1,6 @@
+{
+  "known_anchor_plus_latent_residual": true,
+  "Ni_calibration_preserves_AlFe_exactly": true,
+  "calibrated_energy_and_gain_translation_contract": true,
+  "repair_freezes_Ni_specific_and_electronic_modules": true
+}

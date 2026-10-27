@@ -1,0 +1,67 @@
+{
+  "tolerance_invariants_atol_rtol": 3e-05,
+  "tolerance_fields_relative_l2": 5e-05,
+  "triads": 128,
+  "energy_descriptor_dim": 3072,
+  "full_fft_conjugate_oracle_and_roundtrip": true,
+  "translations": [
+    {
+      "shifts_zyx": [
+        1,
+        2,
+        3
+      ],
+      "bispectrum_max_abs": 2.384185791015625e-07,
+      "energy_max_abs": 0.0,
+      "decoder_coeff_max_abs": 1.1444091796875e-05,
+      "decoder_rho_relative_l2": 1.9436753007084917e-07,
+      "decoder_potential_relative_l2": 2.0890162488740316e-07,
+      "operator_rho_relative_l2": 2.890232053687214e-08,
+      "operator_potential_relative_l2": 4.377211269002146e-07,
+      "operator_energy_max_abs": 0.0
+    },
+    {
+      "shifts_zyx": [
+        -3,
+        1,
+        -2
+      ],
+      "bispectrum_max_abs": 1.7881393432617188e-07,
+      "energy_max_abs": 0.0,
+      "decoder_coeff_max_abs": 1.52587890625e-05,
+      "decoder_rho_relative_l2": 1.9893643354862434e-07,
+      "decoder_potential_relative_l2": 1.8885145891545108e-07,
+      "operator_rho_relative_l2": 2.4460264924641706e-08,
+      "operator_potential_relative_l2": 3.038056775039877e-07,
+      "operator_energy_max_abs": 0.0
+    },
+    {
+      "shifts_zyx": [
+        24,
+        8,
+        16
+      ],
+      "bispectrum_max_abs": 2.086162567138672e-07,
+      "energy_max_abs": 0.0,
+      "decoder_coeff_max_abs": 7.62939453125e-06,
+      "decoder_rho_relative_l2": 1.8147896696518728e-07,
+      "decoder_potential_relative_l2": 2.562898089308874e-07,
+      "operator_rho_relative_l2": 2.959618328191027e-08,
+      "operator_potential_relative_l2": 5.617138754132611e-07,
+      "operator_energy_max_abs": 0.0
+    }
+  ],
+  "energy_cross_mode_phase_gradient_l1": 0.07785314321517944,
+  "finite_nonzero_bispectrum_geometry_decoder_and_both_field_gradients": true,
+  "geometry_rotation_signed_permutation_dilation_and_no_zero_latent_shortcut": true,
+  "equivalent_general_cell_basis_with_field_remapping": "not tested: no general mode/grid/graph remapper; not guaranteed",
+  "ae_projection": {
+    "strategy": "same-mode complex intertwiner projection; DC real affine",
+    "discarded_weight_l2": 14.53592362258152,
+    "source_weight_l2": 47.51216820909868,
+    "discarded_bias_l2": 0.4534876539622238,
+    "residual": "fresh small nonzero equivariant network; amplitude correction starts at one"
+  },
+  "ae_projection_exact_block_and_incompatible_source_rejection": true,
+  "architecture_and_persistent_triad_compatibility_guards": true
+}
