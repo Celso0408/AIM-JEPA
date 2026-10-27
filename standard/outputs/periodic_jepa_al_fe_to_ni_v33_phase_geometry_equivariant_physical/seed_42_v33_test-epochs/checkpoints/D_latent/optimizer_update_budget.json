@@ -1,0 +1,6 @@
+{
+  "stage": "D_latent",
+  "planned_from_epochs": 21300,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 21300
+}

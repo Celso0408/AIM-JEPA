@@ -1,0 +1,8 @@
+{
+  "source": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/autoencoder/best.pt",
+  "exact_state_copy": true,
+  "target_requires_grad": false,
+  "ema_updates": 0,
+  "ema_source": "electronic_online_encoder",
+  "initialization": "selected trained autoencoder, before first JEPA update"
+}

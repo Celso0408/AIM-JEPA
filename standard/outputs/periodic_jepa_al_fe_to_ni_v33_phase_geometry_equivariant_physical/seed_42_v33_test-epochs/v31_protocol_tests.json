@@ -1,0 +1,44 @@
+{
+  "tests": {
+    "cosine_objective_ramp_monotonic": true,
+    "D_starts_low_band_only": true,
+    "source_objective_boundary_continuity_after_competence": true,
+    "density_and_retention_ramps": true,
+    "stage_local_scheduler_resets_clock": true,
+    "variable_ema_monotonic": true,
+    "compact_progressive_unfreezing_with_release_local_lr": true,
+    "retention_stream_enabled": true
+  },
+  "trainable_groups": {
+    "P_cohesive_refinement": [
+      "cohesive_head"
+    ],
+    "G_cohesive_calibration": [
+      "ni_energy_calibration"
+    ],
+    "G_adapter_warmup": [
+      "ni_embedding",
+      "ni_energy_calibration",
+      "ni_field_adapter",
+      "ni_shared_gain"
+    ],
+    "G_joint_finetune": [
+      "cohesive_head",
+      "ni_embedding",
+      "ni_energy_calibration",
+      "ni_field_adapter",
+      "ni_shared_gain",
+      "prediction_decoder",
+      "predictor",
+      "structural_last_block"
+    ],
+    "G_retention_repair": [
+      "cohesive_head",
+      "prediction_decoder",
+      "predictor"
+    ]
+  },
+  "architecture_version": "periodic-field-jepa-v33-bispectrum-geometry-equivariant",
+  "training_protocol_version": "periodic-field-jepa-training-v33-r1-phase-geometry",
+  "curriculum_version": "full-pool-batch-curriculum-v31-r1-competence-gated"
+}

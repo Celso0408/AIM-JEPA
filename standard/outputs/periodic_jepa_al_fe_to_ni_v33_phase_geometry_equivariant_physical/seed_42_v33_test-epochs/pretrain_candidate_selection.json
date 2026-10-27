@@ -1,0 +1,141 @@
+{
+  "candidates": [
+    {
+      "stage": "E_full",
+      "validation_score": 0.0027152474271880567,
+      "metrics": {
+        "Al": {
+          "rho": 0.00652034551431099,
+          "potential": 0.027625048259098617,
+          "energy": 0.009066445971723128,
+          "rho_cosine": 0.9999766329287917,
+          "potential_cosine": 0.9996176528902382,
+          "potential_rms_ratio": 1.0000430095238193,
+          "potential_rms_ratio_min": 0.9917235374450684,
+          "potential_rms_ratio_max": 1.0027453899383545,
+          "energy_p95": 0.025290012359619137,
+          "energy_bias": 0.0032104277808753905,
+          "weak_energy": 0.018753189971481544,
+          "weak_records": 69,
+          "records": 843,
+          "energy_max": 0.16018366813659668,
+          "energy_slope": 0.9899661206632456,
+          "energy_slope_supported": true
+        },
+        "Fe": {
+          "rho": 0.03556118881173223,
+          "potential": 0.02040391994823014,
+          "energy": 0.005258996239819816,
+          "rho_cosine": 0.999369555614262,
+          "potential_cosine": 0.9997915306659503,
+          "potential_rms_ratio": 1.0000205454286013,
+          "potential_rms_ratio_min": 0.99654221534729,
+          "potential_rms_ratio_max": 1.0029939413070679,
+          "energy_p95": 0.017370596528053284,
+          "energy_bias": 0.00040204503582181217,
+          "weak_energy": 0.01011118547448629,
+          "weak_records": 79,
+          "records": 856,
+          "energy_max": 0.05977579951286316,
+          "energy_slope": 0.9978736647324378,
+          "energy_slope_supported": true
+        }
+      },
+      "checkpoint": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/E_full/best.pt",
+      "validation_field_constraints_passed": true,
+      "field_violations": []
+    },
+    {
+      "stage": "F_periodic_ramp",
+      "validation_score": 0.0025140250486574557,
+      "metrics": {
+        "Al": {
+          "rho": 0.006612322887589145,
+          "potential": 0.027806240192494076,
+          "energy": 0.008349601201456778,
+          "rho_cosine": 0.9999759082692373,
+          "potential_cosine": 0.9996132699337436,
+          "potential_rms_ratio": 0.9985552473990236,
+          "potential_rms_ratio_min": 0.990128219127655,
+          "potential_rms_ratio_max": 1.0026463270187378,
+          "energy_p95": 0.02601010799407959,
+          "energy_bias": -0.0010667725389962518,
+          "weak_energy": 0.018371029176573822,
+          "weak_records": 69,
+          "records": 843,
+          "energy_max": 0.16675662994384766,
+          "energy_slope": 0.9925061329508746,
+          "energy_slope_supported": true
+        },
+        "Fe": {
+          "rho": 0.03491366043182038,
+          "potential": 0.02054965410329332,
+          "energy": 0.004914206800825685,
+          "rho_cosine": 0.9993912558828559,
+          "potential_cosine": 0.9997899748176058,
+          "potential_rms_ratio": 0.9980502606970127,
+          "potential_rms_ratio_min": 0.9950624108314514,
+          "potential_rms_ratio_max": 1.0010840892791748,
+          "energy_p95": 0.016433119773864746,
+          "energy_bias": -6.414061220728348e-05,
+          "weak_energy": 0.009285260510595538,
+          "weak_records": 79,
+          "records": 856,
+          "energy_max": 0.06091141700744629,
+          "energy_slope": 1.003638185197336,
+          "energy_slope_supported": true
+        }
+      },
+      "checkpoint": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/F_periodic_ramp/best.pt",
+      "validation_field_constraints_passed": true,
+      "field_violations": [],
+      "selection_rule": "Al/Fe validation energy MAE eV/atom; per-element fields within tolerance of an explicitly constructed frozen best-E_full/F reference"
+    }
+  ],
+  "selected": {
+    "stage": "F_periodic_ramp",
+    "validation_score": 0.0025140250486574557,
+    "metrics": {
+      "Al": {
+        "rho": 0.006612322887589145,
+        "potential": 0.027806240192494076,
+        "energy": 0.008349601201456778,
+        "rho_cosine": 0.9999759082692373,
+        "potential_cosine": 0.9996132699337436,
+        "potential_rms_ratio": 0.9985552473990236,
+        "potential_rms_ratio_min": 0.990128219127655,
+        "potential_rms_ratio_max": 1.0026463270187378,
+        "energy_p95": 0.02601010799407959,
+        "energy_bias": -0.0010667725389962518,
+        "weak_energy": 0.018371029176573822,
+        "weak_records": 69,
+        "records": 843,
+        "energy_max": 0.16675662994384766,
+        "energy_slope": 0.9925061329508746,
+        "energy_slope_supported": true
+      },
+      "Fe": {
+        "rho": 0.03491366043182038,
+        "potential": 0.02054965410329332,
+        "energy": 0.004914206800825685,
+        "rho_cosine": 0.9993912558828559,
+        "potential_cosine": 0.9997899748176058,
+        "potential_rms_ratio": 0.9980502606970127,
+        "potential_rms_ratio_min": 0.9950624108314514,
+        "potential_rms_ratio_max": 1.0010840892791748,
+        "energy_p95": 0.016433119773864746,
+        "energy_bias": -6.414061220728348e-05,
+        "weak_energy": 0.009285260510595538,
+        "weak_records": 79,
+        "records": 856,
+        "energy_max": 0.06091141700744629,
+        "energy_slope": 1.003638185197336,
+        "energy_slope_supported": true
+      }
+    },
+    "checkpoint": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/F_periodic_ramp/best.pt",
+    "validation_field_constraints_passed": true,
+    "field_violations": [],
+    "selection_rule": "Al/Fe validation energy MAE eV/atom; per-element fields within tolerance of an explicitly constructed frozen best-E_full/F reference"
+  }
+}

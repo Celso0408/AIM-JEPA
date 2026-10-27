@@ -1,0 +1,6 @@
+{
+  "stage": "autoencoder",
+  "planned_from_epochs": 25560,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 25560
+}

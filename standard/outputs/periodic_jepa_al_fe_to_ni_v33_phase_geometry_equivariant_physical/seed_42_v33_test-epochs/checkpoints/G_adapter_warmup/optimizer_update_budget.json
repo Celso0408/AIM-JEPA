@@ -1,0 +1,6 @@
+{
+  "stage": "G_adapter_warmup",
+  "planned_from_epochs": 1100,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 1100
+}

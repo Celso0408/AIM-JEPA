@@ -1,0 +1,12 @@
+{
+  "experiment": "periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant",
+  "seed": 42,
+  "run_mode": "DEVELOPMENT",
+  "backbone": "pyg_gnn_kan",
+  "ni_finetune_fraction": 0.1,
+  "ni_validation_fraction": 0.1,
+  "ood_families": [
+    "shear",
+    "combo"
+  ]
+}

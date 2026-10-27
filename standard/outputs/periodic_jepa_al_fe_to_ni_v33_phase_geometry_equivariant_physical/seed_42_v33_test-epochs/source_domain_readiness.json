@@ -1,0 +1,43 @@
+{
+  "ready": true,
+  "gates": {
+    "competence_full_fields": true,
+    "competence_full_potential_shape": true,
+    "competence_full_potential_amplitude": true,
+    "competence_periodic_consistency": true,
+    "Al_mae": true,
+    "Al_bias": true,
+    "Al_p95": true,
+    "Al_maximum": true,
+    "Al_slope": true,
+    "Al_tail": true,
+    "Fe_mae": true,
+    "Fe_bias": true,
+    "Fe_p95": true,
+    "Fe_maximum": true,
+    "Fe_slope": true
+  },
+  "diagnostics": {
+    "competence_Al_rho": 0.006612322887589145,
+    "competence_Al_potential": 0.027806240192494076,
+    "competence_Al_rho_cosine": 0.9999759082692373,
+    "competence_Al_potential_cosine": 0.9996132699337436,
+    "competence_Al_potential_rms_ratio": 0.9985552473990236,
+    "competence_Fe_rho": 0.03491366043182038,
+    "competence_Fe_potential": 0.02054965410329332,
+    "competence_Fe_rho_cosine": 0.9993912558828559,
+    "competence_Fe_potential_cosine": 0.9997899748176058,
+    "competence_Fe_potential_rms_ratio": 0.9980502606970127,
+    "competence_periodic_consistency": 2.065855255750648e-06,
+    "Al_mae_ev_per_atom": 0.003165170449263218,
+    "Al_bias_ev_per_atom": 0.0004043925973287586,
+    "Al_p95_ev_per_atom": 0.009859923033287147,
+    "Al_maximum_ev_per_atom": 0.06321417569319351,
+    "Al_slope_supported": true,
+    "Fe_mae_ev_per_atom": 0.001862879648051693,
+    "Fe_bias_ev_per_atom": 2.4314451128602947e-05,
+    "Fe_p95_ev_per_atom": 0.00622947417996021,
+    "Fe_maximum_ev_per_atom": 0.023090326409970396,
+    "Fe_slope_supported": true
+  }
+}

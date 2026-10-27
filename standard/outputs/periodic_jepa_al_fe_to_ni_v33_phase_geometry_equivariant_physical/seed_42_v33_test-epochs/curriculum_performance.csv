@@ -1,0 +1,11 @@
+stage,status,time_seconds,time_minutes,peak_ram_rss_gib,peak_system_ram_gib,peak_vram_allocated_gib,peak_vram_reserved_gib
+autoencoder,COMPLETED,10830.39,180.51,2.46,4.93,0.39,0.64
+D_latent,COMPLETED,11782.93,196.38,2.58,4.93,1.49,1.72
+E_density,COMPLETED,4860.93,81.02,2.6,4.97,1.78,2.02
+E_density_potential,COMPLETED,7361.39,122.69,2.62,4.96,1.78,2.02
+E_full,COMPLETED,6725.21,112.09,2.71,4.97,1.8,2.02
+F_periodic_ramp,COMPLETED,7698.59,128.31,2.74,5.07,4.26,4.37
+P_cohesive_refinement,COMPLETED,2093.65,34.89,2.98,5.54,0.37,4.44
+G_cohesive_calibration,COMPLETED,4416.42,73.61,3.02,5.38,0.29,4.44
+G_adapter_warmup,COMPLETED,3120.24,52.0,3.07,5.38,4.02,4.44
+G_joint_finetune,FAILED,9560.26,159.34,3.14,5.53,5.17,5.36

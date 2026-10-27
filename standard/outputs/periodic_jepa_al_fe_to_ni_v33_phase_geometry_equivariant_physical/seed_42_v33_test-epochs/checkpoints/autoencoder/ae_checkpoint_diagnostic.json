@@ -1,0 +1,21 @@
+{
+  "epochs_completed": 60,
+  "valid_updates": 25557,
+  "full_regime_updates": 17890,
+  "gates": {
+    "absolute_field_constraints": true,
+    "ae_ramp_complete": true,
+    "coverage_Al": true,
+    "coverage_Fe": true,
+    "finite_validation": true,
+    "hard_exposure": true,
+    "minimum_full_regime_updates": true,
+    "phase_constraints": true,
+    "warmup_complete": true
+  },
+  "last_pt": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/autoencoder/last.pt",
+  "last_exists": true,
+  "best_pt": "outputs/periodic_jepa_al_fe_to_ni_v33_phase_geometry_equivariant_physical/seed_42_v33_test-epochs/checkpoints/autoencoder/best.pt",
+  "best_exists": true,
+  "block_reason": ""
+}

@@ -1,0 +1,6 @@
+{
+  "stage": "E_full",
+  "planned_from_epochs": 10650,
+  "budget_scale": 1.0,
+  "optimizer_update_budget": 10650
+}
