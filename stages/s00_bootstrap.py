@@ -76,9 +76,9 @@ BACKBONE_OPTIONS = ("direct_baseline", "gnn_mlp", "gnn_kan")
 KAN_BASIS_OPTIONS = ("chebyshev", "legendre", "hermite")
 DECODER_OPTIONS = ("spectral_sine_residual", "topology_phase")
 PRIMARY_OUTPUT_OPTIONS = ("direct_topology", "hybrid", "physics_selected")
-ARCHITECTURE_VERSION = "psi-true-jepa-1d-v8-expanded-domain-topology-gated"
+ARCHITECTURE_VERSION = "psi-true-jepa-1d-v12-state-latent-diagnostic"
 SOLVER_VERSION = "mapped-p1-fem-gl4-v3-bound-state-validation"
-SOURCE_REVISION = "2026-09-25-expanded-domain-direct-supervision"
+SOURCE_REVISION = "2026-10-13-v08-control-state-latent-diagnostic"
 PYTHON_HASH_SEED_AT_PROCESS_START=os.environ.get("PYTHONHASHSEED")
 _source_root = Path(os.environ.get("PSI_JEPA_PROJECT_DIR", Path(__file__).resolve().parents[1]))
 _source_files = [_source_root / "main.py", _source_root / "checkpointing.py"] + sorted((_source_root / "stages").glob("s*.py"))
@@ -165,6 +165,7 @@ TINY_OVERFIT_SEED = 7
 class Config:
     mode: str = RUN_MODE
     seed: int = ACTIVE_SEED
+    heldout_kratzer: bool = os.environ.get("PSI_JEPA_HELDOUT_KRATZER", "0") == "1"
     k_states: int = 11
     extra_eigenpairs: int = 8
     kinetic_coefficient: float = 0.5

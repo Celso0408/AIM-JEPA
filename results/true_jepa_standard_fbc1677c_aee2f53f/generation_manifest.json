@@ -1,0 +1,51 @@
+{
+  "experiment_name": "true_jepa_standard_fbc1677c_aee2f53f",
+  "mode": "STANDARD",
+  "run_status": "STANDARD_RUN_COMPLETED_NOT_SCIENTIFICALLY_ACCEPTED",
+  "source_run": "/home/clouduser/psi_jepa_project/V12/outputs/true_jepa_standard_fbc1677c_aee2f53f",
+  "selected_heatmap_route": "physics_selected",
+  "copied_metrics": [
+    "family_summary.csv",
+    "family_state_summary.csv",
+    "generalization_summary.csv",
+    "geometry_summary.csv",
+    "output_route_summary_by_category.csv",
+    "output_route_summary_by_family.csv",
+    "output_route_summary_by_geometry.csv",
+    "per_state_metrics.csv",
+    "per_state_output_metrics.csv",
+    "refinement_depth_ablation.csv",
+    "refinement_iteration_metrics.csv",
+    "state_summary.csv",
+    "test_results.csv",
+    "topology_metrics.csv",
+    "topology_summary_by_category.csv",
+    "topology_summary_by_family.csv",
+    "topology_summary_by_geometry.csv",
+    "topology_summary_by_state.csv",
+    "training_history.csv"
+  ],
+  "heatmaps": [
+    {
+      "category": "ID_test",
+      "families": 27,
+      "states": 11,
+      "mean_fidelity": 0.9780197891483665,
+      "minimum_fidelity": 0.6245580730657159,
+      "cells_below_0_8": 5
+    },
+    {
+      "category": "unseen_analytical_functional_forms",
+      "families": 3,
+      "states": 11,
+      "mean_fidelity": 0.6967548638556519,
+      "minimum_fidelity": 0.0024973654089774804,
+      "cells_below_0_8": 11
+    }
+  ],
+  "spectral_tension_paired_hamiltonians": 513,
+  "training_executed": false,
+  "model_inference_executed": false,
+  "physicless_standard_available": false,
+  "physicless_note": "A matched V12 physicless STANDARD run does not exist; no cross-model comparison was generated."
+}

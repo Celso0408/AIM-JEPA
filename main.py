@@ -51,7 +51,7 @@ PRESETS = {
 PROJECT_DIR = Path(__file__).resolve().parent
 STAGE_DIR = PROJECT_DIR / "stages"
 STAGES = ("s00_bootstrap.py", "s01_physics.py", "s02_data.py", "s03_models.py",
-    "s04_validation.py", "s05_training.py", "s06_evaluation.py", "s07_reports.py",
+    "s04_validation.py", "s05_training.py", "s08_latent_diagnostics.py", "s06_evaluation.py", "s07_reports.py",
 )
 
 class TeeStream:

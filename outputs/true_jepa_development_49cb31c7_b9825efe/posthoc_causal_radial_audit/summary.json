@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETE",
+  "training_performed": false,
+  "checkpoints": {
+    "end_6": "/home/clouduser/psi_jepa_project/V12/outputs/true_jepa_development_49cb31c7_b9825efe/latent_checkpoint_end_6.pt",
+    "first_11": "/home/clouduser/psi_jepa_project/V12/outputs/true_jepa_development_49cb31c7_b9825efe/latent_checkpoint_first_11.pt",
+    "end_11": "/home/clouduser/psi_jepa_project/V12/outputs/true_jepa_development_49cb31c7_b9825efe/latent_checkpoint_selected_end_11.pt",
+    "final": "/home/clouduser/psi_jepa_project/V12/outputs/true_jepa_development_49cb31c7_b9825efe/best.pt"
+  },
+  "causal_scenarios": 13,
+  "radial_hamiltonians": 5,
+  "selector_oracle_agreement": 1.0,
+  "selector_mean_fidelity_regret": 0.0,
+  "selector_maximum_fidelity_regret": 0.0,
+  "orthonormalization": [
+    {
+      "route": "direct",
+      "fidelity": 0.5229635661298578,
+      "fidelity_worst": 0.06336510926485062,
+      "h1": 1.0072428486563942,
+      "persistent_node_accuracy": 0.09090909090909091,
+      "gram_max": 0.9678800463676452
+    },
+    {
+      "route": "cholesky_orthogonal",
+      "fidelity": 0.33359108241380786,
+      "fidelity_worst": 0.0004899889463558793,
+      "h1": 1.9976658420129256,
+      "persistent_node_accuracy": 0.2,
+      "gram_max": 0.0004135727882385254
+    },
+    {
+      "route": "initial_ritz",
+      "fidelity": 0.29096076891503553,
+      "fidelity_worst": 0.02001597359776497,
+      "h1": 2.5940923847935418,
+      "persistent_node_accuracy": 0.0,
+      "gram_max": 0.0006323814392089844
+    }
+  ],
+  "radial_reference": {
+    "projection_fidelity_minimum": 0.9999993670122289,
+    "model_gram_error_maximum": 1.6931929288382482e-15,
+    "solver_residual_maximum": 0.03190652422102769,
+    "tail_probability_maximum": 1.2892047236843354e-12
+  },
+  "elapsed_seconds": 283.5912804719992
+}

@@ -183,10 +183,12 @@ def generate_complete_state_core()->tuple[list[dict[str,Any]],pd.DataFrame]:
         "smooth_perturbed","composite_confining","procedural_composite",
         "asymptotically_constant",
     )
-    generation_families=quick_core_families if CFG.mode=="QUICK" else TRAIN_FAMILIES
+    generation_families=(tuple(f for f in quick_core_families if f in TRAIN_FAMILIES)
+                         if CFG.mode=="QUICK" else TRAIN_FAMILIES)
     # Pre-window caches are deliberately not imported: their domains and schemas are
     # incompatible with the target-free operator-window contract.
-    for fi,family in enumerate(generation_families):
+    for family in generation_families:
+        fi=PRIMARY_FAMILY_ORDER.index(family)
         accepted_before_family=len(accepted)
         needed=CFG.preset.per_family; exponent=int(math.ceil(math.log2(max(2,needed*CFG.max_generation_attempts))))
         if family=="rose_morse":
@@ -249,7 +251,8 @@ print("complete_state_core",{"accepted":len(records),"rejected_attempts":len(rej
 # %% [notebook cell 25]
 def deterministic_split(items:Sequence[dict[str,Any]])->dict[str,list[dict[str,Any]]]:
     result={"train":[],"val":[],"test":[]}
-    for family_index,family in enumerate(TRAIN_FAMILIES):
+    for family in TRAIN_FAMILIES:
+        family_index=PRIMARY_FAMILY_ORDER.index(family)
         ordered=sorted([r for r in items if r["family"]==family],key=lambda r:hashlib.sha256((r["group_id"]+f"|{CFG.seed}").encode()).hexdigest())
         n=len(ordered); ntrain=max(1,int(round(.70*n))); remaining=ordered[ntrain:]
         if len(remaining)==1:

@@ -1,0 +1,6 @@
+group_id,selected_route,oracle_fidelity_route,selection_correct,selected_mean_fidelity,oracle_mean_fidelity,fidelity_regret,direct_mean_fidelity,initial_ritz_mean_fidelity,refined_ritz_mean_fidelity,direct_physics_score,initial_ritz_physics_score,refined_ritz_physics_score,direct_eligible,initial_ritz_eligible,refined_ritz_eligible
+3177fa67cde0cebcdffdc195,direct,direct,True,0.5192029476165771,0.5192029476165771,0.0,0.5192029476165771,0.27629899978637695,0.27629899978637695,inf,inf,inf,False,False,False
+da71cf1a13f5474bd816de07,direct,direct,True,0.5710985064506531,0.5710985064506531,0.0,0.5710985064506531,0.29400211572647095,0.29400211572647095,inf,inf,inf,False,False,False
+bb4c21373d08d26984918111,direct,direct,True,0.5710984468460083,0.5710984468460083,0.0,0.5710984468460083,0.2939974367618561,0.2939974367618561,inf,inf,inf,False,False,False
+5fd7f55322608f18def5dfb6,direct,direct,True,0.5192029476165771,0.5192029476165771,0.0,0.5192029476165771,0.27629393339157104,0.27629393339157104,inf,inf,inf,False,False,False
+e3569f55a42af1b5c82ea46c,direct,direct,True,0.43421486020088196,0.43421486020088196,0.0,0.43421486020088196,0.3142113983631134,0.3142113983631134,inf,inf,inf,False,False,False

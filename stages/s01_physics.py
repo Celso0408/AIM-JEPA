@@ -261,10 +261,12 @@ def physical_boundary_mask(n: int) -> np.ndarray:
     return mask
 
 # %% [notebook cell 13]
-ANALYTICAL_FAMILIES = (
+ALL_ANALYTICAL_FAMILIES = (
     "infinite_box", "harmonic", "half_harmonic", "morse", "poschl_h", "poschl_t",
     "radial_coulomb", "radial_oscillator", "kratzer",
 )
+ANALYTICAL_FAMILIES = tuple(family for family in ALL_ANALYTICAL_FAMILIES
+                            if not (CFG.heldout_kratzer and family == "kratzer"))
 FUNCTIONAL_FAMILIES = (
     "anharmonic_polynomial", "asymmetric_well", "double_well", "multiwell",
     "single_barrier", "multiple_barriers", "gaussian_well", "gaussian_barrier",
@@ -272,9 +274,10 @@ FUNCTIONAL_FAMILIES = (
     "gaussian_random_field", "reflected_potential", "smooth_perturbed",
     "composite_confining", "procedural_composite", "asymptotically_constant",
 )
+PRIMARY_FAMILY_ORDER = ALL_ANALYTICAL_FAMILIES + FUNCTIONAL_FAMILIES
 TRAIN_FAMILIES = ANALYTICAL_FAMILIES + FUNCTIONAL_FAMILIES
 REPARAMETERIZED_SEEN_FAMILIES = ("rosen_morse_ii",)
-UNSEEN_ANALYTICAL_FAMILIES = ("scarf_ii", "eckart", "cosh_well")
+UNSEEN_ANALYTICAL_FAMILIES = ("scarf_ii", "eckart", "cosh_well") + (("kratzer",) if CFG.heldout_kratzer else ())
 HELD_OUT_FAMILIES = REPARAMETERIZED_SEEN_FAMILIES + UNSEEN_ANALYTICAL_FAMILIES
 FAMILY_EQUIVALENCE_CLASSES = {
     "sech2_plus_tanh": ("asymptotically_constant", "rosen_morse_ii"),
@@ -329,7 +332,8 @@ def make_spec(family: str, u: np.ndarray, base_id: str = "") -> PotentialSpec:
         leff = 0.5 * (-1 + math.sqrt(1 + 4 * (ell * (ell + 1) + depth * re * re / kappa)))
         rmax = 14.0 * (CFG.k_states + leff) ** 2 * 2 * kappa / zeff
         return PotentialSpec(family, {"D": depth, "re": re, "ell": ell}, "radial_reduced",
-                             "friedrichs_dirichlet", 0.0, max(rmax, 90.0), 0.0, True, False, base_id=base_id)
+                             "friedrichs_dirichlet", 0.0, max(rmax, 90.0), 0.0, True, False,
+                             generation_component="ood" if CFG.heldout_kratzer else "analytical", base_id=base_id)
 
     if family == "particle_in_box":
         L = 8.0 + 4.0 * u[0]

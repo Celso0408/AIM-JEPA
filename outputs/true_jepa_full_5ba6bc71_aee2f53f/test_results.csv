@@ -1,0 +1,69 @@
+index,test,status,seconds
+1,Hierarchical train-only U normalization,PASS,64.51970133901341
+2,Per-state physics hysteresis and progressive epochs,PASS,0.0028039549943059683
+3,Nested projector rotation invariance and isolation,PASS,0.006276266009081155
+4,Selective Ritz gradients survive exact degeneracy,PASS,0.0017289239913225174
+5,Independent module clipping and accumulation,PASS,0.005171755037736148
+6,Active-state losses exclude inactive targets,PASS,1.4621661370038055
+7,Infinite-box analytical energies,PASS,0.00010080600623041391
+8,Infinite-box analytical wavefunctions,PASS,0.0006684110267087817
+9,Harmonic-oscillator energies,PASS,0.0019140940275974572
+10,Half/full oscillator equivalence,PASS,0.00017331901472061872
+11,Radial analytical cases,PASS,0.001030692015774548
+12,Reference normalization,PASS,0.0047574290074408054
+13,Reference orthogonality,PASS,0.004252196988090873
+14,Correct node counts,PASS,0.01628804497886449
+15,Grid refinement,PASS,0.0001331249950453639
+16,Domain enlargement,PASS,0.00013219600077718496
+17,Reference-to-model-grid projection,PASS,0.002680742007214576
+18,Model-grid state resolution,PASS,0.0028683849959634244
+19,Global-sign invariance,PASS,0.45524566498352215
+20,Exact rho = psi squared,PASS,0.09905822400469333
+21,Correct physical boundary locations,PASS,0.44536138098919764
+22,No group leakage,PASS,0.00011347798863425851
+23,No augmentation-parent leakage,PASS,0.002799325971864164
+24,No exact duplicate leakage,PASS,0.0018027470214292407
+25,Near-duplicate signature semantics,PASS,0.002309181960299611
+26,Near-duplicate checks,PASS,4.4872984290122986e-05
+27,Constant potential-shift covariance,PASS,1.949975055991672
+28,Translation and Schrödinger-dilation covariance,PASS,2.1140175269683823
+29,Exact reflection round trip,PASS,0.005479874962475151
+30,Target-free inference,PASS,3.1060521889594384
+31,Target encoder has no gradients,PASS,5.3800991736352444e-05
+32,Target encoder distinct from online,PASS,1.995899947360158e-05
+33,Target encoder distinct from potential,PASS,2.282962668687105e-06
+34,EMA target parameters update after optimizer steps,PASS,0.004790922976098955
+35,No exact target latent reaches main decoder,PASS,0.6429610199993476
+36,Topology decoder configuration and parameter accounting,PASS,0.0015147720114327967
+37,Exact spectra fit inside operator-scaled ground/log-gap coordinates,PASS,0.0027510979562066495
+38,Topology decoder enforces positive amplitude and exact Sturm phase,PASS,1.3419112639967352
+39,Topology reflection transforms amplitude phase and waveform,PASS,2.5873864439781755
+40,Topology node lobe and phase-resolution losses have constructed-case behavior,PASS,0.5903919669799507
+41,Both decoder types checkpoint and serialize target-free inference,PASS,1.4218718190095387
+42,Operator-scaled ordered energies and exact/Rayleigh consistency,PASS,1.3830512150307186
+43,Refinement configuration supports DEVELOPMENT and STANDARD,PASS,0.00032629602355882525
+44,Zero-depth and zero-learned-modulation identity,PASS,0.3705941159860231
+45,Residual feedback matches the Ritz weak operator,PASS,0.3859387229895219
+46,Every committed refinement iterate preserves physical constraints,PASS,2.2705279369838536
+47,Monotonic refinement safeguard rejects unsafe proposals,PASS,0.000537463987711817
+48,Non-finite proposals and unattempted slots cannot poison refinement losses,PASS,0.0016832370311021805
+49,Three-step refinement has finite end-to-end gradients,PASS,0.6326010859920643
+50,Bidirectional graph edges,PASS,0.02023164601996541
+51,No cross-batch edges,PASS,0.0006865839823149145
+52,Graph permutation equivariance,PASS,0.25026333500863984
+53,Padded-node exclusion,PASS,1.12472241895739
+54,Multiple grid resolutions,PASS,0.30958766903495416
+55,Refinement is stable to mixed-resolution padding and isolated across peers,PASS,3.4028331779991277
+56,Nonuniform grids,PASS,1.0198668529628776
+57,Distant-potential perturbation sensitivity,PASS,1.202781067986507
+58,Chebyshev trusted recurrence values,PASS,0.0008129370398819447
+59,Legendre trusted recurrence values,PASS,0.0007516140467487276
+60,Normalized-Hermite trusted recurrence values,PASS,0.0006182230426929891
+61,Finite gradients for all bases,PASS,0.0044907109695486724
+62,Dense KAN shapes and serialization,PASS,0.003325301979202777
+63,"Factorized KAN shapes, rank, and serialization",PASS,0.003422353998757899
+64,Differentiable weighted orthonormalization,PASS,0.0019825040362775326
+65,Stable near-carrier orthonormalization gradient,PASS,0.0019675520015880466
+66,Tiny-batch overfit,PASS,224.4816153839929
+67,Shortest end-to-end train/evaluate/infer path,PASS,0.5456363768316805
+68,Per-iteration refinement trace and exported metrics are complete,PASS,1.7438368878792971

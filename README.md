@@ -1,502 +1,185 @@
-# AIM-Bio AIM-JEPA Multimodal Synthetic POC
+# PSI-JEPA: Physics-Structured Schrödinger Surrogate
 
-This repository contains a controlled proof of concept for **AIM-JEPA**, a graph-based Joint-Embedding Predictive Architecture for multimodal scientific imaging and scattering data.
+This repository contains **PSI-JEPA**, a Joint-Embedding Predictive Architecture for predicting bound eigenstates of one-dimensional Schrödinger operators. The project is organized under `Psi_Jepa_project/` within the collaborative repository.
 
-The project is framed around the AIM-Bio proposal: learning latent structural relationships between scattering curves, microscopy-like images, reciprocal-space maps, metadata, and hidden structural profiles. The current data are **synthetic procedural benchmarks** for method development. They are not biological validation and should not be described as real biofilm microscopy or real biofilm scattering data.
+This repository accompanies the manuscript **Psi_Jepa (provisory name)**.
 
-## Repository Contents
+- **Publication status:** Not yet published.
+- **DOI:** Not yet available.
 
-| File | Purpose |
+Given a sampled potential, a spatial grid, and operator metadata, the model predicts energies, wavefunctions, and probability densities. Inference does not require reference eigenvalues, reference eigenfunctions, or potential-family labels. The current configuration predicts 11 states, indexed from `n = 0` to `10`.
+
+## Project Contents
+
+File and directory names below refer to locations inside `Psi_Jepa_project/`.
+
+| File or directory | Purpose |
 |---|---|
-| `AIM_JEPA_GNN_KAN_multimodal_POC_colab.ipynb` | Main Colab notebook. Trains the GNN + KAN AIM-JEPA model, runs ablations, diagnostics, retrieval metrics, and visualizations. |
-| `make_aimbio_multimodal_poc_dataset.py` | Reproducible generator for `aimbio_multimodal_poc_5000.npz`. |
-| `aimbio_multimodal_poc_5000.npz` | Larger synthetic multimodal AIM-Bio-style dataset used by the current notebook. |
-| `aimbio_multimodal_poc_512.npz` | Smaller synthetic dataset kept for fast local checks and backward compatibility. |
-| `aimbio_multimodal_poc_README.md` | Companion methodology/data README. |
-| `AIM_JEPA_GNN_KAN_results_summary.md` | Earlier local smoke-test summary. |
-| `Molecular_JEPA_QM9_Colab_Starter.ipynb` | Previous molecular JEPA project used as conceptual inspiration for masked-node JEPA and EMA teacher ideas. |
-| `AIM_JEPA_molecular_transfer_recommendations.md` | Notes on method transfer from molecular JEPA to AIM-Bio AIM-JEPA. |
+| `main.py` | Entry point for the training and evaluation pipeline. |
+| `stages/` | Numerical physics, data generation, models, validation, training, evaluation, and reporting. |
+| `checkpointing.py` | Atomic persistence and loading of resumable checkpoints. |
+| `physicless/` | Separate reduced-physics ablation pipeline. |
+| `outputs/` | Experiment-specific checkpoints, metrics, figures, and audit records. |
+| `results/` | Analysis notebooks and organized tables and figures derived from selected runs. |
+| `plot_potentials/` | Notebooks and visualizations of potentials and reference eigenstates. |
+| `cache/` | Reusable numerical datasets generated during execution. |
+| `logs/` and `pipeline_state.json` | Execution logs, stage status, timings, and failure records. |
 
-## Scientific Status
+## Scientific Scope
 
-This repository demonstrates a **synthetic multimodal method benchmark**, not a biological result.
+PSI-JEPA learns an operator-to-state approximation for the stationary Schrödinger equation:
 
-Supported claims:
+$$
+H[V]\psi_n = E_n\psi_n, \qquad H[V] = -\kappa\,\partial_x^2 + V(x).
+$$
 
-- The notebook constructs an attributed graph from synthetic scattering, microscopy-like image patches, reciprocal-space maps, and metadata.
-- The model predicts frozen latent structural SLD embeddings from visible multimodal context.
-- The workflow can evaluate retrieval, decoded structural diagnostics, graph ablations, modality ablations, masked-node JEPA behavior, KAN coefficient diagnostics, spectral regularization diagnostics, and collapse checks.
+The supported setting consists of scalar, real, self-adjoint 1D operators with the implemented Dirichlet or Friedrichs boundary conditions. The dataset includes finite intervals, truncated lines, half-lines, radial problems, and supported singular endpoints.
 
-Claims not yet supported:
-
-- Biological validation on real biofilm data.
-- A demonstrated real-world biofilm marker or structural signature.
-- Formal interpretability of KAN coefficients.
-- General missing-modality or q-sector prediction beyond the tasks explicitly evaluated in the notebook.
+**Nodal structure, operator consistency, and quantitative accuracy are distinct properties.** The continuous decoder fixes the Sturm nodal class, but this alone does not guarantee accurate wavefunctions or low residuals. Rayleigh–Ritz can improve a learned eigenspace while changing individual nodal identities.
 
 ## Dataset Generation
 
-The larger dataset is generated directly by:
+Reference solutions are generated by a P1 finite-element eigensolver. Checks cover mesh and domain convergence, normalization, orthogonality, node counts, residuals, and tail localization.
+
+The main dataset spans **27 potential families**. FULL uses 192 Hamiltonians per family, totaling 5,184. Complete Hamiltonians are assigned to disjoint training, validation, and test partitions. Normalization statistics are fitted on training data only.
+
+Evaluation includes parameter extrapolation, changed domains and resolutions, and three unseen analytical forms: `scarf_ii`, `eckart`, and `cosh_well`. `rosen_morse_ii` is classified separately as a reparameterization of a previously seen basis. Some challenge categories contain familiar-family test cases rather than unseen functional forms.
+
+The current domain policy selects artificial windows from operator inputs and expands them by up to 60%, respecting the original bounds and geometry. Radial origins and physical boundaries are preserved, grid intervals are increased proportionally, and the physical potential is not redefined.
+
+## Model and Training Methodology
+
+1. **Solution representation.** A solution autoencoder learns a latent representation of FEM eigenstates. Its online encoder initializes a target encoder updated by exponential moving average (EMA).
+2. **Operator-to-state prediction.** A multiscale graph encoder with KAN layers processes the potential and operator metadata. A state-conditioned predictor learns the corresponding target latent representation.
+3. **Structured decoding.** Positive amplitude and monotone phase impose Dirichlet boundaries and the continuous Sturm nodal class. An operator-only auxiliary spectrum and learned positive gaps support ordered energy predictions. Finite-grid node resolution is checked separately.
+4. **Progressive supervision.** Training proceeds through latent alignment, supervision over 3 → 6 → 11 states, physics-guided adjustment, and joint fine-tuning. Objectives combine latent alignment, wavefunctions, density, energy, derivatives, topology, and physical consistency.
+5. **Correction and selection.** Rayleigh–Ritz operates within the learned span, followed by residual-guided refinement. The default `physics_selected` output chooses a route per Hamiltonian using residuals, Gram errors, and topology eligibility, without reference solutions. Checkpoint selection combines global, difficult-group, and worst-group validation scores.
+
+Evaluation tables distinguish `direct_topology`, `initial_ritz`, `hybrid`, and `physics_selected`. The selector considers direct, initial-Ritz, and refined-Ritz candidates. The hybrid route can restore the direct prediction when a correction fails its safeguards.
+
+### Pipeline Stages
+
+| Stage | Role |
+|---|---|
+| `s00_bootstrap.py` | Configuration, device, seeds, and experiment identity. |
+| `s01_physics.py` | Potentials, geometries, FEM solver, and numerical validation. |
+| `s02_data.py` | Dataset, cache, partitions, normalization, and ID/OOD suites. |
+| `s03_models.py` | Encoders, predictor, decoders, energy head, and refinement. |
+| `s04_validation.py` | Losses, curriculum, and pre-training checks, including tiny-overfit. |
+| `s05_training.py` | Autoencoder, main training curriculum, and checkpoints. |
+| `s06_evaluation.py` | ID/OOD evaluation and diagnostics by state, family, and route. |
+| `s07_reports.py` | Figures, final audits, and run/model cards. |
+
+These files are inside `stages/` and share an execution context through `main.py`; they are not standalone programs.
+
+## Running the Project
+
+Use a Python environment with PyTorch, NumPy, SciPy, pandas, and Matplotlib. Analysis notebooks also require IPython/Jupyter. The pipeline selects CUDA when available; FEM generation and some auxiliary operations use the CPU.
+
+Open a terminal in `Psi_Jepa_project/` and run:
 
 ```bash
-python3 make_aimbio_multimodal_poc_dataset.py \
-  --n 5000 \
-  --seed 20260617 \
-  --output aimbio_multimodal_poc_5000.npz
+python -u main.py --mode DEVELOPMENT
 ```
 
-The generator creates independent synthetic samples rather than augmenting the 512-sample file. It uses:
-
-- a synthetic layered scattering/reflectometry model,
-- SLD profile generation from layer thickness, density, roughness, and substrate parameters,
-- a simple Parratt recursion with Nevot-Croce roughness for `logR_true`,
-- heteroscedastic noise for `logR_obs`,
-- synthetic morphology factors shared across image-like modalities,
-- procedural CLSM-like, SEM-like, q-map, height-map, and mask proxies,
-- categorical metadata for growth state, preparation protocol, and strain proxy.
-
-The default script writes a compressed `.npz`. Use `--uncompressed` if you want faster loading at the cost of a larger file:
+For a FULL run:
 
 ```bash
-python3 make_aimbio_multimodal_poc_dataset.py \
-  --n 5000 \
-  --seed 20260617 \
-  --output aimbio_multimodal_poc_5000_uncompressed.npz \
-  --uncompressed
+python -u main.py --mode FULL
 ```
 
-## Dataset Arrays
+Available modes are `QUICK`, `DEVELOPMENT`, `STANDARD`, and `FULL`. They change dataset size, grid resolution, model size, and training budget. QUICK is a functionality check. The current default without `--mode` is STANDARD. Each invocation trains one seed; `--seed` selects another seed supported by the mode.
 
-The first dimension is `N`; for the main benchmark `N=5000`.
+## Checkpoints: Resume or Restart
 
-| Array | Shape | Dtype | Meaning |
-|---|---:|---|---|
-| `q` | `(256,)` | `float32` | q-grid in inverse Angstrom. |
-| `z` | `(512,)` | `float32` | depth grid in Angstrom. |
-| `logR_obs` | `(N, 256)` | `float32` | noisy log10 scattering/reflectometry curve. |
-| `logR_true` | `(N, 256)` | `float32` | noiseless synthetic curve. |
-| `sigma_logR` | `(N, 256)` | `float32` | q-dependent logR uncertainty estimate. |
-| `sld` | `(N, 512)` | `float32` | synthetic structural SLD profile target. |
-| `n_layers` | `(N,)` | `int64` | number of synthetic layers. |
-| `layer_d` | `(N, 3)` | `float32` | synthetic layer thickness parameters. |
-| `layer_rho` | `(N, 3)` | `float32` | synthetic layer SLD/density parameters. |
-| `interface_sigma` | `(N, 4)` | `float32` | synthetic interface roughness parameters. |
-| `substrate_rho` | `(N,)` | `float32` | substrate SLD proxy. |
-| `scale` | `(N,)` | `float32` | reflectometry scale factor. |
-| `background` | `(N,)` | `float32` | reflectometry background term. |
-| `clsm` | `(N, 2, 64, 64)` | `float16` | two-channel CLSM-like image proxy; channel 0 is cell-like signal and channel 1 is matrix/EPS-like signal. |
-| `sem` | `(N, 1, 64, 64)` | `float16` | SEM-like morphology proxy. |
-| `height_map` | `(N, 64, 64)` | `float16` | latent topography/film-height proxy used by the generator. |
-| `qmap` | `(N, 1, 64, 64)` | `float16` | reciprocal-space intensity-map proxy. |
-| `mask` | `(N, 64, 64)` | `uint8` | synthetic segmentation/region mask. |
-| `morph_features` | `(N, 8)` | `float32` | compact morphology vector: thickness, roughness, density, contrast, matrix fraction, cell fraction, height spread, SEM texture. |
-| `growth_state` | `(N,)` | `int64` | synthetic state label: sparse/planktonic-like, weakly organized, matrix-rich/biofilm-like. |
-| `prep_protocol` | `(N,)` | `int64` | synthetic preparation label: hydrated-like, fixed-like, dried/artifact-prone-like. |
-| `strain_id` | `(N,)` | `int64` | synthetic organism/strain proxy. |
-| `meta_json` | scalar string | Unicode | reflectometry generator metadata. |
-| `image_meta_json` | scalar string | Unicode | image/modality generator metadata. |
+During the main training curriculum, the pipeline automatically saves `training_resume.pt` at the end of each completed epoch and at stage transitions. This checkpoint contains model and optimizer states, scheduling and curriculum information, random-generator states, and training history. Writes are atomic, so an interrupted write does not replace the previous valid checkpoint with a partial file.
 
-## Notebook Methodology
+### Resume an Interrupted Run
 
-`AIM_JEPA_GNN_KAN_multimodal_POC_colab.ipynb` implements a two-stage latent-prediction workflow.
+After the previous process has stopped, run the same command from `Psi_Jepa_project/`, using the original mode, seed, and runtime settings. For example, for FULL with seed 7:
 
-### Stage 1: Frozen SLD Target Encoder
-
-The notebook first trains an SLD autoencoder:
-
-```text
-SLD(z) -> SLD encoder -> z_sld -> SLD decoder -> reconstructed SLD(z)
+```bash
+python -u main.py --mode FULL --seed 7
 ```
 
-After this stage, the SLD encoder is frozen. Its latent vector `z_sld` becomes the structural target for AIM-JEPA training. The decoder is used only for diagnostics and visualization, such as decoded SLD MAE and predicted-vs-true SLD plots.
+No `--resume` flag is needed. The program automatically looks for a compatible `training_resume.pt` in the experiment's output directory and continues from the saved epoch/stage boundary. Work performed since the last completed save must be repeated. Earlier pipeline stages are still traversed, with numerical caches and a completed solution-autoencoder checkpoint reused when compatible.
 
-### Stage 2: Graph AIM-JEPA Context Model
+Keep the original output directory and configuration. Compatibility checks include code, configuration, dataset, partitions, normalization, and effective batch size. A missing or incompatible checkpoint will not resume the interrupted training; inspect the log for `RESUMING TRAINING` and its `next_epoch` value to confirm successful recovery. The program reports incompatible checkpoints explicitly.
 
-The context branch receives only observed modalities:
+### Restart Training from the Beginning
 
-```text
-logR_obs + sigma_logR + CLSM + SEM + qmap + metadata
+Use `--restart` to ignore both the solution-autoencoder and main-training checkpoints:
+
+```bash
+python -u main.py --mode FULL --seed 7 --restart
 ```
 
-It does **not** receive the true SLD profile or frozen SLD latent during graph construction or prediction. The training target is:
+This retrains the autoencoder and the main curriculum. Compatible numerical dataset caches may still be reused. **It does not automatically create a new experiment directory:** with unchanged code and configuration, training artifacts in the existing directory can be overwritten. Preserve a separate copy of the previous run before restarting if its results are needed.
 
-```text
-z_target = frozen_sld_encoder(SLD)
-```
+The solution-autoencoder checkpoint is saved after that phase completes and passes its validation gate; it is not an epoch-by-epoch recovery file. An interruption before this save requires repeating the autoencoder phase. `best.pt` and `last.pt` are final model artifacts; automatic interrupted-run recovery uses `training_resume.pt`.
 
-The context model predicts:
-
-```text
-z_pred = GNN_KAN_AIMJEPA(context_graph)
-```
-
-The key JEPA property is that the model predicts a **latent structural embedding**, not raw pixels, raw q-map intensities, raw scattering curves, or raw SLD values.
-
-## Graph Representation
-
-Each sample is converted into a fixed-size attributed graph with **66 nodes**:
-
-| Node type | Count | Meaning |
-|---|---:|---|
-| Scattering interval nodes | 16 | `logR_obs` split into q-intervals, with q coordinates, mean/std curve features, and optional uncertainty. |
-| CLSM patch nodes | 16 | 4x4 grid over the two-channel CLSM-like image. |
-| SEM patch nodes | 16 | 4x4 grid over the SEM-like image. |
-| q-map patch nodes | 16 | 4x4 grid over the reciprocal-space map. |
-| Metadata node | 1 | Embeddings for growth state, preparation protocol, strain proxy, plus normalized morphology features. |
-| Global context node | 1 | Learnable node used for graph readout. |
-
-The fixed graph has **530 directed edges** in the full-graph setting. Edge types include:
-
-- q-adjacency between neighboring scattering intervals,
-- spatial 4-neighbor adjacency within CLSM patches,
-- spatial 4-neighbor adjacency within SEM patches,
-- spatial 4-neighbor adjacency within q-map patches,
-- cross-modal patch correspondence between CLSM, SEM, and q-map patches,
-- metadata links to all other nodes,
-- global-node links to all other nodes.
-
-Edge attributes include an edge-type one-hot vector plus simple relative coordinate/distance features.
-
-The notebook batches graphs without PyTorch Geometric. It keeps a shared fixed `edge_index` and `edge_attr`, and stores node features as:
-
-```text
-batch_node_features: (B, V, node_dim)
-edge_index:          (2, E)
-edge_attr:           (E, edge_attr_dim)
-```
-
-Message passing is implemented with pure PyTorch indexing and `index_add`-style aggregation.
-
-## GNN + KAN Architecture
-
-The main context model is `AIMJEPAGraphKAN`.
-
-It contains:
-
-- modality-specific feature builders for scattering intervals, image patches, q-map patches, and metadata,
-- node-type embeddings,
-- edge-type/edge-attribute embeddings,
-- `GraphKANLayer` message-passing blocks,
-- global-node or graph-level readout,
-- KAN-style predictor head mapping the graph representation to the frozen SLD latent dimension.
-
-The message-passing update is conceptually:
-
-```text
-message_ij = KAN_message([h_source, edge_attr_ij])
-agg_j      = aggregate_i(message_ij)
-h_j_new    = LayerNorm(h_j + KAN_update([h_j, agg_j]))
-```
-
-The notebook includes an MLP baseline only for comparison. The default context model is:
-
-```python
-cfg.context_model = "gnn_kan"
-```
-
-## KAN-Style Basis Layers
-
-The notebook uses self-contained KAN-style basis-function layers. It does not depend on third-party KAN or spline packages.
-
-The layer computes:
-
-```text
-y = base_linear(x) + sum_i,k coefficient[o, i, k] * B_k(x_i)
-```
-
-Available bases:
-
-```python
-fourier
-chebyshev
-legendre
-hermite
-laguerre
-gegenbauer
-rbf
-```
-
-The current checked-in notebook configuration uses:
-
-```python
-cfg.kan_basis = "legendre"
-cfg.num_basis = 8
-```
-
-These are KAN-style basis expansions for method testing. The repository reports coefficient magnitudes as diagnostics, but it does not claim formal KAN interpretability.
-
-## Masked-Node JEPA and EMA Teacher
-
-The notebook also includes a masked-node JEPA objective inspired by the molecular JEPA starter project.
-
-During training:
-
-- the student graph receives a partially masked observed-modality graph,
-- an EMA graph teacher encodes the unmasked observed graph,
-- the student predicts hidden node embeddings,
-- the target for this auxiliary task comes from the EMA teacher, not from the SLD target.
-
-This tests missing-node and missing-modality behavior while preserving the main AIM-JEPA target:
-
-```text
-visible graph context -> frozen SLD latent target
-```
-
-## Losses and Regularization
-
-The Stage 2 objective combines several terms:
-
-- normalized latent MSE between `z_pred` and `z_target`,
-- cosine alignment loss,
-- InfoNCE retrieval/contrastive loss,
-- optional SIGReg-style random-projection distribution regularization,
-- random-projection variance anti-collapse penalty,
-- target norm/std matching,
-- optional KAN coefficient L1 penalty,
-- optional masked-node JEPA loss against the EMA graph teacher,
-- optional multifractal entropy spectral regularization.
-
-### SIGReg Baseline
-
-The SIGReg baseline can be run with:
-
-```python
-cfg.lambda_sigreg = 0.05
-cfg.lambda_mhe = 0.0
-cfg.lambda_trace = 0.0
-```
-
-### Multifractal Entropy Regularization
-
-The notebook includes a multifractal entropy regularizer over the normalized covariance spectrum of predicted latent embeddings.
-
-For probabilities `p_i` from normalized covariance eigenvalues, it computes an escort entropy using:
-
-```text
-beta = cfg.mhe_mf_d * q
-pi_beta = softmax(beta * log(p_i))
-S_beta = -sum_i pi_beta_i log(pi_beta_i)
-effective_rank_beta = exp(S_beta)
-```
-
-Supported modes:
-
-- `min_effective_rank`: penalize only if the effective rank drops below a floor,
-- `target_effective_rank`: penalize distance from a chosen effective rank,
-- `maximize_entropy`: push toward a flatter spectrum.
-
-The notebook also includes a trace guard because entropy alone is scale-invariant and cannot prevent all-variance collapse.
-
-The current checked-in configuration is an MHE replacement run:
-
-```python
-cfg.lambda_sigreg = 0.0
-cfg.lambda_mhe = 0.10
-cfg.lambda_trace = 0.05
-cfg.mhe_mode = "min_effective_rank"
-cfg.mhe_q_values = (0.5, 1.0, 2.0, 4.0)
-cfg.mhe_mf_d = 1.0
-```
-
-Other useful ablations:
-
-```python
-# SIGReg + small MHE
-cfg.lambda_sigreg = 0.05
-cfg.lambda_mhe = 0.005
-cfg.lambda_trace = 0.0
-
-# Predictive cross-spectrum MHE
-cfg.lambda_sigreg = 0.05
-cfg.lambda_pred_mhe = 0.005
-cfg.lambda_pred_trace = 0.0
-```
-
-Do not claim an improvement from a single seed. Compare settings using the same split, architecture, optimizer, and training budget, and report seed-to-seed variation.
-
-## Run Presets
-
-The notebook applies presets after creating the config object.
-
-| Preset | AE epochs | JEPA epochs | Batch size | Hidden dim | GNN layers | Basis terms |
-|---|---:|---:|---:|---:|---:|---:|
-| `smoke` | 1 | 1 | 16 | 64 | 1 | 6 |
-| `short` | 3 | 5 | 16 | 64 | 1 | 6 |
-| `normal` | 50 | 100 | 32 | 128 | 1 | 8 |
-
-The current notebook default is:
-
-```python
-cfg.run_preset = "normal"
-cfg.data_path = "/content/aimbio_multimodal_poc_5000.npz"
-```
-
-For a quick check, change:
-
-```python
-cfg.run_preset = "smoke"
-```
-
-## Running in Colab
-
-1. Open `AIM_JEPA_GNN_KAN_multimodal_POC_colab.ipynb`.
-2. Upload `aimbio_multimodal_poc_5000.npz` to Colab, or place it at `/content/aimbio_multimodal_poc_5000.npz`.
-3. Start with `cfg.run_preset = "smoke"` to verify paths and package availability.
-4. Use `cfg.run_preset = "normal"` for a serious single-seed run.
-5. Outputs are saved under `/content/aim_jepa_gnn_kan_outputs` in Colab, or `aim_jepa_gnn_kan_outputs` locally.
-
-The notebook uses:
-
-- Python,
-- NumPy,
-- pandas,
-- matplotlib,
-- PyTorch.
-
-PyTorch Geometric is not required.
+Replace `FULL` and the seed with the values used by your experiment. The same command pattern applies inside `physicless/`. Avoid concurrent executions targeting the same run.
 
 ## Outputs
 
-The notebook writes:
+Each regular experiment creates a directory named `true_jepa_<mode>_<config_hash>_<code_hash>` inside `outputs/`.
 
-| Output | Meaning |
+| Artifact | Contents |
 |---|---|
-| `aim_jepa_gnn_kan_checkpoint.pt` | Model checkpoint, graph spec, config, normalization stats, split indices. |
-| `aim_jepa_gnn_kan_metrics_history.csv` | JEPA training/validation history. |
-| `sld_autoencoder_metrics_history.csv` | Stage 1 autoencoder history. |
-| `aim_jepa_gnn_kan_context_summary.csv` | Context-modality ablations. |
-| `aim_jepa_gnn_kan_graph_ablation_summary.csv` | Edge-type graph ablations. |
-| `aim_jepa_gnn_kan_node_ablation_summary.csv` | Node-modality ablations. |
-| `aim_jepa_gnn_kan_diagnostics.csv` | KAN and spectral diagnostics. |
-| `config.json` | Final runtime configuration. |
+| `config.json`, `dataset_manifest.json`, `split_manifest.json`, `normalization.json` | Configuration, dataset identity, partitions, and scaling information. |
+| `solver_convergence.csv`, `data_audit.csv`, `operator_window_audit.csv`, `rejections.csv` | Reference quality, effective domains, and rejected samples. |
+| `solution_autoencoder.pt`, `solution_autoencoder_history.json` | Selected solution autoencoder and reconstruction history. |
+| `training_resume.pt`, `training_history.csv` | Resumable state with in-progress history; consolidated CSV after `s05`. |
+| `best.pt`, `last.pt`, `checkpoint_manifest.json` | Validation-selected model, literal last training state, checkpoint roles, and hashes. |
+| `per_state_metrics.csv`, `per_state_output_metrics.csv` | Detailed state-level metrics, including separate output routes. |
+| `family_summary.csv`, `state_summary.csv`, `generalization_summary.csv`, `output_route_summary_by_*.csv` | Aggregated performance across families, states, categories, and routes. |
+| `topology_metrics.csv`, `topology_summary_by_*.csv`, `direct_hybrid_comparison.csv` | Nodal diagnostics and output-route comparisons. |
+| `refinement_iteration_metrics.csv`, `refinement_depth_ablation.csv` | Refinement trajectories and depth comparisons. |
+| `inference_only_demo.npz` and generated `.png` figures | Example operator-only predictions and plots of spectra, wavefunctions, densities, nodes, residuals, and cost. |
+| `run_card.json`, `model_card.json`, `test_results.csv`, `ablation_status.csv` | Provenance, checks, scientific acceptance, limitations, and experiment status. |
 
-## Metrics to Inspect
+Files appear as their stages complete. **Family-level evaluation tables are generated in `s06`, after the entire `s05` training curriculum.** Execution logs are stored in `logs/`, with stage timings and status in `pipeline_state.json`.
 
-Core metrics:
+## Results and Analysis Notebooks
 
-- SLD autoencoder train/validation loss,
-- SLD reconstruction MAE,
-- AIM-JEPA train/validation loss,
-- latent MSE,
-- latent cosine similarity,
-- InfoNCE loss,
-- Recall@1, Recall@5, Recall@10,
-- median retrieval rank,
-- decoded SLD MAE,
-- top-1 and top-5 retrieved SLD MAE,
-- predicted latent standard deviation,
-- target latent standard deviation,
-- collapse warning.
+`results/` contains post-processing of selected experiments; **it is not updated automatically by `main.py`**.
 
-Graph and modality diagnostics:
+| Contents of `results/` | Purpose |
+|---|---|
+| `01_metrics/` | Selected output tables and derived metrics. |
+| `02_figures/` | Curriculum plots and comparison figures, including an `ablation/` subdirectory. |
+| `03_spectral_analysis/` | Organized spectral-analysis tables, including existing ID/OOD heatmaps. |
+| `generate_results/` | The `gerenate_results.ipynb` notebook copies run tables and exports autoencoder history as CSV; `plot_curriculum*.ipynb` notebooks plot the training curriculum. |
+| `heatmap.ipynb` | Regular-model fidelity by family and state, including unseen OOD families; currently exports CSVs into `results/`. |
+| `heatmap_regular_vs_physicless.ipynb` | Family/state heatmaps comparing regular and reduced-physics models. |
+| `compare_physics_informed_vs_physicless.ipynb` | State-resolved comparisons of fidelity, residuals, and nodal correctness. |
 
-- all modalities,
-- scattering only,
-- images only,
-- microscopy only,
-- q-map only,
-- metadata only,
-- no scattering,
-- full graph,
-- no cross-modal edges,
-- no metadata edges,
-- no q-adjacency edges,
-- no spatial image adjacency edges,
-- only global-node edges,
-- removed scattering/CLSM/SEM/qmap/metadata nodes.
+Check each notebook's `ROOT`, `RUN`, `MODE`, and route settings before execution. Some select a fixed run or the first directory entry rather than the latest run. Regular/physicless comparisons check partition compatibility.
 
-KAN and message-passing diagnostics:
+## Reduced-Physics Ablation
 
-- mean and max absolute basis coefficient value,
-- finite KAN coefficient flag,
-- KAN parameter count,
-- KAN gradient norm,
-- node embedding norm/std after message passing,
-- global-node norm,
-- oversmoothing score.
+`physicless/` contains an independent ablation pipeline. It uses the main project's canonical physics and data-generation stages, while maintaining its own model, training, evaluation, logs, and output directories named `physicless_jepa_*`.
 
-MHE diagnostics when enabled:
+Removed mechanisms:
 
-- `mhe_loss`,
-- trace guard loss,
-- covariance trace,
-- participation ratio,
-- condition number,
-- per-beta entropy,
-- per-beta normalized entropy,
-- per-beta effective rank.
+- Sturm-constrained decoding and nodal/topology losses.
+- Positive-gap energy ordering.
+- Explicit state orthogonalization and orthogonality losses.
+- Rayleigh–Ritz training and inference.
+- Residual-based training and refinement.
 
-## Recent Single-Seed Notebook Result
+JEPA/EMA, Dirichlet boundaries, individual normalization, wavefunction/energy/H1 supervision, density, tail localization, reflection consistency, and subspace supervision are retained. Residuals, node counts, and Gram errors remain diagnostic quantities. The output route is `direct_unconstrained`.
 
-The latest checked notebook output used:
+Open a terminal in the project's `physicless/` directory to run the ablation:
 
-```python
-cfg.kan_basis = "legendre"
-cfg.lambda_sigreg = 0.0
-cfg.lambda_mhe = 0.10
-cfg.lambda_trace = 0.05
-cfg.seed = 7
+```bash
+python -u main.py --mode DEVELOPMENT
 ```
 
-On the synthetic 5000-sample dataset, the final all-context test summary was approximately:
+Its final audit is `physicless_ablation_audit.json`. This is a reduced-physics comparison, not a model with every physical assumption removed or a replacement for all architectural ablations.
 
-| Metric | Test value |
-|---|---:|
-| latent cosine | 0.7968 |
-| Recall@1 | 0.1947 |
-| Recall@5 | 0.5640 |
-| Recall@10 | 0.7387 |
-| decoded SLD MAE | 0.7006 |
-| top-5 retrieved SLD MAE | 0.4280 |
-| predicted latent std | 0.0954 |
-| target latent std | 0.0862 |
-| collapse warning | false |
-| MHE participation ratio | 18.15 |
-| MHE condition number | 65.27 |
+## Metrics and Interpretation
 
-These are single-seed synthetic benchmark numbers. They are useful for method debugging and proposal de-risking, but not sufficient for a biological or statistical performance claim.
+Inspect fidelity together with energy error, relative H1 error, independent Schrödinger residual, Gram error, node counts, and runtime. Compare output routes explicitly: high overlap, correct topology, and low residual need not coincide.
 
-## Interpreting the POC
-
-A useful run should show:
-
-- validation/test latent cosine above a random or undertrained baseline,
-- Recall@5 and Recall@10 above random retrieval,
-- decoded or retrieved SLD profiles that improve over random candidates,
-- nonzero predicted latent spread,
-- finite KAN coefficients and gradients,
-- meaningful degradation under graph and modality ablations,
-- no collapse warning.
-
-The most important distinction is:
-
-```text
-Synthetic multimodal benchmark != AIM-Bio biological validation
-```
-
-The benchmark demonstrates that the proposed architecture and diagnostics can be exercised before real DESY/CSSB AIM-Bio data are available.
-
-## Conservative Proposal Wording
-
-As a controlled methodological benchmark, we implemented an AIM-JEPA prototype in which synthetic scattering profiles, microscopy-like images, reciprocal-space maps, and metadata are represented as attributed graphs. A graph neural network with KAN-style basis-function message passing predicts latent structural SLD embeddings, enabling evaluation of cross-modal latent prediction, retrieval, ablation sensitivity, spectral anti-collapse diagnostics, and missing-node behavior before transfer to real AIM-Bio biofilm data.
-
-## Known Limitations
-
-- The dataset is synthetic and procedurally generated.
-- Metadata and morphology features are generator-derived and can be more informative than real experimental metadata would be.
-- CLSM/SEM/qmap arrays are image-like proxies, not real microscopy.
-- The SLD profile is a synthetic scattering target, not a directly measured biological structure.
-- KAN basis coefficients are reported as diagnostics, not as validated scientific explanations.
-- Current results are mostly single-seed experiments; use multi-seed comparisons before claiming improvement.
-- The current target is the SLD latent. Additional tasks are needed to fully demonstrate hidden q-sector prediction or arbitrary missing-modality target prediction.
-
-## Recommended Next Steps
-
-1. Run the main configurations over at least 3 seeds.
-2. Compare MHE replacement, SIGReg baseline, and SIGReg+MHE using the same split and budget.
-3. Add best-validation checkpoint selection instead of relying only on final epoch.
-4. Add post-training spectral diagnostics for every run, including SIGReg-only baselines.
-5. Add explicit missing-modality target prediction tasks.
-6. Add q-sector latent target prediction tasks.
-7. Replace procedural proxies with pilot DESY/CSSB AIM-Bio data when available.
-8. Keep proposal language conservative until biological validation is complete.
+A completed execution may still fail scientific acceptance; consult `run_card.json`. QUICK runs and short ablation checks demonstrate functionality rather than full comparative performance. Unseen-family generalization and improvements require matched evaluations; the model is not a universal eigensolver.

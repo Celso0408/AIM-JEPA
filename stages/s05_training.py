@@ -399,6 +399,19 @@ for stage_index,stage_spec in enumerate(stage_definitions):
             optimizer.step(); optimizer.zero_grad(set_to_none=True); tau=ema_tau(global_step,total_steps); model.update_target(tau)
             global_step+=1; stage_update+=1; optimizer_updates+=1
         val=validation_summary(model,loaders["val"],active_states=active_states); previous_val=val
+        # Observational STANDARD monitor: evaluate the two radial validation
+        # families without changing optimization, selection, or loss weights.
+        radial_monitor={}
+        if stage in ("F_physics_ramp","G_joint_finetune"):
+            validation_rows=getattr(loaders["val"].dataset,"rows",[])
+            for radial_family in ("radial_coulomb","radial_oscillator"):
+                family_rows=[record for record in validation_rows if str(record["family"])==radial_family]
+                if family_rows:
+                    family_val=validation_summary(model,make_loader(family_rows,shuffle=False),active_states,False)
+                    radial_monitor[f"val_{radial_family}_fidelity"]=float(family_val["fidelity"])
+                    radial_monitor[f"val_{radial_family}_h1"]=float(family_val["h1"])
+                    radial_monitor[f"val_{radial_family}_topology_valid_fraction"]=float(
+                        family_val.get("direct_topology_valid_fraction",float("nan")))
         score=val.get("robust_validation_score",validation_metric_score(val))
         monitor=(val["jepa"] if stage=="D_jepa_latent" else
                  val["subspace_projector"]+.05*val["energy"]+.05*val["gap"] if active_states<CFG.k_states else score)
@@ -440,9 +453,21 @@ for stage_index,stage_spec in enumerate(stage_definitions):
              **{f"physics_ramp_s{index}":applied_physics_ramps[index] for index in range(CFG.k_states)},
              **{f"next_physics_enabled_s{index}":bool(physics_curriculum["enabled"][index]) for index in range(CFG.k_states)},
              **{f"next_physics_ramp_s{index}":float(physics_state_ramps(physics_curriculum,active_states)[index]) for index in range(CFG.k_states)},
+             **radial_monitor,
              **{"train_"+k:v for k,v in train_means.items()},
              **{"weight_"+k:float(v) for k,v in weights.items()},**{"val_"+k:v for k,v in val.items()}}
         training_history.append(row); print({k:(round(v,5) if isinstance(v,float) else v) for k,v in row.items() if k in ("stage","epoch","train_loss","clip_fraction","physics_ramp","val_fidelity","validation_score")})
+        # V12 is an observational experiment: these snapshots do not participate in
+        # checkpoint selection or optimization.  They preserve the exact first and
+        # literal-last 11-state models needed to localize the transition failure.
+        if stage=="E_supervised_11" and epoch==0:
+            atomic_torch_save({"model_state":cpu_snapshot(model.state_dict()),"stage":stage,"epoch":epoch,
+                               "global_step":global_step,"active_states":active_states,"validation":dict(val),
+                               "checkpoint_role":"latent_transition_first_11"},OUT/"latent_checkpoint_first_11.pt")
+        if stage=="E_supervised_11":
+            atomic_torch_save({"model_state":cpu_snapshot(model.state_dict()),"stage":stage,"epoch":epoch,
+                               "global_step":global_step,"active_states":active_states,"validation":dict(val),
+                               "checkpoint_role":"latent_transition_literal_last_11"},OUT/"latent_checkpoint_literal_last_11.pt")
         if stage in full_checkpoint_stages and score<best_score-CFG.early_stopping_min_delta:
             best_score=score; best_state=cpu_snapshot(model.state_dict()); best_stage=stage; best_epoch=epoch; best_global_step=global_step; best_global_epoch=global_epoch; best_stage_update=stage_update
             best_optimizer=cpu_snapshot(optimizer.state_dict()); best_scheduler=cpu_snapshot(scheduler_state); best_val=dict(val); best_tau=tau
@@ -490,6 +515,11 @@ for stage_index,stage_spec in enumerate(stage_definitions):
     if stage_best_snapshot is not None:
         model.load_state_dict(stage_best_snapshot); optimizer.load_state_dict(stage_best_optimizer); physics_curriculum=cpu_snapshot(stage_best_curriculum)
         ritz_ready_streak=stage_best_ritz_streak; scheduler_state=cpu_snapshot(stage_best_scheduler); tau=stage_best_tau; previous_val=dict(stage_best_validation)
+    if stage in ("E_subspace_6","E_supervised_11"):
+        boundary_name="end_6" if stage=="E_subspace_6" else "selected_end_11"
+        atomic_torch_save({"model_state":cpu_snapshot(model.state_dict()),"stage":stage,"epoch":epoch,
+                           "global_step":global_step,"active_states":active_states,"validation":dict(previous_val),
+                           "checkpoint_role":f"latent_transition_{boundary_name}"},OUT/f"latent_checkpoint_{boundary_name}.pt")
     next_stage_payload={
         "checkpoint_role":"training_resume","config_hash":CONFIG_HASH,"code_hash":CODE_HASH,
         "dataset_manifest_hash":DATASET_MANIFEST_HASH,"split_manifest_hash":SPLIT_MANIFEST_HASH,
