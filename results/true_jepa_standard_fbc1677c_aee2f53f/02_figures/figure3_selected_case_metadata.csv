@@ -1,0 +1,2 @@
+group_id,family,state,fidelity_direct,fidelity_RR,delta_fidelity,residual_direct,residual_RR,node_count_FEM,node_count_direct,node_count_RR
+1e9d5dfe5854b2bba92f0289,single_barrier,5,0.9905311018367313,0.9985547211652204,0.008023619328489051,0.04578744008243831,0.039416965810917394,5,5,7

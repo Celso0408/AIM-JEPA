@@ -12,3 +12,61 @@ __pycache__/
 
 # OS/editor noise.
 .DS_Store
+# Local directories excluded from publication (including nested copies).
+[Bb]ackup/
+chech_py/
+chech+py/
+tests/
+/physicless/tests/
+/physicless/README.md
+/physicless/LATEST_VALIDATED_RUN.txt
+
+# Generated runs, numerical caches, logs, and runtime state.
+# Keep curated results/, analysis notebooks, and potential visualizations tracked.
+*.log
+pipeline_state*.json
+
+# Model weights, temporary checkpoints, and serialized numerical caches.
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.tmp
+
+# Local source archives.
+*.zip
+
+# Credentials and local environment settings.
+.env
+.env.*
+*.env
+!*.env.example
+!.env.example
+
+# Python bytecode, virtual environments, and tool caches.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Jupyter autosaves and local editor/OS files.
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

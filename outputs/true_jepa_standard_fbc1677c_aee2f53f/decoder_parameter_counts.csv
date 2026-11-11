@@ -1,0 +1,3 @@
+decoder_type,decoder_parameters,total_parameters,trainable_parameters,parameter_matched,delta_total_vs_spectral
+spectral_sine_residual,52729,1178668,1120468,False,0
+topology_phase,38658,1164597,1106397,False,-14071
